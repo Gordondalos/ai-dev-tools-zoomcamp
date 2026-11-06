@@ -1,0 +1,317 @@
+{
+  "source_commit": "b47dff65161c878d095e288e9f9e5b907f5aa3c6",
+  "translated_markdown_files": 13,
+  "headings_preserved": 187,
+  "identical_code_blocks": 164,
+  "rendered_resource_links_adjusted": 39,
+  "referenced_original_assets": 37,
+  "rendered_relative_links_verified": 57,
+  "broken_relative_links": 0,
+  "new_binary_files": 0,
+  "new_html_files": 0,
+  "external_urls_live_checked": false,
+  "browser_visual_check_completed": false,
+  "files": [
+    {
+      "path": "articles/00-draft-prompts.md",
+      "code_blocks": 36,
+      "headings": 41,
+      "code_blocks_byte_identical": true,
+      "inline_code_preserved": true,
+      "headings_preserved": true
+    },
+    {
+      "path": "articles/00-from-zero-to-production.md",
+      "code_blocks": 34,
+      "headings": 33,
+      "code_blocks_byte_identical": true,
+      "inline_code_preserved": true,
+      "headings_preserved": true
+    },
+    {
+      "path": "articles/01-ai-native-workflow.md",
+      "code_blocks": 30,
+      "headings": 17,
+      "code_blocks_byte_identical": true,
+      "inline_code_preserved": true,
+      "headings_preserved": true
+    },
+    {
+      "path": "articles/02-end-to-end-visual-plan.md",
+      "code_blocks": 0,
+      "headings": 2,
+      "code_blocks_byte_identical": true,
+      "inline_code_preserved": true,
+      "headings_preserved": true
+    },
+    {
+      "path": "articles/02-end-to-end.md",
+      "code_blocks": 11,
+      "headings": 14,
+      "code_blocks_byte_identical": true,
+      "inline_code_preserved": true,
+      "headings_preserved": true
+    },
+    {
+      "path": "articles/03-deployment.md",
+      "code_blocks": 14,
+      "headings": 10,
+      "code_blocks_byte_identical": true,
+      "inline_code_preserved": true,
+      "headings_preserved": true
+    },
+    {
+      "path": "articles/04-devops.md",
+      "code_blocks": 13,
+      "headings": 15,
+      "code_blocks_byte_identical": true,
+      "inline_code_preserved": true,
+      "headings_preserved": true
+    },
+    {
+      "path": "articles/05-code-agents-building-blocks.md",
+      "code_blocks": 15,
+      "headings": 14,
+      "code_blocks_byte_identical": true,
+      "inline_code_preserved": true,
+      "headings_preserved": true
+    },
+    {
+      "path": "articles/06-course-launch-2026.md",
+      "code_blocks": 0,
+      "headings": 16,
+      "code_blocks_byte_identical": true,
+      "inline_code_preserved": true,
+      "headings_preserved": true
+    },
+    {
+      "path": "articles/diagram-source/04-redesign-brief.md",
+      "code_blocks": 0,
+      "headings": 5,
+      "code_blocks_byte_identical": true,
+      "inline_code_preserved": true,
+      "headings_preserved": true
+    },
+    {
+      "path": "articles/diagram-source/README.md",
+      "code_blocks": 0,
+      "headings": 12,
+      "code_blocks_byte_identical": true,
+      "inline_code_preserved": true,
+      "headings_preserved": true
+    },
+    {
+      "path": "articles/screenshot-workflow.md",
+      "code_blocks": 11,
+      "headings": 8,
+      "code_blocks_byte_identical": true,
+      "inline_code_preserved": true,
+      "headings_preserved": true
+    },
+    {
+      "path": "articles/substack.md",
+      "code_blocks": 0,
+      "headings": 0,
+      "code_blocks_byte_identical": true,
+      "inline_code_preserved": true,
+      "headings_preserved": true
+    }
+  ],
+  "resource_link_changes": [
+    {
+      "file": "articles/01-ai-native-workflow.md",
+      "from": "images/01-wrong-implementation.png",
+      "to": "../../../articles/images/01-wrong-implementation.png"
+    },
+    {
+      "file": "articles/01-ai-native-workflow.md",
+      "from": "images/01-goal-is-not-met.png",
+      "to": "../../../articles/images/01-goal-is-not-met.png"
+    },
+    {
+      "file": "articles/01-ai-native-workflow.md",
+      "from": "images/01-agent-workflow.png",
+      "to": "../../../articles/images/01-agent-workflow.png"
+    },
+    {
+      "file": "articles/02-end-to-end.md",
+      "from": "images/02-user-session-flow.png",
+      "to": "../../../articles/images/02-user-session-flow.png"
+    },
+    {
+      "file": "articles/02-end-to-end.md",
+      "from": "images/02-article-build-flow.png",
+      "to": "../../../articles/images/02-article-build-flow.png"
+    },
+    {
+      "file": "articles/02-end-to-end.md",
+      "from": "images/02-chatgpt-dictation.png",
+      "to": "../../../articles/images/02-chatgpt-dictation.png"
+    },
+    {
+      "file": "articles/02-end-to-end.md",
+      "from": "images/02-mocked-frontend.png",
+      "to": "../../../articles/images/02-mocked-frontend.png"
+    },
+    {
+      "file": "articles/02-end-to-end.md",
+      "from": "images/02-openapi-contract.png",
+      "to": "../../../articles/images/02-openapi-contract.png"
+    },
+    {
+      "file": "articles/02-end-to-end.md",
+      "from": "images/02-backend-mock-database.png",
+      "to": "../../../articles/images/02-backend-mock-database.png"
+    },
+    {
+      "file": "articles/02-end-to-end.md",
+      "from": "images/02-backend-sqlite.png",
+      "to": "../../../articles/images/02-backend-sqlite.png"
+    },
+    {
+      "file": "articles/03-deployment.md",
+      "from": "images/03-containerization.png",
+      "to": "../../../articles/images/03-containerization.png"
+    },
+    {
+      "file": "articles/03-deployment.md",
+      "from": "images/03-compose-postgres.png",
+      "to": "../../../articles/images/03-compose-postgres.png"
+    },
+    {
+      "file": "articles/03-deployment.md",
+      "from": "images/03-e2e-test-flow.png",
+      "to": "../../../articles/images/03-e2e-test-flow.png"
+    },
+    {
+      "file": "articles/03-deployment.md",
+      "from": "images/03-aws-deployment.png",
+      "to": "../../../articles/images/03-aws-deployment.png"
+    },
+    {
+      "file": "articles/03-deployment.md",
+      "from": "images/03-ci-cd.png",
+      "to": "../../../articles/images/03-ci-cd.png"
+    },
+    {
+      "file": "articles/03-deployment.md",
+      "from": "images/03-full-application.png",
+      "to": "../../../articles/images/03-full-application.png"
+    },
+    {
+      "file": "articles/03-deployment.md",
+      "from": "images/03-next-lesson.png",
+      "to": "../../../articles/images/03-next-lesson.png"
+    },
+    {
+      "file": "articles/04-devops.md",
+      "from": "images/04-devops-overview.png",
+      "to": "../../../articles/images/04-devops-overview.png"
+    },
+    {
+      "file": "articles/04-devops.md",
+      "from": "images/02-backend-sqlite.png",
+      "to": "../../../articles/images/02-backend-sqlite.png"
+    },
+    {
+      "file": "articles/04-devops.md",
+      "from": "images/04-ci-dev.png",
+      "to": "../../../articles/images/04-ci-dev.png"
+    },
+    {
+      "file": "articles/04-devops.md",
+      "from": "images/04-dev-prod-environments.png",
+      "to": "../../../articles/images/04-dev-prod-environments.png"
+    },
+    {
+      "file": "articles/04-devops.md",
+      "from": "images/04-manual-production-deploy.png",
+      "to": "../../../articles/images/04-manual-production-deploy.png"
+    },
+    {
+      "file": "articles/04-devops.md",
+      "from": "images/04-build-once.png",
+      "to": "../../../articles/images/04-build-once.png"
+    },
+    {
+      "file": "articles/04-devops.md",
+      "from": "images/04-observability-pipeline.png",
+      "to": "../../../articles/images/04-observability-pipeline.png"
+    },
+    {
+      "file": "articles/04-devops.md",
+      "from": "images/04-instrumenting-fast-api.png",
+      "to": "../../../articles/images/04-instrumenting-fast-api.png"
+    },
+    {
+      "file": "articles/04-devops.md",
+      "from": "images/04-grafana-dashboard.png",
+      "to": "../../../articles/images/04-grafana-dashboard.png"
+    },
+    {
+      "file": "articles/04-devops.md",
+      "from": "images/04-build-once-observability.png",
+      "to": "../../../articles/images/04-build-once-observability.png"
+    },
+    {
+      "file": "articles/04-devops.md",
+      "from": "images/04-production-responder.png",
+      "to": "../../../articles/images/04-production-responder.png"
+    },
+    {
+      "file": "articles/05-code-agents-building-blocks.md",
+      "from": "images/05-release-skill.png",
+      "to": "../../../articles/images/05-release-skill.png"
+    },
+    {
+      "file": "articles/05-code-agents-building-blocks.md",
+      "from": "images/05-i-heard-you-like-prompts.jpg",
+      "to": "../../../articles/images/05-i-heard-you-like-prompts.jpg"
+    },
+    {
+      "file": "articles/05-code-agents-building-blocks.md",
+      "from": "images/05-subagent-general.png",
+      "to": "../../../articles/images/05-subagent-general.png"
+    },
+    {
+      "file": "articles/05-code-agents-building-blocks.md",
+      "from": "images/05-subagent-pm.png",
+      "to": "../../../articles/images/05-subagent-pm.png"
+    },
+    {
+      "file": "articles/05-code-agents-building-blocks.md",
+      "from": "images/01-agent-workflow.png",
+      "to": "../../../articles/images/01-agent-workflow.png"
+    },
+    {
+      "file": "articles/05-code-agents-building-blocks.md",
+      "from": "images/05-parallel-worktrees.png",
+      "to": "../../../articles/images/05-parallel-worktrees.png"
+    },
+    {
+      "file": "articles/06-course-launch-2026.md",
+      "from": "images/06-course-platform.png",
+      "to": "../../../articles/images/06-course-platform.png"
+    },
+    {
+      "file": "articles/06-course-launch-2026.md",
+      "from": "images/06-course-repository.png",
+      "to": "../../../articles/images/06-course-repository.png"
+    },
+    {
+      "file": "articles/06-course-launch-2026.md",
+      "from": "images/06-course-docs.png",
+      "to": "../../../articles/images/06-course-docs.png"
+    },
+    {
+      "file": "articles/06-course-launch-2026.md",
+      "from": "images/06-leaderboard-2025.png",
+      "to": "../../../articles/images/06-leaderboard-2025.png"
+    },
+    {
+      "file": "articles/06-course-launch-2026.md",
+      "from": "images/06-certificate-2025.png",
+      "to": "../../../articles/images/06-certificate-2025.png"
+    }
+  ]
+}
