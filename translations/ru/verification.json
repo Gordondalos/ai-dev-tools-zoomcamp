@@ -1,0 +1,14 @@
+{
+  "translated_markdown_files": 18,
+  "original_markdown_bytes": 73655,
+  "fenced_blocks_verified_identical": 38,
+  "source_files_verified_against_git_blob_sha": 18,
+  "translation_files_verified_against_sha256": 18,
+  "html_sections": 18,
+  "unique_html_ids": 378,
+  "broken_internal_html_links": 0,
+  "raw_markdown_headings_in_html_paragraphs": 0,
+  "external_pages_live_checked": false,
+  "browser_visual_check_completed": false,
+  "browser_visual_check_note": "Chromium could not start in the execution environment; structural HTML and link checks completed."
+}

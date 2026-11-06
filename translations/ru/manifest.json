@@ -1,0 +1,152 @@
+{
+  "source_repository": "Gordondalos/ai-dev-tools-zoomcamp",
+  "source_commit": "b47dff65161c878d095e288e9f9e5b907f5aa3c6",
+  "prepared_date": "2026-11-06",
+  "translated_markdown_count": 18,
+  "files": [
+    {
+      "path": "01-ai-native-workflow/01-ai-native-developer-workflow.md",
+      "original_url": "https://github.com/Gordondalos/ai-dev-tools-zoomcamp/blob/b47dff65161c878d095e288e9f9e5b907f5aa3c6/01-ai-native-workflow/01-ai-native-developer-workflow.md",
+      "original_git_blob_sha": "1d5c0260d43f1f08f176a50935a6a3fd0bc2f141",
+      "original_bytes": 1913,
+      "translation_bytes": 4374,
+      "translation_sha256": "e2d3112f42c36567a8af1f0ab8cdcf0c9f3edc5cafb1b6193cba379362a1da83"
+    },
+    {
+      "path": "01-ai-native-workflow/README.md",
+      "original_url": "https://github.com/Gordondalos/ai-dev-tools-zoomcamp/blob/b47dff65161c878d095e288e9f9e5b907f5aa3c6/01-ai-native-workflow/README.md",
+      "original_git_blob_sha": "c945ce4f23daba02d662f9e6188e5aeee9c040ba",
+      "original_bytes": 109,
+      "translation_bytes": 428,
+      "translation_sha256": "1f4f6e6beb2939feab0a4960708fc3f958c638f019694a2e9823574db8fdab94"
+    },
+    {
+      "path": "02-development/01-build-and-ship-an-ai-assisted-full-stack-app.md",
+      "original_url": "https://github.com/Gordondalos/ai-dev-tools-zoomcamp/blob/b47dff65161c878d095e288e9f9e5b907f5aa3c6/02-development/01-build-and-ship-an-ai-assisted-full-stack-app.md",
+      "original_git_blob_sha": "c162235b39186a7575bbe392884d9a66dbe5314d",
+      "original_bytes": 2904,
+      "translation_bytes": 6088,
+      "translation_sha256": "cfe1925e7cbd6fc5c9b26424ac6a94e1fc645e0405d4ba174b74cb4315b7d11a"
+    },
+    {
+      "path": "02-development/README.md",
+      "original_url": "https://github.com/Gordondalos/ai-dev-tools-zoomcamp/blob/b47dff65161c878d095e288e9f9e5b907f5aa3c6/02-development/README.md",
+      "original_git_blob_sha": "c7d01460f668f39933cac9af9d39b92b08fbef2b",
+      "original_bytes": 157,
+      "translation_bytes": 471,
+      "translation_sha256": "243aa7d04c42505fbf4a1fef4b023a57879ba96771ff74dbc7873c3b64c3d26b"
+    },
+    {
+      "path": "03-deployment/01-test-containerize-and-deploy-an-ai-assisted-app.md",
+      "original_url": "https://github.com/Gordondalos/ai-dev-tools-zoomcamp/blob/b47dff65161c878d095e288e9f9e5b907f5aa3c6/03-deployment/01-test-containerize-and-deploy-an-ai-assisted-app.md",
+      "original_git_blob_sha": "6c5e5264847b93b9a7673912498148bc15bb6a57",
+      "original_bytes": 3019,
+      "translation_bytes": 6470,
+      "translation_sha256": "45cc99321618e066ecf7acea34614ef1ab5e436610e279c58f2a52f4d237c180"
+    },
+    {
+      "path": "03-deployment/README.md",
+      "original_url": "https://github.com/Gordondalos/ai-dev-tools-zoomcamp/blob/b47dff65161c878d095e288e9f9e5b907f5aa3c6/03-deployment/README.md",
+      "original_git_blob_sha": "3d43d61b93dabcf7178aacb1d1303ed73dc7028e",
+      "original_bytes": 170,
+      "translation_bytes": 606,
+      "translation_sha256": "77f06d126d023b4b6e3e23768ba9281593999908ed05b4dca70c47e2ea87db81"
+    },
+    {
+      "path": "04-devops/01-devops-and-observability-for-ai-built-apps.md",
+      "original_url": "https://github.com/Gordondalos/ai-dev-tools-zoomcamp/blob/b47dff65161c878d095e288e9f9e5b907f5aa3c6/04-devops/01-devops-and-observability-for-ai-built-apps.md",
+      "original_git_blob_sha": "6b3c0093c03b60882dd2e22dfabf3f78168e0203",
+      "original_bytes": 6553,
+      "translation_bytes": 14686,
+      "translation_sha256": "4f98dc91e2f04d6de2199b67c479d6082bc48acc46da5902666e899cf49921d6"
+    },
+    {
+      "path": "04-devops/README.md",
+      "original_url": "https://github.com/Gordondalos/ai-dev-tools-zoomcamp/blob/b47dff65161c878d095e288e9f9e5b907f5aa3c6/04-devops/README.md",
+      "original_git_blob_sha": "a20b00bbe735212aab0ffe901c492e2790893902",
+      "original_bytes": 151,
+      "translation_bytes": 488,
+      "translation_sha256": "f50469d7e077b59021eb6711c64efc49dc2f7a926a6c7721a85f1cf7b98d47de"
+    },
+    {
+      "path": "05-agent-capabilities/README.md",
+      "original_url": "https://github.com/Gordondalos/ai-dev-tools-zoomcamp/blob/b47dff65161c878d095e288e9f9e5b907f5aa3c6/05-agent-capabilities/README.md",
+      "original_git_blob_sha": "bb0fbc6c6f991bcabd4b59a085633b0474e6c28c",
+      "original_bytes": 4104,
+      "translation_bytes": 9651,
+      "translation_sha256": "333349d88732f41c9c95e393aafab4977448cdb1d9d70ed824bd18a122421e11"
+    },
+    {
+      "path": "05-agent-capabilities/clients.md",
+      "original_url": "https://github.com/Gordondalos/ai-dev-tools-zoomcamp/blob/b47dff65161c878d095e288e9f9e5b907f5aa3c6/05-agent-capabilities/clients.md",
+      "original_git_blob_sha": "8a310f43285a7ff787fbe9f75d890472f7cf948a",
+      "original_bytes": 4410,
+      "translation_bytes": 7710,
+      "translation_sha256": "eb08da8ad4296b736c2930ec21623312e68c3221002648cdedeb6dc939617660"
+    },
+    {
+      "path": "README.md",
+      "original_url": "https://github.com/Gordondalos/ai-dev-tools-zoomcamp/blob/b47dff65161c878d095e288e9f9e5b907f5aa3c6/README.md",
+      "original_git_blob_sha": "a6df090adad078460e97b7213c99330a9eb69f70",
+      "original_bytes": 15804,
+      "translation_bytes": 29474,
+      "translation_sha256": "cbc90851de965c87ca1c8bfc3aeea23162b1d55cef69e58c9676a92f83ac6257"
+    },
+    {
+      "path": "cohorts/2026/README.md",
+      "original_url": "https://github.com/Gordondalos/ai-dev-tools-zoomcamp/blob/b47dff65161c878d095e288e9f9e5b907f5aa3c6/cohorts/2026/README.md",
+      "original_git_blob_sha": "92f0140af936f41842d1f1306f4957c534f246d5",
+      "original_bytes": 1143,
+      "translation_bytes": 1876,
+      "translation_sha256": "5ce305e47f26e9eb6d2534daf3ba31210c0836c369b4916c7535be2aff28da99"
+    },
+    {
+      "path": "cohorts/2026/homework/01-ai-native-workflow/homework.md",
+      "original_url": "https://github.com/Gordondalos/ai-dev-tools-zoomcamp/blob/b47dff65161c878d095e288e9f9e5b907f5aa3c6/cohorts/2026/homework/01-ai-native-workflow/homework.md",
+      "original_git_blob_sha": "20b47779b56aeaf90c65f63020cd8a025e53b4ed",
+      "original_bytes": 5289,
+      "translation_bytes": 12081,
+      "translation_sha256": "0d055d440f7f5688d5c6f98aaf87eee02448e5235694b86ce0db0a490a682a04"
+    },
+    {
+      "path": "cohorts/2026/homework/02-development/homework.md",
+      "original_url": "https://github.com/Gordondalos/ai-dev-tools-zoomcamp/blob/b47dff65161c878d095e288e9f9e5b907f5aa3c6/cohorts/2026/homework/02-development/homework.md",
+      "original_git_blob_sha": "3491281ca209da58b9e93978237ade2ed211557e",
+      "original_bytes": 5369,
+      "translation_bytes": 12701,
+      "translation_sha256": "a9837b33bc110a509d3cdd9d5ec692265475b9a741e696a6936b2daa9e431aa0"
+    },
+    {
+      "path": "cohorts/2026/homework/03-deployment/homework.md",
+      "original_url": "https://github.com/Gordondalos/ai-dev-tools-zoomcamp/blob/b47dff65161c878d095e288e9f9e5b907f5aa3c6/cohorts/2026/homework/03-deployment/homework.md",
+      "original_git_blob_sha": "1d079c7b02600d57c98030e8c8032246c9934450",
+      "original_bytes": 6046,
+      "translation_bytes": 12884,
+      "translation_sha256": "04c8583ee708acd7cd37fedc4315c4506b9f1f786c36491ac8563dd938762628"
+    },
+    {
+      "path": "cohorts/2026/homework/04-devops/homework.md",
+      "original_url": "https://github.com/Gordondalos/ai-dev-tools-zoomcamp/blob/b47dff65161c878d095e288e9f9e5b907f5aa3c6/cohorts/2026/homework/04-devops/homework.md",
+      "original_git_blob_sha": "b4eb333d0ab2131250132c25381731a1f04141eb",
+      "original_bytes": 6963,
+      "translation_bytes": 14465,
+      "translation_sha256": "a07b385c264c3690fccbd08cfd602855dff444ffadbf4661be058a4620ede269"
+    },
+    {
+      "path": "cohorts/README.md",
+      "original_url": "https://github.com/Gordondalos/ai-dev-tools-zoomcamp/blob/b47dff65161c878d095e288e9f9e5b907f5aa3c6/cohorts/README.md",
+      "original_git_blob_sha": "8dd03fb192d6928a58a616f16d1f9b120f3c1187",
+      "original_bytes": 4409,
+      "translation_bytes": 8868,
+      "translation_sha256": "5718af8c234a6b0250af89cfeb2f6c5e05a123cef1a683419408a35560f57761"
+    },
+    {
+      "path": "project/README.md",
+      "original_url": "https://github.com/Gordondalos/ai-dev-tools-zoomcamp/blob/b47dff65161c878d095e288e9f9e5b907f5aa3c6/project/README.md",
+      "original_git_blob_sha": "30ad0a53dc634742b7c63b78f7b236743e32c065",
+      "original_bytes": 5142,
+      "translation_bytes": 10316,
+      "translation_sha256": "2eb3fa549509541e8fd95bd45e6d621d1d67a534493f3d77469a13d0015810ed"
+    }
+  ]
+}
