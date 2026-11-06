@@ -313,5 +313,15 @@
       "from": "images/06-certificate-2025.png",
       "to": "../../../articles/images/06-certificate-2025.png"
     }
-  ]
+  ],
+  "subsequent_link_corrections": [
+    {
+      "path": "articles/01-ai-native-workflow.md",
+      "from": "https://github.com/DataTalksClub/ai-dev-tools-zoomcamp/tree/main/cohorts/2026/01-ai-native-workflow/weekly-feedback",
+      "to": "https://github.com/DataTalksClub/ai-dev-tools-zoomcamp/tree/main/01-ai-native-workflow/weekly-feedback",
+      "date": "2026-11-06",
+      "reason": "Устаревшая ссылка исходной статьи; путь исправлен только в переводе, исходный URL сохранён в примечании."
+    }
+  ],
+  "subsequent_link_check_scope": "One weekly-feedback URL correction supplied by the separate browser audit; original code blocks and anchors rechecked locally. Not a full external URL revalidation."
 }

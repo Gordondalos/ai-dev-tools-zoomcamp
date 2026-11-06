@@ -63,7 +63,7 @@
 
 Когда я попросил Claude Code реализовать этот проект, единственным моим промптом было
 «инструмент для еженедельной обратной связи по проектам». Он придумал
-[`weekly-feedback`](https://github.com/DataTalksClub/ai-dev-tools-zoomcamp/tree/main/cohorts/2026/01-ai-native-workflow/weekly-feedback),
+[`weekly-feedback`](https://github.com/DataTalksClub/ai-dev-tools-zoomcamp/tree/main/01-ai-native-workflow/weekly-feedback),
 инструмент командной строки для отслеживания еженедельного состояния проектов. Он фиксирует успехи,
 проблемы, препятствия и следующие шаги. Агент также создал документацию и покрыл
 приложение 62 тестами, которые все успешно проходят.
@@ -987,3 +987,5 @@ Rules
 [AI Dev Tools Zoomcamp](https://github.com/DataTalksClub/ai-dev-tools-zoomcamp).
 
 Курс бесплатный.
+
+> **Примечание к ссылке (2026-11-06):** путь к `weekly-feedback` в исходной статье устарел. Ссылка в тексте ведёт в существующий каталог `01-ai-native-workflow/weekly-feedback`. Исходный адрес сохранён для сверки: `https://github.com/DataTalksClub/ai-dev-tools-zoomcamp/tree/main/cohorts/2026/01-ai-native-workflow/weekly-feedback`.

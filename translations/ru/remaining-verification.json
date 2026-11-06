@@ -1,0 +1,472 @@
+{
+  "source_commit": "9b9527b61332f2b742c749c5f9c26272cf7a08bf",
+  "source_tree_complete": true,
+  "source_blob_hashes_verified": 79,
+  "files_verified": 79,
+  "totals": {
+    "source_fenced_blocks": 216,
+    "source_headings": 526,
+    "source_url_occurrences": 216,
+    "source_inline_code_occurrences": 303,
+    "source_evidence_label_occurrences": 487,
+    "source_numeric_token_occurrences": 1421
+  },
+  "automated_preservation_checks": "passed",
+  "relative_link_check_scope": "Full repository tree at pinned commit plus this translations/ru overlay; code and inline literals are not navigational links.",
+  "relative_links": [
+    {
+      "file": "cohorts/2025/01-overview/README.md",
+      "link": "../../2026/homework/01-ai-native-workflow/homework.md",
+      "repository_target": "translations/ru/cohorts/2026/homework/01-ai-native-workflow/homework.md",
+      "path_exists": true,
+      "fragment_verified": null
+    },
+    {
+      "file": "cohorts/2025/02-end-to-end/README.md",
+      "link": "../../2026/homework/02-development/homework.md",
+      "repository_target": "translations/ru/cohorts/2026/homework/02-development/homework.md",
+      "path_exists": true,
+      "fragment_verified": null
+    },
+    {
+      "file": "cohorts/2025/03-mcp/README.md",
+      "link": "clients.md",
+      "repository_target": "translations/ru/cohorts/2025/03-mcp/clients.md",
+      "path_exists": true,
+      "fragment_verified": null
+    },
+    {
+      "file": "cohorts/2025/03-mcp/README.md",
+      "link": "../../../../../images/mcp/context7-apikey.png",
+      "repository_target": "images/mcp/context7-apikey.png",
+      "path_exists": true,
+      "fragment_verified": null
+    },
+    {
+      "file": "cohorts/2025/03-mcp/README.md",
+      "link": "../../../../../images/mcp/context7-libraries.png",
+      "repository_target": "images/mcp/context7-libraries.png",
+      "path_exists": true,
+      "fragment_verified": null
+    },
+    {
+      "file": "cohorts/2025/03-mcp/README.md",
+      "link": "../../../../../images/mcp/mcp-inspector-with-context7.png",
+      "repository_target": "images/mcp/mcp-inspector-with-context7.png",
+      "path_exists": true,
+      "fragment_verified": null
+    },
+    {
+      "file": "cohorts/2025/README.md",
+      "link": "../2026/",
+      "repository_target": "translations/ru/cohorts/2026",
+      "path_exists": true,
+      "fragment_verified": null
+    },
+    {
+      "file": "cohorts/2025/README.md",
+      "link": "01-overview/",
+      "repository_target": "translations/ru/cohorts/2025/01-overview",
+      "path_exists": true,
+      "fragment_verified": null
+    },
+    {
+      "file": "cohorts/2025/README.md",
+      "link": "02-end-to-end/",
+      "repository_target": "translations/ru/cohorts/2025/02-end-to-end",
+      "path_exists": true,
+      "fragment_verified": null
+    },
+    {
+      "file": "cohorts/2025/README.md",
+      "link": "03-mcp/",
+      "repository_target": "translations/ru/cohorts/2025/03-mcp",
+      "path_exists": true,
+      "fragment_verified": null
+    },
+    {
+      "file": "cohorts/2025/README.md",
+      "link": "04-build-coding-agent/",
+      "repository_target": "translations/ru/cohorts/2025/04-build-coding-agent",
+      "path_exists": true,
+      "fragment_verified": null
+    },
+    {
+      "file": "cohorts/2025/README.md",
+      "link": "05-cicd-devops/",
+      "repository_target": "translations/ru/cohorts/2025/05-cicd-devops",
+      "path_exists": true,
+      "fragment_verified": null
+    },
+    {
+      "file": "cohorts/2025/README.md",
+      "link": "06-automation-lowcode/",
+      "repository_target": "translations/ru/cohorts/2025/06-automation-lowcode",
+      "path_exists": true,
+      "fragment_verified": null
+    },
+    {
+      "file": "cohorts/2025/README.md",
+      "link": "project/",
+      "repository_target": "translations/ru/cohorts/2025/project",
+      "path_exists": true,
+      "fragment_verified": null
+    },
+    {
+      "file": "cohorts/2025/README.md",
+      "link": "../../../../images/course-cover.png",
+      "repository_target": "images/course-cover.png",
+      "path_exists": true,
+      "fragment_verified": null
+    },
+    {
+      "file": "research/2026-07-21-ai-native-curriculum-landscape.md",
+      "link": "#coverage-gaps",
+      "repository_target": "translations/ru/research/2026-07-21-ai-native-curriculum-landscape.md",
+      "path_exists": true,
+      "fragment_verified": true
+    },
+    {
+      "file": "research/2026-07-21-ai-native-curriculum-landscape.md",
+      "link": "../cohorts/2025/01-overview/",
+      "repository_target": "translations/ru/cohorts/2025/01-overview",
+      "path_exists": true,
+      "fragment_verified": null
+    },
+    {
+      "file": "research/article3-deployment/wiki/overview.md",
+      "link": "sources/article-2-end-to-end.md",
+      "repository_target": "translations/ru/research/article3-deployment/wiki/sources/article-2-end-to-end.md",
+      "path_exists": true,
+      "fragment_verified": null
+    },
+    {
+      "file": "research/article3-deployment/wiki/overview.md",
+      "link": "sources/full-stack-workshop-deployment.md",
+      "repository_target": "translations/ru/research/article3-deployment/wiki/sources/full-stack-workshop-deployment.md",
+      "path_exists": true,
+      "fragment_verified": null
+    },
+    {
+      "file": "research/article3-deployment/wiki/overview.md",
+      "link": "sources/interview-canvas-repository.md",
+      "repository_target": "translations/ru/research/article3-deployment/wiki/sources/interview-canvas-repository.md",
+      "path_exists": true,
+      "fragment_verified": null
+    },
+    {
+      "file": "research/article3-deployment/wiki/overview.md",
+      "link": "sources/article-3-live-workshop.md",
+      "repository_target": "translations/ru/research/article3-deployment/wiki/sources/article-3-live-workshop.md",
+      "path_exists": true,
+      "fragment_verified": null
+    },
+    {
+      "file": "research/article3-deployment/wiki/overview.md",
+      "link": "synthesis.md",
+      "repository_target": "translations/ru/research/article3-deployment/wiki/synthesis.md",
+      "path_exists": true,
+      "fragment_verified": null
+    },
+    {
+      "file": "research/article3-deployment/wiki/overview.md",
+      "link": "open-questions.md",
+      "repository_target": "translations/ru/research/article3-deployment/wiki/open-questions.md",
+      "path_exists": true,
+      "fragment_verified": null
+    },
+    {
+      "file": "research/module4-tool-agnostic-curriculum/wiki/concepts/concept-architecture.md",
+      "link": "portable-execution-model.md",
+      "repository_target": "translations/ru/research/module4-tool-agnostic-curriculum/wiki/concepts/portable-execution-model.md",
+      "path_exists": true,
+      "fragment_verified": null
+    },
+    {
+      "file": "research/module4-tool-agnostic-curriculum/wiki/concepts/concept-architecture.md",
+      "link": "assessment-model.md",
+      "repository_target": "translations/ru/research/module4-tool-agnostic-curriculum/wiki/concepts/assessment-model.md",
+      "path_exists": true,
+      "fragment_verified": null
+    },
+    {
+      "file": "research/module4-tool-agnostic-curriculum/wiki/overview.md",
+      "link": "concepts/revised-module-architecture.md",
+      "repository_target": "translations/ru/research/module4-tool-agnostic-curriculum/wiki/concepts/revised-module-architecture.md",
+      "path_exists": true,
+      "fragment_verified": null
+    },
+    {
+      "file": "research/module4-tool-agnostic-curriculum/wiki/overview.md",
+      "link": "concepts/agent-escalation-policy.md",
+      "repository_target": "translations/ru/research/module4-tool-agnostic-curriculum/wiki/concepts/agent-escalation-policy.md",
+      "path_exists": true,
+      "fragment_verified": null
+    },
+    {
+      "file": "research/module4-tool-agnostic-curriculum/wiki/overview.md",
+      "link": "concepts/recurring-security-audit.md",
+      "repository_target": "translations/ru/research/module4-tool-agnostic-curriculum/wiki/concepts/recurring-security-audit.md",
+      "path_exists": true,
+      "fragment_verified": null
+    },
+    {
+      "file": "research/module4-tool-agnostic-curriculum/wiki/overview.md",
+      "link": "../guideline.md",
+      "repository_target": "translations/ru/research/module4-tool-agnostic-curriculum/guideline.md",
+      "path_exists": true,
+      "fragment_verified": null
+    },
+    {
+      "file": "research/module4-tool-agnostic-curriculum/wiki/overview.md",
+      "link": "synthesis.md",
+      "repository_target": "translations/ru/research/module4-tool-agnostic-curriculum/wiki/synthesis.md",
+      "path_exists": true,
+      "fragment_verified": null
+    },
+    {
+      "file": "research/module4-tool-agnostic-curriculum/wiki/overview.md",
+      "link": "open-questions.md",
+      "repository_target": "translations/ru/research/module4-tool-agnostic-curriculum/wiki/open-questions.md",
+      "path_exists": true,
+      "fragment_verified": null
+    },
+    {
+      "file": "research/module4-tool-agnostic-curriculum/wiki/sources/agent-security-review.md",
+      "link": "../concepts/recurring-security-audit.md",
+      "repository_target": "translations/ru/research/module4-tool-agnostic-curriculum/wiki/concepts/recurring-security-audit.md",
+      "path_exists": true,
+      "fragment_verified": null
+    },
+    {
+      "file": "research/module4-tool-agnostic-curriculum/wiki/sources/alerting-sre.md",
+      "link": "../concepts/agent-escalation-policy.md",
+      "repository_target": "translations/ru/research/module4-tool-agnostic-curriculum/wiki/concepts/agent-escalation-policy.md",
+      "path_exists": true,
+      "fragment_verified": null
+    },
+    {
+      "file": "research/module4-tool-agnostic-curriculum/wiki/sources/current-audit-models.md",
+      "link": "../concepts/recurring-security-audit.md",
+      "repository_target": "translations/ru/research/module4-tool-agnostic-curriculum/wiki/concepts/recurring-security-audit.md",
+      "path_exists": true,
+      "fragment_verified": null
+    },
+    {
+      "file": "research/module4-tool-agnostic-curriculum/wiki/sources/current-module-4.md",
+      "link": "../comparisons/tool-to-concept-map.md",
+      "repository_target": "translations/ru/research/module4-tool-agnostic-curriculum/wiki/comparisons/tool-to-concept-map.md",
+      "path_exists": true,
+      "fragment_verified": null
+    },
+    {
+      "file": "research/module4-tool-agnostic-curriculum/wiki/sources/current-module-4.md",
+      "link": "../concepts/concept-architecture.md",
+      "repository_target": "translations/ru/research/module4-tool-agnostic-curriculum/wiki/concepts/concept-architecture.md",
+      "path_exists": true,
+      "fragment_verified": null
+    },
+    {
+      "file": "research/module4-tool-agnostic-curriculum/wiki/sources/mcp-security.md",
+      "link": "../concepts/agent-capability-security.md",
+      "repository_target": "translations/ru/research/module4-tool-agnostic-curriculum/wiki/concepts/agent-capability-security.md",
+      "path_exists": true,
+      "fragment_verified": null
+    },
+    {
+      "file": "research/module4-tool-agnostic-curriculum/wiki/sources/nist-ai-rmf.md",
+      "link": "../concepts/ai-usage-governance.md",
+      "repository_target": "translations/ru/research/module4-tool-agnostic-curriculum/wiki/concepts/ai-usage-governance.md",
+      "path_exists": true,
+      "fragment_verified": null
+    },
+    {
+      "file": "research/module4-tool-agnostic-curriculum/wiki/sources/nist-csf-2.md",
+      "link": "../concepts/concept-architecture.md",
+      "repository_target": "translations/ru/research/module4-tool-agnostic-curriculum/wiki/concepts/concept-architecture.md",
+      "path_exists": true,
+      "fragment_verified": null
+    },
+    {
+      "file": "research/module4-tool-agnostic-curriculum/wiki/sources/nist-incident-response.md",
+      "link": "../concepts/operational-investigation.md",
+      "repository_target": "translations/ru/research/module4-tool-agnostic-curriculum/wiki/concepts/operational-investigation.md",
+      "path_exists": true,
+      "fragment_verified": null
+    },
+    {
+      "file": "research/module4-tool-agnostic-curriculum/wiki/sources/nist-ssdf.md",
+      "link": "../concepts/assessment-model.md",
+      "repository_target": "translations/ru/research/module4-tool-agnostic-curriculum/wiki/concepts/assessment-model.md",
+      "path_exists": true,
+      "fragment_verified": null
+    },
+    {
+      "file": "research/module4-tool-agnostic-curriculum/wiki/sources/observability-pipeline.md",
+      "link": "../concepts/revised-module-architecture.md",
+      "repository_target": "translations/ru/research/module4-tool-agnostic-curriculum/wiki/concepts/revised-module-architecture.md",
+      "path_exists": true,
+      "fragment_verified": null
+    },
+    {
+      "file": "research/module4-tool-agnostic-curriculum/wiki/sources/opentelemetry-signals.md",
+      "link": "../concepts/operational-investigation.md",
+      "repository_target": "translations/ru/research/module4-tool-agnostic-curriculum/wiki/concepts/operational-investigation.md",
+      "path_exists": true,
+      "fragment_verified": null
+    },
+    {
+      "file": "research/module4-tool-agnostic-curriculum/wiki/sources/owasp-prompt-injection.md",
+      "link": "../concepts/agent-capability-security.md",
+      "repository_target": "translations/ru/research/module4-tool-agnostic-curriculum/wiki/concepts/agent-capability-security.md",
+      "path_exists": true,
+      "fragment_verified": null
+    },
+    {
+      "file": "research/module4-tool-agnostic-curriculum/wiki/sources/owasp-secure-code-review.md",
+      "link": "../concepts/change-assurance.md",
+      "repository_target": "translations/ru/research/module4-tool-agnostic-curriculum/wiki/concepts/change-assurance.md",
+      "path_exists": true,
+      "fragment_verified": null
+    },
+    {
+      "file": "research/module4-tool-agnostic-curriculum/wiki/sources/safe-remediation.md",
+      "link": "../concepts/agent-escalation-policy.md",
+      "repository_target": "translations/ru/research/module4-tool-agnostic-curriculum/wiki/concepts/agent-escalation-policy.md",
+      "path_exists": true,
+      "fragment_verified": null
+    },
+    {
+      "file": "research/module4-tool-agnostic-curriculum/wiki/sources/syllabus-proposal.md",
+      "link": "../concepts/concept-architecture.md",
+      "repository_target": "translations/ru/research/module4-tool-agnostic-curriculum/wiki/concepts/concept-architecture.md",
+      "path_exists": true,
+      "fragment_verified": null
+    },
+    {
+      "file": "research/module4-tool-agnostic-curriculum/wiki/sources/syllabus-proposal.md",
+      "link": "../concepts/assessment-model.md",
+      "repository_target": "translations/ru/research/module4-tool-agnostic-curriculum/wiki/concepts/assessment-model.md",
+      "path_exists": true,
+      "fragment_verified": null
+    },
+    {
+      "file": "research/module4-tool-agnostic-curriculum/wiki/sources/tool-repositories.md",
+      "link": "../comparisons/tool-to-concept-map.md",
+      "repository_target": "translations/ru/research/module4-tool-agnostic-curriculum/wiki/comparisons/tool-to-concept-map.md",
+      "path_exists": true,
+      "fragment_verified": null
+    }
+  ],
+  "relative_link_failures": [],
+  "source_link_defects_fixed_with_notices": [
+    {
+      "file": "cohorts/2025/01-overview/README.md",
+      "original_link": "../../2026/01-ai-native-workflow/homework.md",
+      "missing_source_path": "cohorts/2026/01-ai-native-workflow/homework.md",
+      "corrected_link": "../../2026/homework/01-ai-native-workflow/homework.md",
+      "verified_target": "translations/ru/cohorts/2026/homework/01-ai-native-workflow/homework.md"
+    },
+    {
+      "file": "cohorts/2025/02-end-to-end/README.md",
+      "original_link": "../../2026/02-development/homework.md",
+      "missing_source_path": "cohorts/2026/02-development/homework.md",
+      "corrected_link": "../../2026/homework/02-development/homework.md",
+      "verified_target": "translations/ru/cohorts/2026/homework/02-development/homework.md"
+    }
+  ],
+  "manual_semantic_review": {
+    "type": "selective independent comparison, not full line-by-line certification",
+    "samples": [
+      {
+        "path": "01-ai-native-workflow/weekly-feedback/README.md",
+        "scope": "JSON storage, merging/replacement semantics, weekly summary translation"
+      },
+      {
+        "path": "cohorts/2025/02-end-to-end/README.md",
+        "scope": "First game prompt, preserved English original, translated feature requirements"
+      },
+      {
+        "path": "cohorts/2025/03-mcp/clients.md",
+        "scope": "MCP configuration, OS caveat, source placeholders preserved"
+      },
+      {
+        "path": "cohorts/2025/project/README.md",
+        "scope": "Peer review, certificate consequence, complete 12-item scoring rubric"
+      },
+      {
+        "path": "cohorts/2026/03-deployment/agent-relay/SPEC.md",
+        "scope": "Claims, idempotency, lease expiration, completion retries, agent trust boundaries"
+      },
+      {
+        "path": "docs/2026-syllabus-proposal.md",
+        "scope": "Module 3 positioning and conceptual model, bilingual teaching text and prompt blocks"
+      },
+      {
+        "path": "research/2026-07-21-ai-native-curriculum-landscape.md",
+        "scope": "Opening methodology, uncertainty warning, source descriptions and original quotations"
+      },
+      {
+        "path": "research/2026-course-launch-article/wiki/open-questions.md",
+        "scope": "Unresolved schedule/load/publication questions and conflicting word-count targets"
+      },
+      {
+        "path": "research/2026-course-launch-article/output/article-draft-provenance.md",
+        "scope": "Claim provenance and certainty checks; historical publication language adjusted"
+      },
+      {
+        "path": "research/article3-deployment/critique.md",
+        "scope": "Migration exclusion, AWS choice rationale, historical authorization and accepted risks"
+      },
+      {
+        "path": "research/article3-deployment/wiki/sources/article-3-live-workshop.md",
+        "scope": "Ports, storage, cloud/OIDC and cleanup stack name; historical verification limitation"
+      },
+      {
+        "path": "research/module4-tool-agnostic-curriculum/wiki/sources/current-audit-models.md",
+        "scope": "Model identifiers, retention caveat, provider distinction; assertions remain historical"
+      },
+      {
+        "path": "research/module4-tool-agnostic-curriculum/wiki/concepts/agent-capability-security.md",
+        "scope": "Least privilege, untrusted inputs, exfiltration and capability inventory"
+      },
+      {
+        "path": "research/module4-tool-agnostic-curriculum/wiki/concepts/agent-escalation-policy.md",
+        "scope": "Autonomy levels, all remediation preconditions, immediate escalation conditions"
+      },
+      {
+        "path": "research/module4-tool-agnostic-curriculum/wiki/concepts/recurring-security-audit.md",
+        "scope": "Audit depth, independent model review, finding validation and evidence record"
+      },
+      {
+        "path": "research/module4-tool-agnostic-curriculum/wiki/concepts/portable-execution-model.md",
+        "scope": "Portable CLI contract and separate evidence/action/verification stages"
+      }
+    ],
+    "terminology_fix": "data-exfiltration: вывод -> несанкционированная передача"
+  },
+  "external_url_network_checks": "See separate external link audit when provided; lexical preservation above is not an HTTP/content check.",
+  "code_execution": "not_run",
+  "visual_browser_review": "not_run",
+  "limitations_ru": [
+    "Смысловая проверка выборочная: 16 файлов или отмеченных разделов, не сплошная редакторская вычитка всех 79 файлов.",
+    "Команды, программы, внешние видео и содержимое иллюстраций не переводились и не исполнялись.",
+    "Исторические утверждения о продуктах и моделях сохранены без актуализации.",
+    "Индекс и ссылки на ресурсы рассчитаны на установку в translations/ru полного репозитория."
+  ],
+  "repository_markdown_coverage": {
+    "source_commit": "9b9527b61332f2b742c749c5f9c26272cf7a08bf",
+    "source_markdown_files": 110,
+    "previously_translated": 31,
+    "new_translated": 79,
+    "translated_source_paths_present_after_overlay": 110,
+    "missing_source_paths": [],
+    "generated_indexes_excluded": true
+  },
+  "publication_navigation": {
+    "reader_sections_preserved": 18,
+    "reader_internal_links_valid": true,
+    "additional_index_relative_links_checked": 83,
+    "links_to_main_available_after_merge": true
+  }
+}
