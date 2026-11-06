@@ -1,0 +1,262 @@
+{
+  "source_repository": "Gordondalos/ai-dev-tools-zoomcamp",
+  "source_commit": "b47dff65161c878d095e288e9f9e5b907f5aa3c6",
+  "prepared_date": "2026-11-06",
+  "translated_markdown": [
+    {
+      "path": "articles/00-draft-prompts.md",
+      "source_url": "https://github.com/Gordondalos/ai-dev-tools-zoomcamp/blob/b47dff65161c878d095e288e9f9e5b907f5aa3c6/articles/00-draft-prompts.md",
+      "source_git_blob_sha": "47e1a91ef58abb780cc31991860c369100a51428",
+      "source_bytes": 25092,
+      "translation_sha256": "54c44a8e193a83bded230a8385d11bf22f5b723e3ae864ee7031506816125c03",
+      "translation_bytes": 58198
+    },
+    {
+      "path": "articles/00-from-zero-to-production.md",
+      "source_url": "https://github.com/Gordondalos/ai-dev-tools-zoomcamp/blob/b47dff65161c878d095e288e9f9e5b907f5aa3c6/articles/00-from-zero-to-production.md",
+      "source_git_blob_sha": "2aaeef7cd176bcce154b8528016e8578e89b883b",
+      "source_bytes": 18996,
+      "translation_sha256": "a4115e36d5d5c085a688a71d44c948177bea7e516cc58d4db4639593375a21c3",
+      "translation_bytes": 42199
+    },
+    {
+      "path": "articles/01-ai-native-workflow.md",
+      "source_url": "https://github.com/Gordondalos/ai-dev-tools-zoomcamp/blob/b47dff65161c878d095e288e9f9e5b907f5aa3c6/articles/01-ai-native-workflow.md",
+      "source_git_blob_sha": "2398399a3a399120234f7c8b237b5daa42609776",
+      "source_bytes": 23562,
+      "translation_sha256": "4388cc558e7341cdc430871a1ce4b49471513cc4f23b9a2ab313f6438eee4969",
+      "translation_bytes": 50482
+    },
+    {
+      "path": "articles/02-end-to-end-visual-plan.md",
+      "source_url": "https://github.com/Gordondalos/ai-dev-tools-zoomcamp/blob/b47dff65161c878d095e288e9f9e5b907f5aa3c6/articles/02-end-to-end-visual-plan.md",
+      "source_git_blob_sha": "91b3c5d721f90497aadc744accb5cdac09400326",
+      "source_bytes": 4879,
+      "translation_sha256": "6401bccb5552d5c22abf62f9aa7b5e9a49989635b2815e8d3dcf40638e9bea60",
+      "translation_bytes": 9651
+    },
+    {
+      "path": "articles/02-end-to-end.md",
+      "source_url": "https://github.com/Gordondalos/ai-dev-tools-zoomcamp/blob/b47dff65161c878d095e288e9f9e5b907f5aa3c6/articles/02-end-to-end.md",
+      "source_git_blob_sha": "8e184c07463ca6824a2af2b8073cd46b66657db1",
+      "source_bytes": 15019,
+      "translation_sha256": "f47abcc362680eb147f52d213249129fb8ba5ac68ae0597c8643511a764d348f",
+      "translation_bytes": 28502
+    },
+    {
+      "path": "articles/03-deployment.md",
+      "source_url": "https://github.com/Gordondalos/ai-dev-tools-zoomcamp/blob/b47dff65161c878d095e288e9f9e5b907f5aa3c6/articles/03-deployment.md",
+      "source_git_blob_sha": "342dc93afad99be979ca68188075318153310cae",
+      "source_bytes": 12942,
+      "translation_sha256": "4dc28051295e8dfc82e7734f6a19af84b1edcc95cc4b103bd094ba8a2cc0ba4c",
+      "translation_bytes": 23443
+    },
+    {
+      "path": "articles/04-devops.md",
+      "source_url": "https://github.com/Gordondalos/ai-dev-tools-zoomcamp/blob/b47dff65161c878d095e288e9f9e5b907f5aa3c6/articles/04-devops.md",
+      "source_git_blob_sha": "d390202c4624d9f977198ff66a5472319ff6f6f0",
+      "source_bytes": 20205,
+      "translation_sha256": "7ad18f305b162606366149a6a81cc105d4dc212e5a2a2be9ddcc0df9930f0d6e",
+      "translation_bytes": 40586
+    },
+    {
+      "path": "articles/05-code-agents-building-blocks.md",
+      "source_url": "https://github.com/Gordondalos/ai-dev-tools-zoomcamp/blob/b47dff65161c878d095e288e9f9e5b907f5aa3c6/articles/05-code-agents-building-blocks.md",
+      "source_git_blob_sha": "e46f410d6499bc065448a75b70e25b8d1b2f193e",
+      "source_bytes": 19160,
+      "translation_sha256": "b9e5e53a43079d142524e4f19db9f9011f04df1b21082bc2691b79a054a0fcd2",
+      "translation_bytes": 36314
+    },
+    {
+      "path": "articles/06-course-launch-2026.md",
+      "source_url": "https://github.com/Gordondalos/ai-dev-tools-zoomcamp/blob/b47dff65161c878d095e288e9f9e5b907f5aa3c6/articles/06-course-launch-2026.md",
+      "source_git_blob_sha": "c3dd428fb0b9de3c7e37d12986599f2d8dd69611",
+      "source_bytes": 18251,
+      "translation_sha256": "13ba2744347e4b4fa21a9a74ee4626473287f6c763361a4867018e3d059eb71c",
+      "translation_bytes": 30753
+    },
+    {
+      "path": "articles/diagram-source/04-redesign-brief.md",
+      "source_url": "https://github.com/Gordondalos/ai-dev-tools-zoomcamp/blob/b47dff65161c878d095e288e9f9e5b907f5aa3c6/articles/diagram-source/04-redesign-brief.md",
+      "source_git_blob_sha": "228928b3ebf45e36935bcf3066c23d8f47ea3b0a",
+      "source_bytes": 1793,
+      "translation_sha256": "ff1cdebf7e21d3fd03a2b1248057e2e0ad43ecff4ea56b129e66c168c2025f99",
+      "translation_bytes": 4325
+    },
+    {
+      "path": "articles/diagram-source/README.md",
+      "source_url": "https://github.com/Gordondalos/ai-dev-tools-zoomcamp/blob/b47dff65161c878d095e288e9f9e5b907f5aa3c6/articles/diagram-source/README.md",
+      "source_git_blob_sha": "39d768377287df59c3f95a02ca80f8ffcb4d6fc4",
+      "source_bytes": 5299,
+      "translation_sha256": "2c8347346e6f59a88d05f429632f64eadd7d8b30d5a3a163aa8b393a7530485d",
+      "translation_bytes": 11316
+    },
+    {
+      "path": "articles/screenshot-workflow.md",
+      "source_url": "https://github.com/Gordondalos/ai-dev-tools-zoomcamp/blob/b47dff65161c878d095e288e9f9e5b907f5aa3c6/articles/screenshot-workflow.md",
+      "source_git_blob_sha": "c770f20bff738c0b9969ffadc59c3e1dd75b8fa8",
+      "source_bytes": 8379,
+      "translation_sha256": "0a20efb41b55e544bd0d8d9c1d06abaf9cbc5c5bf5af2a2350a4e32a4c1ec939",
+      "translation_bytes": 14740
+    },
+    {
+      "path": "articles/substack.md",
+      "source_url": "https://github.com/Gordondalos/ai-dev-tools-zoomcamp/blob/b47dff65161c878d095e288e9f9e5b907f5aa3c6/articles/substack.md",
+      "source_git_blob_sha": "9e60595efcf227890c9496da920e2e5bc7f80991",
+      "source_bytes": 1541,
+      "translation_sha256": "1d664640a71008f05ebe8b7cb80a3c4b574ee553ed74ee8452bc41cbaa4f940b",
+      "translation_bytes": 3083
+    }
+  ],
+  "resource_policy": "Images reuse the existing repository files; only rendered relative resource paths are adjusted. Code blocks and inline code are unchanged.",
+  "referenced_original_assets": [
+    {
+      "path": "articles/images/01-agent-workflow.png",
+      "git_blob_sha": "220db8540e2e540d03acdd25d7a0984713759cd6"
+    },
+    {
+      "path": "articles/images/01-goal-is-not-met.png",
+      "git_blob_sha": "6af5334fb81aa0b7e14395a7dc30ce991d43f075"
+    },
+    {
+      "path": "articles/images/01-wrong-implementation.png",
+      "git_blob_sha": "4e4899e20c0c6f238b66bbc327bdb4636a76ce77"
+    },
+    {
+      "path": "articles/images/02-article-build-flow.png",
+      "git_blob_sha": "f0f612ced08f15b1a212395f2dea7608c932d42a"
+    },
+    {
+      "path": "articles/images/02-backend-mock-database.png",
+      "git_blob_sha": "a9eb69f309aceb58c446cf77b6a88b2341ba809c"
+    },
+    {
+      "path": "articles/images/02-backend-sqlite.png",
+      "git_blob_sha": "602464534b9a34d25bc0bdd6579d5418efc8d6ff"
+    },
+    {
+      "path": "articles/images/02-chatgpt-dictation.png",
+      "git_blob_sha": "cf6b33e42ab4247553be2186cd8c980ef49a018e"
+    },
+    {
+      "path": "articles/images/02-mocked-frontend.png",
+      "git_blob_sha": "3cb6b91962240de72ee051907f79539fae8abb0a"
+    },
+    {
+      "path": "articles/images/02-openapi-contract.png",
+      "git_blob_sha": "0421af392194ffa6f9bb2ca393dae21d724a24c8"
+    },
+    {
+      "path": "articles/images/02-user-session-flow.png",
+      "git_blob_sha": "2c4a714cf93241de9f8649746ed6a7f7c8775e63"
+    },
+    {
+      "path": "articles/images/03-aws-deployment.png",
+      "git_blob_sha": "cf26fe623df84f27c931e3e0a94c111d33c7cf6d"
+    },
+    {
+      "path": "articles/images/03-ci-cd.png",
+      "git_blob_sha": "b59c9eb0f53bbccf3f1e63f5b5237adfe6d61d08"
+    },
+    {
+      "path": "articles/images/03-compose-postgres.png",
+      "git_blob_sha": "8d78dc8e6ef4f1c729d143f916fac87070b0a431"
+    },
+    {
+      "path": "articles/images/03-containerization.png",
+      "git_blob_sha": "0509026b81a39e4e044cec6265b7b0f25b4fbea2"
+    },
+    {
+      "path": "articles/images/03-e2e-test-flow.png",
+      "git_blob_sha": "f5e73e98246defdfa4d14db35226a5a533cd056b"
+    },
+    {
+      "path": "articles/images/03-full-application.png",
+      "git_blob_sha": "3dbed293487b214d496afb504864fb0d41f72973"
+    },
+    {
+      "path": "articles/images/03-next-lesson.png",
+      "git_blob_sha": "5614f823c1dcfc983caa3f421d0b7f4f093b7572"
+    },
+    {
+      "path": "articles/images/04-build-once-observability.png",
+      "git_blob_sha": "375a03e675c218bbcd28f24fcf16921ece408afd"
+    },
+    {
+      "path": "articles/images/04-build-once.png",
+      "git_blob_sha": "677353b9ec8c0f71a8675bd696179691af792e3b"
+    },
+    {
+      "path": "articles/images/04-ci-dev.png",
+      "git_blob_sha": "9a93c290f2b232dd2f3f174578a9796a596ee1c8"
+    },
+    {
+      "path": "articles/images/04-dev-prod-environments.png",
+      "git_blob_sha": "6964de153b8a4e64395f4d92e93cf6b17cb09e2f"
+    },
+    {
+      "path": "articles/images/04-devops-overview.png",
+      "git_blob_sha": "296a2a087db291e287e1e0980ed4c40ce1cc93e2"
+    },
+    {
+      "path": "articles/images/04-grafana-dashboard.png",
+      "git_blob_sha": "2f140a7ad0b5e5946aeff147f822187df4d767d5"
+    },
+    {
+      "path": "articles/images/04-instrumenting-fast-api.png",
+      "git_blob_sha": "9d0d2ddb7a5554eb96eb05de03d16d4af7086754"
+    },
+    {
+      "path": "articles/images/04-manual-production-deploy.png",
+      "git_blob_sha": "aa3b9e90ec5a570f6a4f8a0effe8c51521a53d1a"
+    },
+    {
+      "path": "articles/images/04-observability-pipeline.png",
+      "git_blob_sha": "e8a9901ab65e061c788da9591873040ce7e1913f"
+    },
+    {
+      "path": "articles/images/04-production-responder.png",
+      "git_blob_sha": "6d36ac460d83851f8971cdf9d80df52ee1141867"
+    },
+    {
+      "path": "articles/images/05-i-heard-you-like-prompts.jpg",
+      "git_blob_sha": "abb6f02c00b3c9a3099a20192251a4a31afb0e8c"
+    },
+    {
+      "path": "articles/images/05-parallel-worktrees.png",
+      "git_blob_sha": "2c102ca5123b7705428dc0590cc1cfb5b0562890"
+    },
+    {
+      "path": "articles/images/05-release-skill.png",
+      "git_blob_sha": "5b2c40249a86dae8088a4527a9807d7f0a467e47"
+    },
+    {
+      "path": "articles/images/05-subagent-general.png",
+      "git_blob_sha": "66f8ef576fedfb99fc674baff716b7941f29c8fd"
+    },
+    {
+      "path": "articles/images/05-subagent-pm.png",
+      "git_blob_sha": "642d35fb76b90f6be53a17fa9807ccb531489103"
+    },
+    {
+      "path": "articles/images/06-certificate-2025.png",
+      "git_blob_sha": "77a64f3efa20bc96b5facd1cacd62701fc6a2f76"
+    },
+    {
+      "path": "articles/images/06-course-docs.png",
+      "git_blob_sha": "5f1aae56bc48fc79cb39b5ae88cbd5e0b69c217d"
+    },
+    {
+      "path": "articles/images/06-course-platform.png",
+      "git_blob_sha": "df1a9d656c75b17688a4769eb1f4b0aa9bf0e3fc"
+    },
+    {
+      "path": "articles/images/06-course-repository.png",
+      "git_blob_sha": "478c842473f8b85150b0ab4354cc0b5e68f08300"
+    },
+    {
+      "path": "articles/images/06-leaderboard-2025.png",
+      "git_blob_sha": "34cacbd0a8a4e75f6da3b90864f28475b54cb7d2"
+    }
+  ]
+}
