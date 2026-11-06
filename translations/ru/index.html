@@ -1,0 +1,2502 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>AI Dev Tools Zoomcamp · Русский учебный комплект</title><style>
+:root{--ink:#1c2926;--green:#156b55;--muted:#5a6d66;--line:#dbe6df;--paper:#fffefa;--tint:#f0f5ee}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:20px}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}a{color:var(--green);text-decoration-thickness:1px;text-underline-offset:3px;overflow-wrap:anywhere}a:hover{color:#103a2e}nav{position:fixed;inset:0 auto 0 0;width:280px;padding:30px 24px;background:var(--tint);border-right:1px solid var(--line);overflow:auto;font-size:14px;line-height:1.45}nav h2{font-size:18px;margin:0 0 18px}nav ul{padding:0;list-style:none}nav li{margin:0 0 13px}nav a{text-decoration:none}nav .minor{font-size:12px;color:var(--muted);margin-top:24px}main{margin-left:280px;max-width:1100px;padding:52px 64px 100px}header{border-bottom:2px solid var(--green);padding-bottom:32px;margin-bottom:38px}.eyebrow,.chapter-label{text-transform:uppercase;font-size:12px;letter-spacing:.1em;font-weight:650;color:var(--muted)}h1{font-size:36px;line-height:1.2;letter-spacing:-.025em;margin:24px 0}h2{font-size:26px;line-height:1.3;margin:36px 0 15px}h3{font-size:21px;line-height:1.35;margin:28px 0 12px}h4{font-size:18px}p,ul,ol{margin-top:12px;margin-bottom:18px}li{margin-bottom:6px}blockquote{margin:22px 0;padding:8px 20px;border-left:4px solid #74a88f;background:var(--tint)}blockquote p:last-child{margin-bottom:12px}pre{padding:20px;background:#142b26;color:#e2efe7;overflow-x:auto;border-radius:8px;font-size:14px;line-height:1.5}code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace}p code,li code{background:#edf2ec;padding:2px 5px;border-radius:3px;font-size:.9em}table{border-collapse:collapse;font-size:15px;width:100%;display:block;overflow-x:auto;margin:24px 0}th,td{padding:12px;border:1px solid var(--line);vertical-align:top}th{background:var(--tint)}.chapter{padding-top:36px;margin-top:40px;border-top:1px solid var(--line)}.chapter h1{font-size:31px}.chapter-label a{font-weight:400;letter-spacing:0;text-transform:none}.note{padding:18px 22px;background:var(--tint);border:1px solid var(--line);border-radius:8px;font-size:15px}.note p{margin:4px 0 10px}.back{display:block;margin-top:32px;font-size:13px}.image-link{font-size:12px}.video-link{font-size:14px}#contents{display:none}details{font-size:15px;margin-top:20px}summary{cursor:pointer;font-weight:650}.intro{font-size:20px;color:var(--muted)}.sources{font-size:12px;color:var(--muted);overflow-wrap:anywhere}
+@media(max-width:900px){nav{display:none}main{margin:0;padding:28px 22px 65px}h1{font-size:30px}.chapter h1{font-size:28px}#contents{display:block}pre{font-size:12px}.intro{font-size:18px}}
+@media print{nav,.back,.chapter-label a{display:none}main{margin:0;max-width:none;padding:0}body{font-size:11pt}h1{font-size:24pt}.chapter{break-before:page}pre{white-space:pre-wrap;overflow:visible;color:#111;background:#f2f4f1}a{color:inherit}table{display:table;font-size:10pt}h1,h2,h3,h4{break-after:avoid}}
+</style></head><body><nav aria-label="Оглавление"><h2>AI Dev Tools<br>Zoomcamp</h2><p>Русский учебный комплект</p><ul><li><a href="#page-01">О курсе и программа</a></li><li><a href="#page-02">Модуль 1 · индекс</a></li><li><a href="#page-03">1. Рабочий процесс с ИИ</a></li><li><a href="#page-04">Модуль 2 · индекс</a></li><li><a href="#page-05">2. Full-stack-приложение</a></li><li><a href="#page-06">Модуль 3 · индекс</a></li><li><a href="#page-07">3. Тесты и развёртывание</a></li><li><a href="#page-08">Модуль 4 · индекс</a></li><li><a href="#page-09">4. DevOps и наблюдаемость</a></li><li><a href="#page-10">5. Возможности агентов</a></li><li><a href="#page-11">Настройка клиентов MCP</a></li><li><a href="#page-12">Поток 2026 · расписание</a></li><li><a href="#page-13">Домашнее задание 1</a></li><li><a href="#page-14">Домашнее задание 2</a></li><li><a href="#page-15">Домашнее задание 3</a></li><li><a href="#page-16">Домашнее задание 4</a></li><li><a href="#page-17">Итоговый проект</a></li><li><a href="#page-18">Как устроены потоки</a></li></ul><p class="minor">18 страниц · личный перевод<br>Версия исходника: 26 октября 2026<br>Подготовлено: 6 ноября 2026</p></nav><main><header id="top"><div class="eyebrow">AI DEV TOOLS ZOOMCAMP / РУССКИЙ ПЕРЕВОД</div><h1>От идеи до работающего приложения с ИИ</h1><p class="intro">18 основных страниц курса: программа, пять модулей, домашние задания и итоговый проект.</p><div class="note"><p><strong>Это перевод материалов, а не новая редакция курса.</strong> Код и команды сохранены. Даты и незаполненные разделы переданы из оригинала. Актуальные сроки проверяйте на <a href="https://courses.datatalks.club/ai-dev-tools-2026/">платформе курса</a>.</p><p>Статьи articles/, видео, архив 2025 и исследовательские материалы не переведены; ссылки ведут на оригиналы. Документация сдаваемого итогового проекта по-прежнему должна быть <strong>на английском</strong>.</p></div><details><summary>Об этом комплекте и использовании</summary><p>Неофициальный перевод для личного чтения. Авторы исходных материалов: DataTalks.Club и указанные в курсе авторы. Общая лицензия курса в проверенном репозитории не обнаружена. Комплект размещается как первая часть русского перевода в отдельной ветке публичного форка Gordondalos/ai-dev-tools-zoomcamp.</p><p>Текст читается офлайн. Видео, статьи, репозитории приложений и изображения открываются по внешним ссылкам и требуют интернета. Исходный код приложений сюда не включён.</p><p>Оригинал: <a href="https://github.com/Gordondalos/ai-dev-tools-zoomcamp/tree/b47dff65161c878d095e288e9f9e5b907f5aa3c6">Gordondalos/ai-dev-tools-zoomcamp</a>, коммит b47dff65161c878d095e288e9f9e5b907f5aa3c6. Все 18 страниц имеют ссылки на свои оригиналы.</p></details><details id="contents"><summary>Оглавление: 18 страниц</summary><ul><li><a href="#page-01">О курсе и программа</a></li><li><a href="#page-02">Модуль 1 · индекс</a></li><li><a href="#page-03">1. Рабочий процесс с ИИ</a></li><li><a href="#page-04">Модуль 2 · индекс</a></li><li><a href="#page-05">2. Full-stack-приложение</a></li><li><a href="#page-06">Модуль 3 · индекс</a></li><li><a href="#page-07">3. Тесты и развёртывание</a></li><li><a href="#page-08">Модуль 4 · индекс</a></li><li><a href="#page-09">4. DevOps и наблюдаемость</a></li><li><a href="#page-10">5. Возможности агентов</a></li><li><a href="#page-11">Настройка клиентов MCP</a></li><li><a href="#page-12">Поток 2026 · расписание</a></li><li><a href="#page-13">Домашнее задание 1</a></li><li><a href="#page-14">Домашнее задание 2</a></li><li><a href="#page-15">Домашнее задание 3</a></li><li><a href="#page-16">Домашнее задание 4</a></li><li><a href="#page-17">Итоговый проект</a></li><li><a href="#page-18">Как устроены потоки</a></li></ul></details></header><section id="page-01" class="chapter"><div class="chapter-label">СТРАНИЦА 1 / 18 · <a href="README.md">Markdown</a></div><p align="center">
+<a href="https://raw.githubusercontent.com/Gordondalos/ai-dev-tools-zoomcamp/b47dff65161c878d095e288e9f9e5b907f5aa3c6/images/course-cover.png" class="image-link">Изображение: Обложка AI Dev Tools Zoomcamp (онлайн)</a>
+</p>
+<h1 align="center">
+AI Dev Tools Zoomcamp: разработка ПО с ИИ в основе рабочего процесса
+</h1>
+<p><a href="https://github.com/Gordondalos/ai-dev-tools-zoomcamp/blob/b47dff65161c878d095e288e9f9e5b907f5aa3c6/README.md">Оригинал
+этой страницы</a>. Неофициальный русский перевод для личного
+использования. Текст отражает указанный коммит, а не подтверждённое
+текущее расписание курса.</p>
+<p align="center">
+Бесплатный практический курс о том, как использовать инструменты ИИ для
+разработки, тестирования, развёртывания, расширения и аудита
+программного обеспечения, сохраняя инженерную дисциплину.
+</p>
+<p align="center">
+<a href="https://courses.datatalks.club/register/ai-dev-tools/"><span class="image-link">Изображение: Зарегистрироваться (онлайн)</span></a>
+</p>
+<p align="center">
+<a href="https://courses.datatalks.club/register/ai-dev-tools/">Регистрация</a>
+| <a href="https://courses.datatalks.club/ai-dev-tools-2026/">Платформа
+курса</a> | <a href="https://datatalks.club/slack.html">Присоединиться к
+Slack</a> |
+<a href="https://app.slack.com/client/T01ATQK62F8/C09HWT76L95">Канал
+курса в Slack</a> |
+<a href="https://t.me/aidevtoolszoomcamp">Telegram</a> |
+<a href="https://www.youtube.com/playlist?list=PL3MmuxUbc_hLuyafXPyhTdbF4s_uNhc43">Плейлист
+YouTube</a> |
+<a href="https://datatalks.club/faq/ai-dev-tools-zoomcamp.html">Частые
+вопросы</a>
+</p>
+<p align="center">
+<a href="https://github.com/DataTalksClub/ai-dev-tools-zoomcamp/pulls"><span class="image-link">Изображение: Pull request приветствуются (онлайн)</span></a>
+<a href="https://datatalks.club/slack.html"><span class="image-link">Изображение: Присоединиться к Slack (онлайн)</span></a>
+</p>
+<p><a id="page-01--quick-links"></a></p>
+<h2 id="page-01--быстрые-ссылки">Быстрые ссылки</h2>
+<table>
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Ресурс</th>
+<th>Ссылка</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Регистрация</td>
+<td><a href="https://courses.datatalks.club/register/ai-dev-tools/">Записаться
+на бесплатный поток 2026 года</a></td>
+</tr>
+<tr class="even">
+<td>Дата начала</td>
+<td>31 августа 2026 года</td>
+</tr>
+<tr class="odd">
+<td>Обучение</td>
+<td><a href="https://courses.datatalks.club/ai-dev-tools-2026/">Платформа
+курса</a> · <a href="https://github.com/DataTalksClub/ai-dev-tools-zoomcamp">Материалы</a>
+· <a href="https://www.youtube.com/playlist?list=PL3MmuxUbc_hLuyafXPyhTdbF4s_uNhc43">Видео</a></td>
+</tr>
+<tr class="even">
+<td>Запуск курса</td>
+<td><a href="https://aishippingblog.com/p/ai-dev-tools-zoomcamp-2026-starts">Прочитать
+статью о запуске</a></td>
+</tr>
+<tr class="odd">
+<td>Сообщество</td>
+<td><a href="https://datatalks.club/slack.html">Slack</a> · <a href="https://app.slack.com/client/T01ATQK62F8/C09HWT76L95">Канал
+курса</a> · <a href="https://t.me/aidevtoolszoomcamp">Telegram</a></td>
+</tr>
+<tr class="even">
+<td>Помощь</td>
+<td><a href="https://datatalks.club/docs/courses/ai-dev-tools-zoomcamp/">Документация</a>
+· <a href="https://datatalks.club/docs/courses/zoomcamp-logistics/">Организация
+обучения</a> · <a href="https://datatalks.club/faq/ai-dev-tools-zoomcamp.html">Частые
+вопросы</a></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>[!NOTE] Материалы 2026 года сейчас дорабатываются. Репозиторий
+показывает направление следующего потока, но некоторые видео, домашние
+задания, сроки, требования к проекту и подробности модулей могут
+измениться до начала потока 31 августа 2026 года.</p>
+</blockquote>
+<p><em>Примечание к переводу: предупреждение выше сохранено из
+оригинала, хотя на дату подготовки перевода, 6 ноября 2026 года,
+указанная дата уже прошла. Актуальные сроки следует проверять на
+платформе курса.</em></p>
+<p><a id="page-01--about-the-course"></a></p>
+<h2 id="page-01--о-курсе">О курсе</h2>
+<p>AI Dev Tools Zoomcamp — бесплатный практический курс для
+разработчиков и технических специалистов по данным, которые хотят
+освоить дисциплинированную разработку ПО с помощью ИИ.</p>
+<p>В основе курса лежит один рабочий процесс:</p>
+<blockquote>
+<p>Давайте инструментам ИИ подходящий контекст, поручайте им подходящие
+задачи, проверяйте то, что они создают, тестируйте результат и
+выпускайте программное обеспечение с защитными ограничениями.</p>
+</blockquote>
+<p>Вы сравните современные инструменты ИИ для разработчиков, создадите и
+развернёте full-stack-приложение, наладите его эксплуатацию с
+наблюдаемостью и реагированием на инциденты при помощи агентов, а также
+расширите возможности агентов разработки с помощью MCP и повторно
+используемых компонентов.</p>
+<p>Курс не ограничивается промпт-инжинирингом и не посвящён обучению
+моделей или созданию RAG-систем. Главное здесь — повседневная разработка
+ПО с ИИ-ассистентами и агентами, тестами, CI/CD, развёртыванием,
+документацией и проверкой кода.</p>
+<p><a id="page-01--who-should-join"></a></p>
+<h2 id="page-01--для-кого-этот-курс">Для кого этот курс</h2>
+<p>Курс подойдёт вам, если вы:</p>
+<ul>
+<li>Уже умеете писать простой код на Python, JavaScript, TypeScript или
+похожем языке.</li>
+<li>Хотите профессионально использовать инструменты ИИ для
+программирования, а не только получать отдельные фрагменты кода.</li>
+<li>Хотите выстроить воспроизводимый процесс планирования, составления
+запросов, проверки, тестирования, отладки и выпуска кода.</li>
+<li>Заботитесь о поддерживаемости, тестах, развёртывании, документации и
+ревью кода.</li>
+<li>Хотите создать проект, демонстрирующий практические навыки
+разработки с ИИ.</li>
+<li>Цените общие сроки потока, поддержку сообщества, взаимное
+рецензирование и возможность получить сертификат.</li>
+</ul>
+<p>Курс особенно полезен разработчикам ПО, ML-инженерам,
+MLOps-инженерам, AI-инженерам, специалистам по данным, инженерам данных,
+аналитикам, которые пишут код, и студентам технических специальностей,
+которым нужен практический проектный опыт.</p>
+<p>Курс, вероятно, не подойдёт вам, если вы никогда не программировали,
+ищете нетехническое введение в ИИ или прежде всего хотите изучать
+обучение и дообучение моделей, LangChain, векторные базы данных либо
+RAG.</p>
+<p><a id="page-01--prerequisites"></a></p>
+<h2 id="page-01--предварительные-знания">Предварительные знания</h2>
+<p>Опыт работы с инструментами ИИ не требуется.</p>
+<p>Вы должны:</p>
+<ul>
+<li>Уметь писать простой код на Python, JavaScript, TypeScript или
+похожем языке.</li>
+<li>Уверенно пользоваться командной строкой.</li>
+<li>Знать основы Git и GitHub.</li>
+</ul>
+<p>Будут полезны, но не обязательны:</p>
+<ul>
+<li>Базовые знания веб-разработки.</li>
+<li>Базовое знакомство с Docker.</li>
+</ul>
+<p>Не требуются:</p>
+<ul>
+<li>Опыт работы с ИИ-ассистентами или агентами для
+программирования.</li>
+<li>Мощный компьютер или GPU.</li>
+</ul>
+<p><a id="page-01--how-to-take-the-course"></a></p>
+<h2 id="page-01--как-проходить-курс">Как проходить курс</h2>
+<p>Можно учиться вместе с потоком или самостоятельно в своём темпе.</p>
+<table>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Обучение в потоке</th>
+<th>Самостоятельное обучение</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Начало</td>
+<td>31 августа 2026 года</td>
+<td>В любое время</td>
+</tr>
+<tr class="even">
+<td>Стоимость</td>
+<td>Бесплатно</td>
+<td>Бесплатно</td>
+</tr>
+<tr class="odd">
+<td>Лекции</td>
+<td>В записи</td>
+<td>В записи</td>
+</tr>
+<tr class="even">
+<td>Домашние задания</td>
+<td>Оцениваются</td>
+<td>Доступны, но баллы не начисляются</td>
+</tr>
+<tr class="odd">
+<td>Таблица лидеров</td>
+<td>Да</td>
+<td>Нет</td>
+</tr>
+<tr class="even">
+<td>Взаимное рецензирование</td>
+<td>Да</td>
+<td>Нет</td>
+</tr>
+<tr class="odd">
+<td>Возможность получить сертификат</td>
+<td>Да</td>
+<td>Нет</td>
+</tr>
+<tr class="even">
+<td>Регистрация</td>
+<td><a href="https://courses.datatalks.club/register/ai-dev-tools/">Записаться
+здесь</a></td>
+<td>Начните с репозитория</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>[!IMPORTANT] Обучение в потоке не означает обязательных занятий в
+прямом эфире. Лекции записаны заранее. Поток означает общие сроки,
+оцениваемые домашние задания, участие в таблице лидеров, взаимное
+рецензирование, поддержку общей учебной динамики и возможность получить
+сертификат.</p>
+</blockquote>
+<p>Шаги для самостоятельного обучения:</p>
+<ol type="1">
+<li>Изучайте материалы этого репозитория.</li>
+<li>Смотрите видео из <a href="https://www.youtube.com/playlist?list=PL3MmuxUbc_hLuyafXPyhTdbF4s_uNhc43">плейлиста
+курса</a>.</li>
+<li>Задавайте вопросы и делитесь успехами в <a href="https://datatalks.club/slack.html">Slack DataTalks.Club</a>.</li>
+<li>Выполняйте домашние задания для практики и создайте проект для
+портфолио.</li>
+</ol>
+<p><a id="page-01--syllabus"></a></p>
+<h2 id="page-01--программа">Программа</h2>
+<p><a id="page-01--module-1-ai-native-developer-workflow"></a></p>
+<h3 id="page-01--модуль-1.-рабочий-процесс-разработчика-с-ии-в-основе"><a href="#page-03">Модуль
+1. Рабочий процесс разработчика с ИИ в основе</a></h3>
+<p>Узнайте, как с помощью агентов разработки превратить расплывчатую
+идею продукта в программное обеспечение со спецификацией, реализацией и
+независимой проверкой.</p>
+<p>В этом модуле вы:</p>
+<ul>
+<li>Превратите расплывчатую идею в спецификацию и бэклог конкретных
+задач.</li>
+<li>Передадите агентам разработки устойчивый контекст через
+<code>AGENTS.md</code>.</li>
+<li>Используете роли PM/инженер/QA, организуя работу через циклы и
+графы, чтобы реализовать и проверить задачи бэклога.</li>
+</ul>
+<p>Результат: вы спроектируете и запустите процесс разработки с ИИ в
+основе, который проведёт продукт от идеи до реализации и независимой
+проверки качества.</p>
+<p><a id="page-01--module-2-build-and-ship-an-ai-assisted-full-stack-app"></a></p>
+<h3 id="page-01--модуль-2.-создание-и-выпуск-full-stack-приложения-с-помощью-ии"><a href="#page-05">Модуль
+2. Создание и выпуск full-stack-приложения с помощью ИИ</a></h3>
+<p>Создайте full-stack-приложение с помощью ИИ-ассистентов для
+программирования, поочерёдно заменяя компоненты-заглушки настоящими.</p>
+<p>Вы:</p>
+<ul>
+<li>Превратите идею в спецификацию, затем создадите прототип фронтенда и
+контракт OpenAPI.</li>
+<li>Реализуете бэкенд на FastAPI по этому контракту, затем соедините его
+с фронтендом, добавив аутентификацию и совместную работу в реальном
+времени.</li>
+<li>Замените временное хранилище на SQLite и добавите тесты.</li>
+</ul>
+<p>Результат: работающее full-stack-приложение с обновлениями в реальном
+времени, постоянным хранением данных, тестами и ясным
+API-контрактом.</p>
+<p><a id="page-01--module-3-test-containerize-and-deploy-an-ai-assisted-app"></a></p>
+<h3 id="page-01--модуль-3.-тестирование-контейнеризация-и-развёртывание-приложения-созданного-с-ии"><a href="#page-07">Модуль
+3. Тестирование, контейнеризация и развёртывание приложения, созданного
+с ИИ</a></h3>
+<p>Перенесите приложение со своего компьютера в общедоступное
+развёртывание, добавив тесты и проверки доставки, которые проверяют
+систему целиком.</p>
+<p>Вы:</p>
+<ul>
+<li>Контейнеризируете приложение и перейдёте с SQLite на Postgres с
+помощью Docker Compose.</li>
+<li>Добавите интеграционные и сквозные тесты, в том числе Playwright для
+сценария совместной работы.</li>
+<li>Развернёте приложение в AWS и настроите конвейер CI/CD в GitHub
+Actions.</li>
+</ul>
+<p>Результат: общедоступное контейнеризированное приложение на Postgres
+с автоматическими тестами и CI/CD, который выполняет развёртывание
+только после успешного прохождения тестов.</p>
+<p><a id="page-01--module-4-devops-and-observability-for-ai-built-apps"></a></p>
+<h3 id="page-01--модуль-4.-devops-и-наблюдаемость-приложений-созданных-с-ии"><a href="#page-09">Модуль
+4. DevOps и наблюдаемость приложений, созданных с ИИ</a></h3>
+<p>Развёрнутое приложение всё ещё может незаметно давать сбои. Добавьте
+управление релизами и наблюдаемость, чтобы обнаруживать и расследовать
+проблемы и реагировать на них.</p>
+<p>Вы:</p>
+<ul>
+<li>Разделите среды разработки и эксплуатации, настроив конвейер
+продвижения версионированных релизов.</li>
+<li>Инструментируете приложение с помощью OpenTelemetry, направив данные
+в Prometheus, Loki, Tempo и Grafana, и настроите оповещение, по которому
+можно принять меры.</li>
+<li>Дадите агенту разработки ограниченную роль реагирования на инциденты
+с доступом только на чтение.</li>
+</ul>
+<p>Результат: отдельные процессы для dev/prod, стек наблюдаемости,
+полезные оповещения и экспериментальный ИИ-агент дежурного
+реагирования.</p>
+<p><a id="page-01--module-5-coding-agent-building-blocks-reusable-skills-and-specialized-subagents"></a></p>
+<h3 id="page-01--модуль-5.-компоненты-агентов-разработки-повторно-используемые-навыки-и-специализированные-субагенты"><a href="#page-10">Модуль 5. Компоненты агентов
+разработки: повторно используемые навыки и специализированные
+субагенты</a></h3>
+<p>Превратите повторяющиеся рабочие процессы и роли в проекте в повторно
+используемые возможности, которые агенты разработки смогут находить и
+применять.</p>
+<p>Вы:</p>
+<ul>
+<li>Создадите обнаруживаемые навыки с помощью <code>SKILL.md</code> и
+решите, должны ли они быть глобальными или относиться к конкретному
+проекту.</li>
+<li>Определите узкоспециализированных субагентов, включая роли
+PM/инженер/QA, чтобы отделить реализацию от независимой проверки.</li>
+<li>Организуете параллельное выполнение задач в изолированных Git
+worktree.</li>
+</ul>
+<p>Результат: повторно используемые навыки, определения субагентов и
+схема оркестрации для последовательной или параллельной работы над
+проектом.</p>
+<blockquote>
+<p>[!NOTE] В модуле 5 нет оцениваемого домашнего задания. Вместо него
+оценивается <a href="#page-10--module-deliverable-agent-extension-pack">результат
+работы по модулю</a>.</p>
+</blockquote>
+<p><a id="page-01--final-project"></a></p>
+<h2 id="page-01--итоговый-проект">Итоговый проект</h2>
+<p>В <a href="#page-17">итоговом проекте</a> вы примените
+рабочий процесс курса к собственному приложению от начала до конца.</p>
+<p>Вы:</p>
+<ul>
+<li>Выберете проблему и опишете ожидаемое поведение системы.</li>
+<li>Создадите фронтенд.</li>
+<li>Создадите бэкенд.</li>
+<li>Определите взаимодействие фронтенда и бэкенда с помощью контракта
+OpenAPI.</li>
+<li>Добавите базу данных или постоянное хранилище.</li>
+<li>Протестируете приложение.</li>
+<li>Контейнеризируете приложение.</li>
+<li>Развернёте его, чтобы другие могли им воспользоваться.</li>
+<li>Задокументируете, как использовали инструменты ИИ, промпты, рабочие
+процессы, инструкции для агентов, MCP или автоматизацию.</li>
+</ul>
+<p>Для получения сертификата в потоке проекты проходят взаимное
+рецензирование. Участники должны успешно сдать итоговый проект и
+выполнить обязательные рецензии на проекты других участников.</p>
+<p><a id="page-01--certificate"></a></p>
+<h2 id="page-01--сертификат">Сертификат</h2>
+<p>Сертификаты доступны во время обучения в потоке тем, кто завершит
+итоговый проект и обязательное взаимное рецензирование.</p>
+<p>Домашние задания помогают не отставать, но сертификат зависит от
+выполнения требований к итоговому проекту и взаимному рецензированию.
+Общий порядок получения сертификата описан в разделе <a href="https://datatalks.club/docs/courses/zoomcamp-logistics/certification/">Certification</a>.</p>
+<p>При самостоятельном обучении все материалы доступны бесплатно, однако
+для получения сертификата необходимо участвовать в потоке.</p>
+<p><a id="page-01--instructors"></a></p>
+<h2 id="page-01--преподаватели">Преподаватели</h2>
+<ul>
+<li><a href="https://linkedin.com/in/agrigorev">Alexey Grigorev</a></li>
+<li><a href="https://www.linkedin.com/in/bhavanicodes">Bhavani
+Ravi</a></li>
+</ul>
+<p><a id="page-01--learner-stories"></a></p>
+<h2 id="page-01--истории-участников">Истории участников</h2>
+<blockquote>
+<p>Этот курс коренным образом изменил мой подход к разработке с ИИ. Я
+перешёл от «создания моделей» к проектированию систем с помощью ИИ,
+которые быстрее выпускать и проще дорабатывать.</p>
+<p>Во время курса я создал инструмент оптимизации инвестиционного
+портфеля, full-stack-приложение с использованием ChatGPT, Lovable и
+Antigravity, а также структурированный проект на GitHub с
+воспроизводимой документацией.</p>
+<ul>
+<li><a href="https://www.linkedin.com/in/chasseur2valeurs/">Yann
+Pham-Van</a>, независимый специалист по данным</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>Курс научил меня эффективно использовать агентов разработки,
+отлаживать проблемы и познакомил с MCP, инструментами и промптами. Он
+помог мне научиться превращать любую идею в работающий прототип.</p>
+<ul>
+<li><a href="https://www.linkedin.com/in/revathy-ramalingam/">Revathy
+Ramalingam</a>, старший разработчик ПО в Yalabs Solutions</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>Во время курса я создал сайт для изучения финского языка, который
+помогает англоязычным пользователям практиковать чтение, письмо,
+аудирование и разговорную речь на финском.</p>
+<p>Я использовал Antigravity с Gemini и Claude, MCP-сервер документации
+Context7, TypeScript, Python, Next.js, FastAPI, SQLite и CI/CD с GitHub
+Actions.</p>
+<ul>
+<li><a href="https://www.linkedin.com/in/kaiquan-mah">Kaiquan Mah</a>,
+специалист по данным в Total eBiz Solutions</li>
+</ul>
+</blockquote>
+<p><a id="page-01--community-and-support"></a></p>
+<h2 id="page-01--сообщество-и-поддержка">Сообщество и поддержка</h2>
+<p><a id="page-01--slack"></a></p>
+<h3>Slack</h3>
+<p>Присоединяйтесь к <a href="https://datatalks.club/slack.html">Slack
+DataTalks.Club</a> и используйте канал <a href="https://app.slack.com/client/T01ATQK62F8/C09HWT76L95">#course-ai-dev-tools-zoomcamp</a>
+для вопросов о курсе, помощи с проблемами и обсуждений.</p>
+<p>Прежде чем задать вопрос, прочитайте:</p>
+<ul>
+<li><a href="https://datatalks.club/docs/courses/zoomcamp-logistics/asking-questions/">Рекомендации
+о том, как задавать вопросы</a>.</li>
+<li><a href="https://datatalks.club/slack/guidelines.html">Правила
+сообщества</a>.</li>
+</ul>
+<p><a id="page-01--announcements"></a></p>
+<h3 id="page-01--объявления">Объявления</h3>
+<p>Объявления курса публикуются в <a href="https://t.me/aidevtoolszoomcamp">Telegram-канале</a>. Сообщения из
+Telegram также дублируются в канале курса в Slack.</p>
+<p><a id="page-01--learning-in-public"></a></p>
+<h3 id="page-01--обучение-на-публике">Обучение на публике</h3>
+<p>Делитесь прогрессом с хештегом <code>#aidevtools</code> и отмечайте
+Alexey Grigorev или DataTalksClub. Обучение на публике помогает
+сохранять ответственность за результат, знакомиться с другими
+участниками и наглядно показывать свою работу.</p>
+<p>См. <a href="https://datatalks.club/docs/courses/zoomcamp-logistics/learning-in-public/">руководство
+по обучению на публике</a>.</p>
+<p><a id="page-01--sponsors"></a></p>
+<h2 id="page-01--спонсоры">Спонсоры</h2>
+<p>Хотите поддержать DataTalks.Club и этот курс? Напишите на <a href="mailto:alexey@datatalks.club">alexey@datatalks.club</a>.</p>
+<p><a id="page-01--faq"></a></p>
+<h2 id="page-01--частые-вопросы">Частые вопросы</h2>
+<p>Полный список находится в <a href="https://datatalks.club/faq/ai-dev-tools-zoomcamp.html">FAQ AI Dev
+Tools Zoomcamp</a>.</p>
+<p><a id="page-01--is-this-course-free"></a></p>
+<h3 id="page-01--этот-курс-бесплатный">Этот курс бесплатный?</h3>
+<p>Да. Видео, материалы, домашние задания и участие в потоке
+бесплатны.</p>
+<p><a id="page-01--do-i-need-ai-experience"></a></p>
+<h3 id="page-01--нужен-ли-опыт-работы-с-ии">Нужен ли опыт работы с ИИ?</h3>
+<p>Нет. Опыт работы с инструментами ИИ для программирования не
+требуется. Вы должны уметь писать простой код и работать с репозиторием
+проекта.</p>
+<p><a id="page-01--do-i-need-to-be-a-software-engineer"></a></p>
+<h3 id="page-01--нужно-ли-быть-разработчиком-по">Нужно ли быть разработчиком
+ПО?</h3>
+<p>Нет. Курс также подходит специалистам по данным, ML-инженерам,
+MLOps-инженерам, инженерам данных, аналитикам, которые пишут код, и
+студентам технических специальностей. Базовые навыки программирования
+необходимы.</p>
+<p><a id="page-01--are-there-live-classes"></a></p>
+<h3 id="page-01--есть-ли-занятия-в-прямом-эфире">Есть ли занятия в прямом
+эфире?</h3>
+<p>Лекции записаны заранее. Обучение в потоке добавляет общие сроки,
+оцениваемые домашние задания, таблицу лидеров, взаимное рецензирование,
+поддержку сообщества и возможность получить сертификат.</p>
+<p><a id="page-01--can-i-take-the-course-self-paced"></a></p>
+<h3 id="page-01--можно-ли-проходить-курс-самостоятельно">Можно ли проходить курс
+самостоятельно?</h3>
+<p>Да. Видео и материалы репозитория доступны в любое время. При
+самостоятельном обучении сертификат не выдаётся, если вы не
+присоединитесь к потоку.</p>
+<p><a id="page-01--do-i-need-a-powerful-computer-or-gpu"></a></p>
+<h3 id="page-01--нужен-ли-мощный-компьютер-или-gpu">Нужен ли мощный компьютер или
+GPU?</h3>
+<p>Нет. Мощный компьютер или GPU не требуются.</p>
+<p><a id="page-01--is-this-course-about-rag-or-model-training"></a></p>
+<h3 id="page-01--этот-курс-посвящён-rag-или-обучению-моделей">Этот курс посвящён
+RAG или обучению моделей?</h3>
+<p>Нет. Курс сосредоточен на процессах разработки ПО с ИИ: ассистентах и
+агентах для программирования, MCP, тестировании, CI/CD, развёртывании,
+документации, ревью, безопасности, аудите и DevOps.</p>
+<p><a id="page-01--about-datatalksclub"></a></p>
+<h2 id="page-01--о-datatalks.club">О DataTalks.Club</h2>
+<p align="center">
+<a href="https://github.com/user-attachments/assets/1243a44a-84c8-458d-9439-aaf6f3a32d89" class="image-link">Изображение: DataTalks.Club (онлайн)</a>
+</p>
+<p align="center">
+<a href="https://datatalks.club/">DataTalks.Club</a> — международное
+онлайн-сообщество людей, увлечённых данными. Здесь можно обсуждать
+данные, учиться, делиться знаниями, задавать вопросы и отвечать на них,
+а также поддерживать друг друга.
+</p>
+<p align="center">
+<a href="https://datatalks.club/">Сайт</a> |
+<a href="https://datatalks.club/slack.html">Присоединиться к сообществу
+в Slack</a> |
+<a href="https://us19.campaign-archive.com/home/?u=0d7822ab98152f5afc118c176&amp;id=97178021aa">Рассылка</a>
+| <a href="http://lu.ma/dtc-events">Ближайшие мероприятия</a> |
+<a href="https://www.youtube.com/@DataTalksClub/featured">YouTube</a> |
+<a href="https://github.com/DataTalksClub">GitHub</a> |
+<a href="https://www.linkedin.com/company/datatalks-club/">LinkedIn</a>
+| <a href="https://x.com/DataTalksClub">X</a>
+</p>
+<p>Большая часть активности DataTalks.Club происходит в <a href="https://datatalks.club/slack.html">Slack</a>. Там мы публикуем
+новости, обсуждаем вопросы по курсам и помогаем участникам поддерживать
+друг друга.</p>
+<p>В DataTalks.Club мы организуем онлайн-мероприятия, активности
+сообщества и бесплатные курсы. Подробнее см. в <a href="https://datatalks.club/docs/general/">документации
+DataTalks.Club</a>.</p>
+<a class="back" href="#top">↑ В начало и к оглавлению</a></section><section id="page-02" class="chapter"><div class="chapter-label">СТРАНИЦА 2 / 18 · <a href="01-ai-native-workflow/README.md">Markdown</a></div><p><a id="page-02--ai-native-developer-workflow"></a></p>
+<h1 id="page-02--рабочий-процесс-разработчика-с-ии-в-основе">Рабочий процесс
+разработчика с ИИ в основе</h1>
+<p><a href="https://github.com/Gordondalos/ai-dev-tools-zoomcamp/blob/b47dff65161c878d095e288e9f9e5b907f5aa3c6/01-ai-native-workflow/README.md">Оригинал
+материала</a></p>
+<p>Уроки:</p>
+<ul>
+<li><a href="#page-03">Рабочий процесс
+разработчика с ИИ в основе</a></li>
+</ul>
+<a class="back" href="#top">↑ В начало и к оглавлению</a></section><section id="page-03" class="chapter"><div class="chapter-label">СТРАНИЦА 3 / 18 · <a href="01-ai-native-workflow/01-ai-native-developer-workflow.md">Markdown</a></div><p class="video-link"><a href="https://www.youtube.com/watch?v=VUJxJGpaDEs">Видео урока на YouTube (оригинал)</a></p><p><a id="page-03--ai-native-developer-workflow"></a></p>
+<h1 id="page-03--рабочий-процесс-разработчика-с-ии-в-основе">Рабочий процесс
+разработчика с ИИ в основе</h1>
+<p><a href="https://github.com/Gordondalos/ai-dev-tools-zoomcamp/blob/b47dff65161c878d095e288e9f9e5b907f5aa3c6/01-ai-native-workflow/01-ai-native-developer-workflow.md">Оригинал
+материала</a></p>
+<p>Инструменты меняются каждый месяц, но мы продолжаем работать примерно
+так же, как раньше. В этом модуле мы начинаем с расплывчатой идеи
+продукта, формулируем спецификацию и подготавливаем контекст. Затем
+реализуем продукт и проводим независимую проверку качества.</p>
+<p>Вы изучите:</p>
+<ul>
+<li>Разработку на основе спецификаций</li>
+<li>Проектирование контекста</li>
+<li>Роли менеджера продукта, разработчика и специалиста по
+тестированию</li>
+<li>Проектирование циклов работы агента</li>
+<li>Проектирование графов взаимодействия агентов</li>
+</ul>
+<p>Краткое содержание модуля: сопроводительная статья показывает, как
+превратить расплывчатую идею в полезную спецификацию, предоставить
+агенту устойчивый контекст, разбить работу на список задач и
+использовать отдельные роли менеджера продукта, разработчика и
+специалиста по тестированию для реализации и проверки результата. Проект
+weekly-feedback служит предостерегающим примером разработки без
+спецификации, а затем на примере retroloop последовательно разбираются
+разработка на основе спецификаций, проектирование циклов и графов
+взаимодействия агентов.</p>
+<p><a href="https://aishippingblog.com/p/ai-native-development-specifications">Читать
+статью: «Разработка с ИИ в основе: спецификации, проектирование циклов и
+графов»</a></p>
+<p><a id="page-03--example-projects"></a></p>
+<h2 id="page-03--примеры-проектов">Примеры проектов</h2>
+<p>Мы дважды реализуем идею weekly-feedback, чтобы показать, зачем нужна
+спецификация:</p>
+<ul>
+<li><a href="https://github.com/Gordondalos/ai-dev-tools-zoomcamp/tree/b47dff65161c878d095e288e9f9e5b907f5aa3c6/01-ai-native-workflow/weekly-feedback"><code>weekly-feedback</code></a>
+— работающая утилита командной строки, которую Claude Code создаёт по
+одному расплывчатому предложению. Здесь приведены её исходный код и
+тесты.</li>
+<li><a href="https://github.com/alexeygrigorev/retroloop"><code>retroloop</code></a>
+— приложение на Django для проведения ретроспектив, созданное после
+подготовки спецификации продукта и проработки упорядоченного списка
+задач в GitHub.</li>
+</ul>
+<p><a id="page-03--previous-cohort-materials"></a></p>
+<h2 id="page-03--материалы-предыдущего-потока">Материалы предыдущего потока</h2>
+<p>В 2025 году мы подробнее рассматривали существующие инструменты. Сами
+инструменты изменились, но их категории по-прежнему помогают понять, для
+чего нужен каждый тип инструментов.</p>
+<ul>
+<li><a href="https://github.com/Gordondalos/ai-dev-tools-zoomcamp/tree/b47dff65161c878d095e288e9f9e5b907f5aa3c6/cohorts/2025/01-overview">Модуль
+1 из архива потока 2025 года</a></li>
+</ul>
+<p><a id="page-03--community-notes"></a></p>
+<h2 id="page-03--конспекты-участников">Конспекты участников</h2>
+<p>Добавляйте ссылки на свои конспекты выше этой строки.</p>
+<a class="back" href="#top">↑ В начало и к оглавлению</a></section><section id="page-04" class="chapter"><div class="chapter-label">СТРАНИЦА 4 / 18 · <a href="02-development/README.md">Markdown</a></div><p><a id="page-04--build-and-ship-an-ai-assisted-full-stack-app"></a></p>
+<h1 id="page-04--создание-и-выпуск-full-stack-приложения-с-помощью-ии">Создание и
+выпуск full-stack-приложения с помощью ИИ</h1>
+<p><a href="https://github.com/Gordondalos/ai-dev-tools-zoomcamp/blob/b47dff65161c878d095e288e9f9e5b907f5aa3c6/02-development/README.md">Оригинал
+материала</a></p>
+<p>Уроки:</p>
+<ul>
+<li><a href="#page-05">Создание и
+выпуск full-stack-приложения с помощью ИИ</a></li>
+</ul>
+<a class="back" href="#top">↑ В начало и к оглавлению</a></section><section id="page-05" class="chapter"><div class="chapter-label">СТРАНИЦА 5 / 18 · <a href="02-development/01-build-and-ship-an-ai-assisted-full-stack-app.md">Markdown</a></div><p class="video-link"><a href="https://www.youtube.com/watch?v=x9dq5nBpDg8">Видео урока на YouTube (оригинал)</a></p><p><a id="page-05--build-and-ship-an-ai-assisted-full-stack-app"></a></p>
+<h1 id="page-05--создание-и-выпуск-full-stack-приложения-с-помощью-ии">Создание и
+выпуск full-stack-приложения с помощью ИИ</h1>
+<p><a href="https://github.com/Gordondalos/ai-dev-tools-zoomcamp/blob/b47dff65161c878d095e288e9f9e5b907f5aa3c6/02-development/01-build-and-ship-an-ai-assisted-full-stack-app.md">Оригинал
+материала</a></p>
+<p><a id="page-05--overview"></a></p>
+<h2 id="page-05--обзор">Обзор</h2>
+<p>В этом модуле вы создадите полноценное работающее приложение с
+помощью ИИ. Основным проектом остаётся небольшое приложение Snake Arena:
+оно наглядное, интерактивное и при этом требует основных составляющих
+реальной системы:</p>
+<ul>
+<li>спецификации продукта</li>
+<li>фронтенда</li>
+<li>контракта OpenAPI</li>
+<li>бэкенда</li>
+<li>базы данных</li>
+<li>тестов</li>
+</ul>
+<p>Цель не в том, чтобы позволить ИИ-инструменту бесконтрольно создать
+всё приложение. Цель — отработать управляемый процесс, в котором ИИ
+помогает двигаться быстрее, а вы проверяете каждый шаг.</p>
+<p>В конце модуля у вас будет приложение, которое работает на вашем
+компьютере: фронтенд и бэкенд взаимодействуют по определённому
+контракту, а данные сохраняются в SQLite. Всё необходимое, чтобы сделать
+приложение доступным другим людям, — интеграционные тесты, контейнеры,
+CI, развёртывание и CI/CD — рассматривается в <a href="#page-07">модуле
+3</a>.</p>
+<p>Вы научитесь:</p>
+<ul>
+<li>Писать небольшую спецификацию продукта с пользовательскими
+историями, критериями приёмки и перечнем того, что не входит в задачи
+продукта, прежде чем генерировать код</li>
+<li>Создавать прототип фронтенда с помощью ИИ-инструмента (Lovable,
+Bolt, Cursor, Claude Code, Codex и других), затем переносить его в
+обычный рабочий процесс с репозиторием и делать удобным для
+сопровождения</li>
+<li>Определять контракт OpenAPI как единый источник истины для фронтенда
+и бэкенда</li>
+<li>Реализовывать бэкенд на FastAPI по контракту, начиная с имитации
+базы данных и тестов для основных эндпоинтов</li>
+<li>Заменять имитацию хранилища на SQLite, сохраняя независимость
+приложения от конкретной базы данных, чтобы впоследствии перейти на
+Postgres без переписывания приложения</li>
+<li>Добавлять модульные тесты и тесты фронтенда, покрывающие поведение,
+описанное в спецификации и контракте</li>
+</ul>
+<p>Пример приложения:</p>
+<ul>
+<li><a href="https://github.com/alexeygrigorev/interview-canvas-share" class="uri">https://github.com/alexeygrigorev/interview-canvas-share</a></li>
+</ul>
+<p>Краткое содержание модуля: сопроводительная статья показывает, как с
+нуля создать приложение для совместной работы на собеседованиях по
+проектированию систем. От прототипа фронтенда с имитацией вызовов она
+переходит к контракту OpenAPI, бэкенду на FastAPI, совместной работе
+через WebSocket и сохранению данных в SQLite. Каждый этап проверяется
+тестами перед переходом к следующему.</p>
+<p><a href="https://aishippingblog.com/p/build-and-ship-a-full-stack-app-with">Читать
+статью: «Создание и выпуск full-stack-приложения с ИИ-помощниками для
+программирования»</a></p>
+<p><a id="page-05--module-deliverables"></a></p>
+<h2 id="page-05--результаты-работы-по-модулю">Результаты работы по модулю</h2>
+<p>К концу модуля 2 в вашем репозитории должны быть:</p>
+<pre class="text"><code>product-spec.md
+AGENTS.md or equivalent
+frontend/
+backend/
+openapi.yaml
+tests/
+docs/ai-usage-report.md</code></pre>
+<p>Примечание: <code>or equivalent</code> означает «или аналогичный
+файл». Имена файлов и каталогов в примере сохранены без изменений.</p>
+<p>Приложение должно запускаться локально по инструкции из README,
+сохранять данные в SQLite и успешно проходить собственные тесты.</p>
+<p><a id="page-05--previous-cohort-materials"></a></p>
+<h2 id="page-05--материалы-предыдущего-потока">Материалы предыдущего потока</h2>
+<p>Предыдущая версия этого модуля находится в архиве:</p>
+<ul>
+<li><a href="https://github.com/Gordondalos/ai-dev-tools-zoomcamp/tree/b47dff65161c878d095e288e9f9e5b907f5aa3c6/cohorts/2025/02-end-to-end">Модуль
+2 из архива потока 2025 года</a></li>
+</ul>
+<p><a id="page-05--community-notes"></a></p>
+<h2 id="page-05--конспекты-участников">Конспекты участников</h2>
+<p>Вели конспект? Вы можете поделиться им здесь.</p>
+<ul>
+<li>Добавьте ссылку на свой конспект выше этой строки</li>
+</ul>
+<a class="back" href="#top">↑ В начало и к оглавлению</a></section><section id="page-06" class="chapter"><div class="chapter-label">СТРАНИЦА 6 / 18 · <a href="03-deployment/README.md">Markdown</a></div><p><a id="page-06--test-containerize-and-deploy-an-ai-assisted-app"></a></p>
+<h1 id="page-06--тестирование-контейнеризация-и-развёртывание-приложения-созданного-с-помощью-ии">Тестирование,
+контейнеризация и развёртывание приложения, созданного с помощью ИИ</h1>
+<p><a href="https://github.com/Gordondalos/ai-dev-tools-zoomcamp/blob/b47dff65161c878d095e288e9f9e5b907f5aa3c6/03-deployment/README.md">Оригинал
+материала</a></p>
+<p>Уроки:</p>
+<ul>
+<li><a href="#page-07">Тестирование,
+контейнеризация и развёртывание приложения, созданного с помощью
+ИИ</a></li>
+</ul>
+<a class="back" href="#top">↑ В начало и к оглавлению</a></section><section id="page-07" class="chapter"><div class="chapter-label">СТРАНИЦА 7 / 18 · <a href="03-deployment/01-test-containerize-and-deploy-an-ai-assisted-app.md">Markdown</a></div><p class="video-link"><a href="https://www.youtube.com/watch?v=gxt5ZDVnBMM">Видео урока на YouTube (оригинал)</a></p><p><a id="page-07--test-containerize-and-deploy-an-ai-assisted-app"></a></p>
+<h1 id="page-07--тестирование-контейнеризация-и-развёртывание-приложения-созданного-с-помощью-ии">Тестирование,
+контейнеризация и развёртывание приложения, созданного с помощью ИИ</h1>
+<p><a href="https://github.com/Gordondalos/ai-dev-tools-zoomcamp/blob/b47dff65161c878d095e288e9f9e5b907f5aa3c6/03-deployment/01-test-containerize-and-deploy-an-ai-assisted-app.md">Оригинал
+материала</a></p>
+<p><a id="page-07--overview"></a></p>
+<h2 id="page-07--обзор">Обзор</h2>
+<p>Модуль 2 заканчивается приложением, которое работает на вашем
+компьютере. В этом модуле вы пройдёте оставшийся путь: проверите
+приложение тестами, задействующими реальный стек, упакуете его в
+контейнеры, настроите автоматические проверки каждого pull request и
+развернёте его для других пользователей.</p>
+<p>Последовательность этапов:</p>
+<pre class="text"><code>integration tests
+containerization
+continuous integration
+deployment
+continuous delivery</code></pre>
+<p>Перевод схемы:</p>
+<blockquote>
+<p>интеграционные тесты → контейнеризация → непрерывная интеграция →
+развёртывание → непрерывная доставка</p>
+</blockquote>
+<p>На каждом этапе ИИ-инструменты хорошо готовят черновой вариант, но
+плохо справляются с ответственностью за результат. Сгенерированный
+<code>Dockerfile</code>, с которым сборка завершается успешно, не
+обязательно собирает то, что нужно. А зелёный пайплайн, который
+пропускает тесты, хуже, чем отсутствие пайплайна. Рабочий процесс
+остаётся таким же, как в предыдущих модулях: дайте агенту создать первую
+версию, затем прочитайте её, запустите и намеренно внесите поломку,
+чтобы проверить, обнаружат ли проверки хоть какую-нибудь проблему.</p>
+<p>Продолжайте работать с приложением, созданным в модуле 2.</p>
+<p>Краткое содержание модуля: сопроводительная статья показывает переход
+от локального приложения к общедоступному развёртыванию. В ней
+добавляются интеграционные и сквозные тесты, фронтенд и бэкенд
+упаковываются в контейнер, SQLite заменяется на Postgres с помощью
+Docker Compose, приложение развёртывается в AWS, а доставка
+автоматизируется через GitHub Actions.</p>
+<p><a href="https://aishippingblog.com/p/deploy-a-full-stack-app-with-ai-coding">Читать
+статью: «Развёртывание full-stack-приложения с ИИ-помощниками для
+программирования»</a></p>
+<p>Вы научитесь:</p>
+<ul>
+<li>Писать интеграционные тесты, которые обращаются к реальной базе
+данных, покрывают миграции, аутентификацию и взаимодействие фронтенда с
+бэкендом и выполняются достаточно быстро, чтобы запускаться при каждом
+push</li>
+<li>Контейнеризировать приложение с помощью многоэтапного Dockerfile и
+Docker Compose, заменяя SQLite на Postgres</li>
+<li>Настраивать CI в GitHub Actions для запуска линтеров, модульных и
+интеграционных тестов, а также сборки контейнера для каждого pull
+request</li>
+<li>Развёртывать приложение по общедоступному URL на платформе вроде
+Render, Fly.io, Railway или Cloud Run, используя управляемую базу данных
+и запуск миграций при развёртывании</li>
+<li>Настраивать CI/CD так, чтобы слияние в main было возможно только
+после успешных тестов и автоматически запускало сборку, миграции и
+повторное развёртывание</li>
+<li>Добавлять отдельные staging- и production-окружения, smoke-тест
+после развёртывания и документированный порядок отката</li>
+</ul>
+<p><a id="page-07--module-deliverables"></a></p>
+<h2 id="page-07--результаты-работы-по-модулю">Результаты работы по модулю</h2>
+<p>К концу модуля 3 в вашем репозитории должны быть:</p>
+<pre class="text"><code>tests/integration/
+Dockerfile
+docker-compose.yml
+.github/workflows/ci.yml
+.github/workflows/deploy.yml
+docs/testing.md
+docs/deployment.md
+docs/release-process.md</code></pre>
+<p>Приложение должно быть доступно по общедоступному URL, автоматически
+пересобираться и развёртываться при слиянии в основную ветку, а также
+воспроизводиться локально по инструкции из README.</p>
+<p><a id="page-07--previous-cohort-materials"></a></p>
+<h2 id="page-07--материалы-предыдущего-потока">Материалы предыдущего потока</h2>
+<p>Материалы по теме из предыдущего потока:</p>
+<ul>
+<li><a href="https://github.com/Gordondalos/ai-dev-tools-zoomcamp/tree/b47dff65161c878d095e288e9f9e5b907f5aa3c6/cohorts/2025/05-cicd-devops">Модуль
+CI/CD и DevOps из архива потока 2025 года</a></li>
+</ul>
+<p><a id="page-07--community-notes"></a></p>
+<h2 id="page-07--конспекты-участников">Конспекты участников</h2>
+<p>Вели конспект? Вы можете поделиться им здесь.</p>
+<ul>
+<li>Добавьте ссылку на свой конспект выше этой строки</li>
+</ul>
+<a class="back" href="#top">↑ В начало и к оглавлению</a></section><section id="page-08" class="chapter"><div class="chapter-label">СТРАНИЦА 8 / 18 · <a href="04-devops/README.md">Markdown</a></div><p><a id="page-08--devops-and-observability-for-ai-built-apps"></a></p>
+<h1 id="page-08--devops-и-наблюдаемость-приложений-созданных-с-помощью-ии">DevOps
+и наблюдаемость приложений, созданных с помощью ИИ</h1>
+<p><a href="https://github.com/Gordondalos/ai-dev-tools-zoomcamp/blob/b47dff65161c878d095e288e9f9e5b907f5aa3c6/04-devops/README.md">Оригинал
+материала</a></p>
+<p>Уроки:</p>
+<ul>
+<li><a href="#page-09">DevOps и
+наблюдаемость приложений, созданных с помощью ИИ</a></li>
+</ul>
+<a class="back" href="#top">↑ В начало и к оглавлению</a></section><section id="page-09" class="chapter"><div class="chapter-label">СТРАНИЦА 9 / 18 · <a href="04-devops/01-devops-and-observability-for-ai-built-apps.md">Markdown</a></div><p class="video-link"><a href="https://www.youtube.com/watch?v=YkxLo_FRoQw">Видео урока на YouTube (оригинал)</a></p><p><a id="page-09--devops-and-observability-for-ai-built-apps"></a></p>
+<h1 id="page-09--devops-и-наблюдаемость-приложений-созданных-с-помощью-ии">DevOps
+и наблюдаемость приложений, созданных с помощью ИИ</h1>
+<p><a href="https://github.com/Gordondalos/ai-dev-tools-zoomcamp/blob/b47dff65161c878d095e288e9f9e5b907f5aa3c6/04-devops/01-devops-and-observability-for-ai-built-apps.md">Оригинал
+материала</a></p>
+<p>Модуль 3 заканчивается приложением, которое автоматически
+развёртывается после успешного прохождения тестов. Это делает его
+доступным в сети, но не позволяет понять, продолжает ли оно
+работать.</p>
+<p>Если важный эндпоинт начинает возвращать <code>500</code>, нужно
+узнать, что пользователи столкнулись с проблемой, найти неудачные
+запросы, связать их с развёртыванием, которое привело к сбою, и решить,
+что делать дальше. CI/CD доставляет плохой релиз столь же эффективно,
+как и хороший.</p>
+<p>В этом модуле мы выстроим цикл, закрывающий этот пробел:</p>
+<pre class="text"><code>change
+→ observe user impact
+→ alert with context
+→ investigate from evidence
+→ authorize a bounded response or escalate
+→ verify recovery
+→ audit the code and the response trail</code></pre>
+<p>Перевод схемы:</p>
+<blockquote>
+<p>изменение → наблюдение за влиянием на пользователей → оповещение с
+контекстом → расследование на основе диагностических данных → разрешение
+ограниченных действий по реагированию или эскалация → проверка
+восстановления → аудит кода и истории реагирования</p>
+</blockquote>
+<p>Мы также включим в этот цикл агента в качестве первой линии
+поддержки. Он запускается автоматически по сигналу оповещения, изучает
+сохранённый пакет диагностических данных и код, а затем предлагает
+действие. При этом он не получает учётные данные с общим доступом к
+production. Модель оценивает уверенность в решении, а код вне модели
+обеспечивает соблюдение разрешений.</p>
+<p>Конкретный стек: OpenTelemetry передаёт данные в Prometheus, Loki и
+Tempo, поверх которых работает Grafana, а обработчик инцидентов
+запускает Codex или Claude Code в режиме без интерактивного интерфейса.
+Эти продукты можно заменить. Главное, что стоит усвоить, — границы между
+диагностическими данными, рассуждением, разрешением на действие и
+проверкой результата.</p>
+<p>Вы научитесь:</p>
+<ul>
+<li>Выяснять, на какие вопросы о сбое после развёртывания у вас нет
+ответов, и понимать, почему одних графиков загрузки CPU недостаточно для
+наблюдаемости</li>
+<li>Инструментировать один эндпоинт от начала до конца с помощью
+OpenTelemetry: собирать метрики, трассировки и структурированные логи
+без утечки секретов</li>
+<li>Настраивать конвейер телеметрии: OpenTelemetry Collector передаёт
+данные в Prometheus, Loki и Tempo, а Grafana позволяет просматривать их
+вместе</li>
+<li>Создавать одно оповещение, отражающее реальное влияние на
+пользователей и запускающее локальный обработчик инцидента</li>
+<li>До подключения модели собирать ограниченный, воспроизводимый пакет
+диагностических данных с помощью разрешённых запросов только для
+чтения</li>
+<li>Запускать по оповещению агента для программирования (Codex или
+Claude Code) без интерактивного интерфейса, предоставляя ему доступ к
+развёрнутым системам только для чтения и изолированное рабочее дерево
+для предлагаемого исправления</li>
+<li>Разрешать развёртывание только для изменений из разрешённого списка
+и после успешных тестов, а затем использовать Docker Compose; передавать
+проблему на следующий уровень, если эти проверки не пройдены</li>
+<li>Проводить регулярные проверки безопасности, сочетающие
+детерминированный сканер (Semgrep), проверку моделью и подтверждение
+человеком</li>
+<li>Рассматривать сам обработчик инцидентов как поверхность атаки:
+учитывать его возможности, учётные данные и происхождение компонентов
+(Snyk Agent Scan)</li>
+</ul>
+<p>Для домашнего задания используйте отдельный <a href="https://github.com/alexeygrigorev/order-tracker">стартовый проект
+Order Tracker</a>. Можно также выполнить упражнение на приложении,
+которое вы развернули в <a href="#page-07">модуле
+3</a>.</p>
+<p>Краткое содержание модуля: сопроводительная статья подготавливает
+развёрнутое приложение к промышленной эксплуатации: разделяет dev и
+prod, собирает логи, метрики и трассировки и настраивает оповещения о
+влиянии на пользователей. Затем она запускает небольшого
+экспериментального агента в роли дежурного по инцидентам: получив
+оповещение, он исследует первопричину, воспроизводит сбой и фиксирует
+исправление в коммите. В этом прототипе нет списков разрешённых
+действий, эскалации и проверки восстановления, необходимых для
+production. Уроки самого модуля добавляют эти защитные механизмы.</p>
+<p><a href="https://aishippingblog.com/p/devops-and-observability-for-an-ai">Читать
+статью: «DevOps и наблюдаемость приложения, созданного с помощью
+ИИ»</a></p>
+<p>Именно здесь начинается <a href="#page-10">модуль 5</a>. Каждая
+возможность, которую вы там добавляете агенту для программирования,
+должна быть отражена в такой же таблице возможностей, какую вы здесь
+составляете для обработчика инцидентов.</p>
+<p><a id="page-09--where-the-other-tools-fit"></a></p>
+<h2 id="page-09--место-остальных-инструментов">Место остальных инструментов</h2>
+<p>Когда проблемы определены, становится понятно, где использовать
+остальные инструменты:</p>
+<ul>
+<li><strong>HolmesGPT</strong> и <strong>K8sGPT</strong> собирают
+эксплуатационные данные, которые модель может объяснить. Это тот же
+подход, что и у нашего обработчика инцидентов, но для прохождения курса
+знание Kubernetes не требуется.</li>
+<li><strong>PR-Agent</strong> применяет проверку моделью на этапе pull
+request.</li>
+<li><strong>Semgrep MCP</strong> подключает детерминированное
+сканирование к агенту.</li>
+<li><strong>Snyk Agent Scan</strong> инвентаризирует цепочку поставок
+расширений агента.</li>
+<li><strong>LiteLLM</strong> добавляет шлюз для маршрутизации запросов к
+моделям, управления ключами, бюджетами и логами, когда нескольким
+приложениям или провайдерам нужна единая политика.</li>
+<li><strong>Ollama</strong> запускает модели локально, когда этого
+требуют ограничения на размещение данных.</li>
+<li><strong>garak</strong> тестирует сами LLM-приложения, к которым наше
+приложение не относится.</li>
+</ul>
+<p>Локальная модель не делает рабочий процесс автоматически
+конфиденциальным: по-прежнему важны хост, сеть, история промптов,
+локальные логи, аутентификация эндпоинтов и качество модели. Шлюз
+централизует политику доступа к моделям, но не превращает слабый процесс
+реагирования на инциденты в надёжный.</p>
+<p><a id="page-09--non-goals"></a></p>
+<h2 id="page-09--что-не-входит-в-модуль">Что не входит в модуль</h2>
+<p>В этом модуле намеренно не рассматриваются:</p>
+<pre class="text"><code>SLOs, error budgets, and burn-rate alerts
+synthetic monitoring, real-user monitoring, and profiling
+sampling, retention, and observability cost control
+canary and progressive delivery, feature flags, chaos testing
+on-call ownership, incident command, blameless postmortems
+SBOMs, build provenance, signing, penetration testing</code></pre>
+<p>Перевод списка:</p>
+<blockquote>
+<ul>
+<li>Целевые показатели уровня обслуживания (SLO), бюджеты ошибок и
+оповещения о скорости их расходования</li>
+<li>Синтетический мониторинг, мониторинг реальных пользователей и
+профилирование</li>
+<li>Выборочное сохранение телеметрии, сроки её хранения и контроль
+затрат на наблюдаемость</li>
+<li>Канареечные и постепенные релизы, флаги функциональности и
+хаос-тестирование</li>
+<li>Ответственность дежурных, координация реагирования на инциденты и
+разборы инцидентов без поиска виноватых</li>
+<li>Перечни компонентов ПО (SBOM), сведения о происхождении сборки,
+подписание и тестирование на проникновение</li>
+</ul>
+</blockquote>
+<p>Эти темы исключены не потому, что они неважны, а потому, что
+отвлекали бы от основного цикла. В заключительном разделе статьи
+предлагается порядок их добавления, начиная с SLI и SLO для наиболее
+важного пользовательского сценария.</p>
+<p><a id="page-09--module-deliverable-operations-and-security-report"></a></p>
+<h2 id="page-09--результат-работы-по-модулю-отчёт-об-эксплуатации-и-безопасности">Результат
+работы по модулю: отчёт об эксплуатации и безопасности</h2>
+<p>Примените материал модуля к Order Tracker или собственному
+приложению:</p>
+<pre class="text"><code>observability/
+  collector.yaml
+  compose.yaml
+  dashboard.json
+  alerts.yaml
+
+incident-response/
+  collect-evidence.sh
+  test-incident.sh
+  responder-task.md
+  response.schema.json
+  autonomy-policy.yaml
+  runbooks/verify-recovery.sh
+  incidents/
+
+security-audit/
+  audit-brief.md
+  findings.schema.json
+  capability-table.md
+  runs/
+
+docs/operations-and-security-report.md</code></pre>
+<p>По одному идентификатору инцидента читатель отчёта должен суметь
+восстановить:</p>
+<ul>
+<li>развёрнутую версию и влияние на пользователей</li>
+<li>оповещение и изученные диагностические данные</li>
+<li>использованные модель и конфигурацию, а также предложенное
+действие</li>
+<li>решение, принятое политикой разрешений, и фактически выполненную
+команду</li>
+<li>проверку восстановления либо пакет данных для эскалации</li>
+<li>связанные результаты проверки безопасности и решение человека по
+ним</li>
+</ul>
+<p>Основной принцип: модель может рассуждать; система должна наблюдать,
+разрешать действия, проверять результат и сохранять историю.</p>
+<p><a id="page-09--previous-cohort-materials"></a></p>
+<h2 id="page-09--материалы-предыдущего-потока">Материалы предыдущего потока</h2>
+<p>Материалы по теме из предыдущего потока:</p>
+<ul>
+<li><a href="https://github.com/Gordondalos/ai-dev-tools-zoomcamp/tree/b47dff65161c878d095e288e9f9e5b907f5aa3c6/cohorts/2025/05-cicd-devops">Модуль
+CI/CD и DevOps из архива потока 2025 года</a></li>
+</ul>
+<p><a id="page-09--community-notes"></a></p>
+<h2 id="page-09--конспекты-участников">Конспекты участников</h2>
+<p>Вели конспект? Вы можете поделиться им здесь.</p>
+<ul>
+<li>Добавьте ссылку на свой конспект выше этой строки</li>
+</ul>
+<a class="back" href="#top">↑ В начало и к оглавлению</a></section><section id="page-10" class="chapter"><div class="chapter-label">СТРАНИЦА 10 / 18 · <a href="05-agent-capabilities/README.md">Markdown</a></div><p><a id="page-10--module-5--coding-agent-capabilities-mcp-skills-plugins-and-custom-agents"></a></p>
+<h1 id="page-10--модуль-5-возможности-агентов-для-программирования-mcp-навыки-плагины-и-собственные-агенты">Модуль
+5 — Возможности агентов для программирования: MCP, навыки, плагины и
+собственные агенты</h1>
+<p><a href="https://github.com/Gordondalos/ai-dev-tools-zoomcamp/blob/b47dff65161c878d095e288e9f9e5b907f5aa3c6/05-agent-capabilities/README.md">Оригинал
+материала</a></p>
+<p><a id="page-10--overview"></a></p>
+<h2 id="page-10--обзор">Обзор</h2>
+<p>Этот модуль посвящён тому, как расширять, настраивать, ограничивать и
+проверять современных агентов для программирования, а также делиться их
+конфигурациями.</p>
+<p>Он не посвящён одному конкретному инструменту программирования. В
+примерах может использоваться определённая среда, но концепции должны
+быть переносимы между современными агентными системами разработки,
+такими как Claude Code, Codex, OpenCode, Cursor, GitHub Copilot, Aider,
+Windsurf, и будущими инструментами.</p>
+<p>Устойчивая концептуальная модель:</p>
+<pre class="text"><code>instructions
+context
+tools
+permissions
+reusable workflows
+specialized agents
+packaging and sharing
+custom agent loops
+audit trail</code></pre>
+<p>Перевод списка:</p>
+<blockquote>
+<ul>
+<li>Инструкции</li>
+<li>Контекст</li>
+<li>Инструменты</li>
+<li>Разрешения</li>
+<li>Повторно используемые рабочие процессы</li>
+<li>Специализированные агенты</li>
+<li>Упаковка и распространение</li>
+<li>Собственные циклы работы агентов</li>
+<li>Журнал действий для аудита</li>
+</ul>
+</blockquote>
+<p>В разных продуктах эти возможности называются по-разному. Например,
+один инструмент может называть повторно используемый рабочий процесс
+навыком, а другой — командой, промптом, правилом, рецептом или
+расширением. Курс должен сначала объяснять саму возможность, а уже затем
+— синтаксис конкретного продукта.</p>
+<p>Вы научитесь:</p>
+<ul>
+<li>Понимать цикл работы агента: сбор контекста, планирование, вызовы
+инструментов, правки, тесты и итерации до получения diff или PR. Для
+этого вы направите агента на приложение из модуля 2/3 и поручите ему
+спланировать и реализовать небольшую функцию</li>
+<li>Писать переносимые инструкции проекта (AGENTS.md, CLAUDE.md или
+аналог), описывающие архитектуру, команды, соглашения и границы
+безопасности, чтобы ими мог пользоваться любой агент</li>
+<li>С помощью MCP предоставлять агенту ограниченный набор инструментов,
+ресурсов и промптов вместо доступа ко всему сразу</li>
+<li>Превращать регулярно повторяемый чек-лист или процедуру в повторно
+используемый рабочий процесс: навык, slash-команду, правило или рецепт в
+зависимости от инструмента</li>
+<li>Добавлять хуки и защитные ограничения, чтобы форматирование, линтинг
+и проверки безопасности выполнялись автоматически, а не зависели от
+просьбы «пожалуйста, будь осторожен»</li>
+<li>Создавать специализированных субагентов с ограниченным контекстом и
+разрешениями для вспомогательных задач, таких как проверка API, отладка
+или тестирование</li>
+<li>Упаковывать общую конфигурацию в плагин или расширение, когда её
+нужно переносить между командами или проектами, а не просто хранить в
+одном репозитории</li>
+<li>Определять, когда для CI/CD, задач по расписанию или
+структурированных конвейеров стоит создать собственного агента вместо
+использования интерактивного агента для программирования</li>
+</ul>
+<p>Краткое содержание модуля: сопроводительная статья рассматривает два
+строительных блока для работы с агентами для программирования: повторно
+используемые навыки для регулярно выполняемых процедур и
+специализированные субагенты, работающие в собственном изолированном
+контексте, чтобы не засорять основной сеанс. В ней показано, как
+совместить оба подхода с git worktrees, чтобы несколько агентов
+параллельно выполняли отдельные задачи, а основной сеанс выступал
+оркестратором, следующим определённому процессу.</p>
+<p><a href="https://aishippingblog.com/p/coding-agent-building-blocks-reusable">Читать
+статью: «Строительные блоки агентов для программирования: повторно
+используемые навыки и специализированные субагенты»</a></p>
+<p><a id="page-10--module-deliverable-agent-extension-pack"></a></p>
+<h2 id="page-10--результат-работы-по-модулю-набор-расширений-агента">Результат
+работы по модулю: набор расширений агента</h2>
+<p>Студенты дополняют приложение из модулей 2 и 3 набором расширений
+агента.</p>
+<p>Минимальные требования:</p>
+<pre class="text"><code>1 project instructions file
+1 reusable workflow/skill/command
+1 specialized subagent
+1 MCP tool/server
+1 hook or guardrail
+1 small plugin/extension package OR custom agent
+1 permission/security note</code></pre>
+<p>Перевод списка:</p>
+<blockquote>
+<ul>
+<li>1 файл с инструкциями проекта</li>
+<li>1 повторно используемый рабочий процесс, навык или команда</li>
+<li>1 специализированный субагент</li>
+<li>1 инструмент или сервер MCP</li>
+<li>1 хук или защитное ограничение</li>
+<li>1 небольшой пакет плагина или расширения ЛИБО собственный агент</li>
+<li>1 заметка о разрешениях и безопасности</li>
+</ul>
+</blockquote>
+<p>Предлагаемая структура репозитория:</p>
+<pre class="text"><code>AGENTS.md
+CLAUDE.md or equivalent tool-specific instructions
+
+agent-capabilities/
+  review-api-change/
+  debug-ci-failure/
+  subagents/
+
+agent-hooks/
+
+mcp-server/
+  server.py
+  README.md
+
+plugins/
+  ai-devtools-agent-pack/
+
+custom-agent/
+  agent.py
+  README.md
+
+docs/
+  agent-extension-pack.md
+  permissions.md
+  demo.md</code></pre>
+<p>Примечание: <code>or equivalent tool-specific instructions</code>
+означает «или аналогичные инструкции для конкретного инструмента». Имена
+файлов и каталогов в примере сохранены без изменений.</p>
+<p>Сценарий демонстрации:</p>
+<ol type="1">
+<li>Агент читает инструкции проекта.</li>
+<li>Запускается повторно используемый рабочий процесс.</li>
+<li>Специализированный субагент проверяет изменение API.</li>
+<li>Агент вызывает инструмент MCP.</li>
+<li>Хук или защитное ограничение блокирует действие, выполняет
+форматирование, проверку или запись в журнал.</li>
+<li>Студент просматривает итоговый diff.</li>
+</ol>
+<p><a id="page-10--homework"></a></p>
+<h2 id="page-10--домашнее-задание">Домашнее задание</h2>
+<blockquote>
+<p>[!IMPORTANT] В модуле 5 нет оцениваемого домашнего задания. Вместо
+него подготовьте описанный выше <a href="#page-10--module-deliverable-agent-extension-pack">набор расширений
+агента</a> и включите его в свой <a href="#page-17">итоговый
+проект</a>.</p>
+</blockquote>
+<p><a id="page-10--previous-cohort-materials"></a></p>
+<h2 id="page-10--материалы-предыдущего-потока">Материалы предыдущего потока</h2>
+<p>Предыдущая версия этого модуля, посвящённая MCP, находится в
+архиве:</p>
+<ul>
+<li><a href="https://github.com/Gordondalos/ai-dev-tools-zoomcamp/tree/b47dff65161c878d095e288e9f9e5b907f5aa3c6/cohorts/2025/03-mcp">Модуль
+3 из архива потока 2025 года</a></li>
+<li><a href="#page-11">Заметки по настройке клиентов MCP</a></li>
+</ul>
+<a class="back" href="#top">↑ В начало и к оглавлению</a></section><section id="page-11" class="chapter"><div class="chapter-label">СТРАНИЦА 11 / 18 · <a href="05-agent-capabilities/clients.md">Markdown</a></div><p><a id="page-11--configuration"></a></p>
+<h1 id="page-11--настройка">Настройка</h1>
+<p><a href="https://github.com/Gordondalos/ai-dev-tools-zoomcamp/blob/b47dff65161c878d095e288e9f9e5b907f5aa3c6/05-agent-capabilities/clients.md">Оригинал
+материала</a></p>
+<p><a id="page-11--github-copilot"></a></p>
+<h2>GitHub Copilot</h2>
+<p>…</p>
+<p><a id="page-11--codex"></a></p>
+<h2>Codex</h2>
+<p><a id="page-11--codex--mcp-setup-vs-code--linux"></a></p>
+<h3 id="page-11--настройка-codex-mcp-vs-code-linux">Настройка CODEX + MCP (VS
+Code — Linux)</h3>
+<blockquote>
+<p>Эти шаги рассчитаны на среду <strong>Linux</strong>. В Windows или
+macOS пути и команды могут отличаться.</p>
+</blockquote>
+<p><a id="page-11--1-install-codex-extension-and-sign-in"></a></p>
+<h4 id="page-11--установите-расширение-codex-и-войдите-в-аккаунт">1. Установите
+расширение Codex и войдите в аккаунт</h4>
+<ul>
+<li>Установите <strong>OpenAI Codex</strong> из VS Code Marketplace</li>
+<li>Войдите в свой аккаунт OpenAI</li>
+</ul>
+<p><a id="page-11--2-install-the-codex-cli-required"></a></p>
+<h4 id="page-11--установите-codex-cli-обязательно">2. Установите Codex CLI
+(обязательно)</h4>
+<p>Выполните в терминале:</p>
+<div class="sourceCode" id="page-11--cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="page-11--cb1-1"><a href="#page-11--cb1-1" aria-hidden="true" tabindex="-1"></a>    <span class="ex">npm</span> install <span class="at">-g</span> @openai/codex</span>
+<span id="page-11--cb1-2"><a href="#page-11--cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="ex">codex</span> <span class="at">--version</span></span></code></pre></div>
+<p>Установка CLI инициализирует конфигурацию Codex и
+<code>config.toml</code>.</p>
+<p><a id="page-11--3-open-codex-mcp-settings"></a></p>
+<h4 id="page-11--откройте-настройки-mcp-в-codex">3. Откройте настройки MCP в
+Codex</h4>
+<ul>
+<li>Откройте вкладку <strong>Codex</strong> в VS Code</li>
+<li>Нажмите кнопку <strong>Settings (⚙️)</strong></li>
+<li>Откроется файл <code>config.toml</code>, используемый Codex</li>
+</ul>
+<p><a id="page-11--4-configure-the-mcp-server-linux"></a></p>
+<h4 id="page-11--настройте-mcp-сервер-linux">4. Настройте MCP-сервер (Linux)</h4>
+<p>Добавьте в <code>config.toml</code> следующее:</p>
+<div class="sourceCode" id="page-11--cb2"><pre class="sourceCode toml"><code class="sourceCode toml"><span id="page-11--cb2-1"><a href="#page-11--cb2-1" aria-hidden="true" tabindex="-1"></a>    <span class="kw">[codex.mcp_servers.hw3-mcp]</span></span>
+<span id="page-11--cb2-2"><a href="#page-11--cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">command</span> <span class="op">=</span> <span class="st">"uv"</span></span>
+<span id="page-11--cb2-3"><a href="#page-11--cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">args</span> <span class="op">=</span> <span class="op">[</span></span>
+<span id="page-11--cb2-4"><a href="#page-11--cb2-4" aria-hidden="true" tabindex="-1"></a>      <span class="st">"--directory"</span><span class="op">,</span></span>
+<span id="page-11--cb2-5"><a href="#page-11--cb2-5" aria-hidden="true" tabindex="-1"></a>      <span class="st">"/path/to/ai-dev-tools-zoomcamp/05-agent-capabilities"</span><span class="op">,</span></span>
+<span id="page-11--cb2-6"><a href="#page-11--cb2-6" aria-hidden="true" tabindex="-1"></a>      <span class="st">"run"</span><span class="op">,</span></span>
+<span id="page-11--cb2-7"><a href="#page-11--cb2-7" aria-hidden="true" tabindex="-1"></a>      <span class="st">"python"</span><span class="op">,</span></span>
+<span id="page-11--cb2-8"><a href="#page-11--cb2-8" aria-hidden="true" tabindex="-1"></a>      <span class="st">"main.py"</span></span>
+<span id="page-11--cb2-9"><a href="#page-11--cb2-9" aria-hidden="true" tabindex="-1"></a>    <span class="op">]</span></span>
+<span id="page-11--cb2-10"><a href="#page-11--cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="dt">startup_timeout_sec</span> <span class="op">=</span> <span class="dv">10</span></span>
+<span id="page-11--cb2-11"><a href="#page-11--cb2-11" aria-hidden="true" tabindex="-1"></a>    <span class="dt">tool_timeout_sec</span> <span class="op">=</span> <span class="dv">60</span></span>
+<span id="page-11--cb2-12"><a href="#page-11--cb2-12" aria-hidden="true" tabindex="-1"></a>    <span class="dt">enabled</span> <span class="op">=</span> <span class="cn">true</span></span></code></pre></div>
+<p><strong>Примечание об имени сервера</strong> <code>hw3-mcp</code> —
+это просто метка в конфигурации. Её можно заменить любым понятным именем
+(например, <code>local-mcp</code> или <code>mcp-tools</code>). Имя
+должно быть уникальным, но не обязано совпадать с именем папки проекта
+или каким-либо обозначением в коде.</p>
+<p><a id="page-11--5-trust-the-project"></a></p>
+<h3 id="page-11--добавьте-проект-в-доверенные">5. Добавьте проект в
+доверенные</h3>
+<p>Также добавьте:</p>
+<div class="sourceCode" id="page-11--cb3"><pre class="sourceCode toml"><code class="sourceCode toml"><span id="page-11--cb3-1"><a href="#page-11--cb3-1" aria-hidden="true" tabindex="-1"></a>    <span class="kw">[projects."</span><span class="dt">/path/to/ai-dev-tools-zoomcamp"</span><span class="kw">]</span></span>
+<span id="page-11--cb3-2"><a href="#page-11--cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">trust_level</span> <span class="op">=</span> <span class="st">"trusted"</span></span></code></pre></div>
+<p><a id="page-11--6-expected-behavior"></a></p>
+<h3 id="page-11--ожидаемое-поведение">6. Ожидаемое поведение</h3>
+<ul>
+<li><strong>Инструменты</strong> MCP доступны в Codex</li>
+<li>Если сервер предоставляет только инструменты, Codex сообщит, что
+<strong>ресурсов MCP нет</strong> (это ожидаемое поведение)</li>
+</ul>
+<p><a id="page-11--cursor"></a></p>
+<h2>Cursor</h2>
+<p>…</p>
+<p><a id="page-11--antigravity"></a></p>
+<h2>Antigravity</h2>
+<p><a id="page-11--prerequisites"></a></p>
+<h3 id="page-11--необходимые-условия">Необходимые условия</h3>
+<ul>
+<li>ИИ-помощник Antigravity (Google Deepmind)</li>
+<li>Установленные Node.js и npm (для большинства MCP-серверов)</li>
+<li>API-ключи для сторонних MCP-серверов (если требуются)</li>
+</ul>
+<p><a id="page-11--configuration-file-location"></a></p>
+<h3 id="page-11--расположение-файла-конфигурации">Расположение файла
+конфигурации</h3>
+<p>Antigravity читает конфигурации MCP-серверов из JSON-файла. Файл
+конфигурации должен называться <code>mcp.json</code> и находиться в
+каталоге вашего проекта.</p>
+<p><a id="page-11--basic-configuration-format"></a></p>
+<h3 id="page-11--базовый-формат-конфигурации">Базовый формат конфигурации</h3>
+<p>Создайте файл <code>mcp.json</code> со следующей структурой:</p>
+<div class="sourceCode" id="page-11--cb4"><pre class="sourceCode json"><code class="sourceCode json"><span id="page-11--cb4-1"><a href="#page-11--cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span></span>
+<span id="page-11--cb4-2"><a href="#page-11--cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"mcpServers"</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="page-11--cb4-3"><a href="#page-11--cb4-3" aria-hidden="true" tabindex="-1"></a>        <span class="dt">"server-name"</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="page-11--cb4-4"><a href="#page-11--cb4-4" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"command"</span><span class="fu">:</span> <span class="st">"command-to-run"</span><span class="fu">,</span></span>
+<span id="page-11--cb4-5"><a href="#page-11--cb4-5" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"args"</span><span class="fu">:</span> <span class="ot">[</span></span>
+<span id="page-11--cb4-6"><a href="#page-11--cb4-6" aria-hidden="true" tabindex="-1"></a>                <span class="st">"argument1"</span><span class="ot">,</span></span>
+<span id="page-11--cb4-7"><a href="#page-11--cb4-7" aria-hidden="true" tabindex="-1"></a>                <span class="st">"argument2"</span></span>
+<span id="page-11--cb4-8"><a href="#page-11--cb4-8" aria-hidden="true" tabindex="-1"></a>            <span class="ot">]</span></span>
+<span id="page-11--cb4-9"><a href="#page-11--cb4-9" aria-hidden="true" tabindex="-1"></a>        <span class="fu">}</span></span>
+<span id="page-11--cb4-10"><a href="#page-11--cb4-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">}</span></span>
+<span id="page-11--cb4-11"><a href="#page-11--cb4-11" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code></pre></div>
+<p><a id="page-11--example-adding-context7-mcp-server"></a></p>
+<h3 id="page-11--пример-добавление-mcp-сервера-context7">Пример: добавление
+MCP-сервера Context7</h3>
+<p>Context7 предоставляет доступ к документации библиотек и возможности
+поиска по коду.</p>
+<p><a id="page-11--step-1-create-mcpjson"></a></p>
+<h4 id="page-11--шаг-1.-создайте-mcp.json">Шаг 1. Создайте mcp.json</h4>
+<div class="sourceCode" id="page-11--cb5"><pre class="sourceCode json"><code class="sourceCode json"><span id="page-11--cb5-1"><a href="#page-11--cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span></span>
+<span id="page-11--cb5-2"><a href="#page-11--cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"mcpServers"</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="page-11--cb5-3"><a href="#page-11--cb5-3" aria-hidden="true" tabindex="-1"></a>        <span class="dt">"context7"</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="page-11--cb5-4"><a href="#page-11--cb5-4" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"command"</span><span class="fu">:</span> <span class="st">"npx"</span><span class="fu">,</span></span>
+<span id="page-11--cb5-5"><a href="#page-11--cb5-5" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"args"</span><span class="fu">:</span> <span class="ot">[</span></span>
+<span id="page-11--cb5-6"><a href="#page-11--cb5-6" aria-hidden="true" tabindex="-1"></a>                <span class="st">"-y"</span><span class="ot">,</span></span>
+<span id="page-11--cb5-7"><a href="#page-11--cb5-7" aria-hidden="true" tabindex="-1"></a>                <span class="st">"@upstash/context7-mcp@latest"</span></span>
+<span id="page-11--cb5-8"><a href="#page-11--cb5-8" aria-hidden="true" tabindex="-1"></a>            <span class="ot">]</span></span>
+<span id="page-11--cb5-9"><a href="#page-11--cb5-9" aria-hidden="true" tabindex="-1"></a>        <span class="fu">}</span></span>
+<span id="page-11--cb5-10"><a href="#page-11--cb5-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">}</span></span>
+<span id="page-11--cb5-11"><a href="#page-11--cb5-11" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code></pre></div>
+<p><a id="page-11--step-2-set-up-api-key-if-required"></a></p>
+<h4 id="page-11--шаг-2.-настройте-api-ключ-если-требуется">Шаг 2. Настройте
+API-ключ (если требуется)</h4>
+<p>Некоторые MCP-серверы, например Context7, требуют аутентификации:</p>
+<p><strong>В Windows (PowerShell):</strong></p>
+<div class="sourceCode" id="page-11--cb6"><pre class="sourceCode powershell"><code class="sourceCode powershell"><span id="page-11--cb6-1"><a href="#page-11--cb6-1" aria-hidden="true" tabindex="-1"></a><span class="va">$env</span><span class="op">:</span><span class="va">CONTEXT7_API_KEY</span><span class="op">=</span><span class="st">"your-api-key-here"</span></span></code></pre></div>
+<p><strong>В Linux/Mac:</strong></p>
+<div class="sourceCode" id="page-11--cb7"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="page-11--cb7-1"><a href="#page-11--cb7-1" aria-hidden="true" tabindex="-1"></a><span class="bu">export</span> <span class="va">CONTEXT7_API_KEY</span><span class="op">=</span><span class="st">"your-api-key-here"</span></span></code></pre></div>
+<p><strong>Постоянная настройка (Windows):</strong> Добавьте настройку в
+свой профиль PowerShell или задайте системную переменную окружения.</p>
+<p><a id="page-11--step-3-restart-antigravity"></a></p>
+<h4 id="page-11--шаг-3.-перезапустите-antigravity">Шаг 3. Перезапустите
+Antigravity</h4>
+<p>После добавления конфигурации MCP перезапустите Antigravity, чтобы
+загрузить новый MCP-сервер.</p>
+<p><a id="page-11--step-4-verify-mcp-server-connection"></a></p>
+<h4 id="page-11--шаг-4.-проверьте-подключение-к-mcp-серверу">Шаг 4. Проверьте
+подключение к MCP-серверу</h4>
+<p>После перезапуска Antigravity проверьте, подключён ли MCP-сервер:</p>
+<ol type="1">
+<li><strong>В интерфейсе Antigravity:</strong> нажмите меню с
+<strong>тремя точками (⋮)</strong></li>
+<li><strong>Найдите «MCP Servers»</strong> или аналогичный пункт,
+показывающий подключённые серверы</li>
+<li>В списке должны появиться настроенные вами серверы (например,
+«context7»)</li>
+</ol>
+<blockquote>
+<p>[!IMPORTANT] <strong>Если ваш MCP-сервер не появился:</strong> -
+Убедитесь, что файл <code>mcp.json</code> находится в правильном месте -
+Проверьте синтаксис JSON (используйте валидатор JSON) - Убедитесь, что
+Node.js и npm установлены и доступны из командной строки - Проверьте
+правильность имени пакета сервера (например,
+<code>@upstash/context7-mcp@latest</code>) - Просмотрите логи
+Antigravity на наличие сообщений об ошибках - Попробуйте вручную
+выполнить команду MCP в терминале, чтобы проверить её работу:
+<code>powershell   npx -y @upstash/context7-mcp@latest</code></p>
+</blockquote>
+<blockquote>
+<p>[!TIP] Если после выполнения всех шагов Context7 или другой сервер не
+появился в списке MCP-серверов: 1. Ещё раз убедитесь, что синтаксис
+вашего <code>mcp.json</code> точно соответствует примерам 2. Проверьте,
+что у вас есть активное интернет-соединение (оно нужно <code>npx</code>
+для загрузки пакетов) 3. Полностью перезапустите Antigravity (закройте и
+снова откройте приложение) 4. Проверьте, нужно ли задать обязательные
+переменные окружения (например, <code>CONTEXT7_API_KEY</code>)</p>
+</blockquote>
+<p>…</p>
+<a class="back" href="#top">↑ В начало и к оглавлению</a></section><section id="page-12" class="chapter"><div class="chapter-label">СТРАНИЦА 12 / 18 · <a href="cohorts/2026/README.md">Markdown</a></div><p><a id="page-12--ai-dev-tools-zoomcamp-2026"></a></p>
+<h1>AI Dev Tools Zoomcamp 2026</h1>
+<p><a href="https://github.com/Gordondalos/ai-dev-tools-zoomcamp/blob/b47dff65161c878d095e288e9f9e5b907f5aa3c6/cohorts/2026/README.md">Оригинал
+этой страницы</a>.</p>
+<ul>
+<li><a href="https://courses.datatalks.club/ai-dev-tools-2026/">Платформа
+управления курсом</a></li>
+<li><a href="https://datatalks.club/faq/ai-dev-tools-zoomcamp.html">Частые
+вопросы</a></li>
+</ul>
+<p>Домашние задания:</p>
+<ul>
+<li><a href="#page-13">Модуль 1.
+Рабочий процесс разработчика с ИИ в основе</a> — срок сдачи:
+2026-09-07</li>
+<li><a href="#page-14">Модуль 2. Создание и
+выпуск full-stack-приложения с помощью ИИ</a> — срок сдачи:
+2026-09-14</li>
+<li><a href="#page-15">Модуль 3. Тестирование,
+контейнеризация и развёртывание приложения, созданного с ИИ
+[ЧЕРНОВИК]</a> — срок сдачи: 2026-09-21</li>
+<li><a href="#page-16">Модуль 4. DevOps и
+наблюдаемость приложений, созданных с ИИ</a> — срок сдачи:
+2026-09-28</li>
+</ul>
+<p>Проект:</p>
+<ul>
+<li><a href="#page-17">Итоговый проект: одно приложение,
+от спецификации до эксплуатации</a> — второй месяц, две попытки</li>
+</ul>
+<p><em>Примечание к переводу: даты и пометка «ЧЕРНОВИК» сохранены из
+исходного файла. На 6 ноября 2026 года все перечисленные даты сдачи уже
+прошли; действующее расписание и возможность сдачи нужно проверять на
+платформе курса.</em></p>
+<a class="back" href="#top">↑ В начало и к оглавлению</a></section><section id="page-13" class="chapter"><div class="chapter-label">СТРАНИЦА 13 / 18 · <a href="cohorts/2026/homework/01-ai-native-workflow/homework.md">Markdown</a></div><p><a id="page-13--homework-1-ai-native-developer-workflow"></a></p>
+<h1 id="page-13--домашнее-задание-1-рабочий-процесс-разработчика-с-ии">Домашнее
+задание 1: Рабочий процесс разработчика с ИИ</h1>
+<p><a href="https://github.com/Gordondalos/ai-dev-tools-zoomcamp/blob/b47dff65161c878d095e288e9f9e5b907f5aa3c6/cohorts/2026/homework/01-ai-native-workflow/homework.md">Оригинал</a></p>
+<p>В этом домашнем задании мы создадим приложение с помощью ИИ. Но
+вместо готовой спецификации вы получите расплывчатую идею,
+самостоятельно превратите её в спецификацию, а затем реализуете
+приложение на Django.</p>
+<p>Можно использовать любого агента для программирования: Claude Code,
+Codex CLI, Gemini CLI, Cursor, Aider, GitHub Copilot и других. Выберите
+одного и работайте с ним на протяжении всего задания. С
+чат-инструментами пришлось бы постоянно копировать код туда и обратно,
+поэтому рекомендуем агента, который умеет редактировать файлы и
+запускать команды прямо в репозитории с домашним заданием.</p>
+<p>Для начала понадобится только Python (также рекомендуем использовать
+<code>uv</code>). Знать Python или Django для выполнения этого задания
+не обязательно.</p>
+<p><a id="page-13--homework-idea"></a></p>
+<h2 id="page-13--идея-домашнего-задания">Идея домашнего задания</h2>
+<p>Начнём с очень расплывчатой идеи:</p>
+<blockquote>
+<p>Инструмент для распределения совместных домашних обязанностей</p>
+</blockquote>
+<p>Других требований мы не задаём, поэтому у большинства из вас
+получатся разные решения.</p>
+<p>В этом задании мы хотим превратить это расплывчатое описание в чёткую
+спецификацию.</p>
+<p><a id="page-13--question-1-select-your-coding-agent"></a></p>
+<h2 id="page-13--вопрос-1-выберите-агента-для-программирования">Вопрос 1:
+Выберите агента для программирования</h2>
+<p>Можно использовать любого агента для программирования. Какого вы
+выбрали?</p>
+<p><a id="page-13--question-2-turn-the-idea-into-a-spec"></a></p>
+<h2 id="page-13--вопрос-2-превратите-идею-в-спецификацию">Вопрос 2: Превратите
+идею в спецификацию</h2>
+<p>Откройте чат с ассистентом и обсудите идею, используя примерно такой
+запрос:</p>
+<pre class="text"><code>I want to build a tool for managing shared household chores.
+
+Help me set the scope for this homework precisely. I want to brainstorm with you
+and understand how the tool should work. Give me options.
+
+Ask me one question at a time and keep your output short.</code></pre>
+<p>Перевод примера:</p>
+<blockquote>
+<p>Я хочу создать инструмент для распределения совместных домашних
+обязанностей.</p>
+<p>Помоги мне точно определить объём работы для этого домашнего задания.
+Я хочу обсудить с тобой идеи и понять, как должен работать инструмент.
+Предложи варианты.</p>
+<p>Задавай по одному вопросу за раз и отвечай кратко.</p>
+</blockquote>
+<p>Ответьте на его вопросы, а затем попросите сохранить всё в файл
+Markdown.</p>
+<p>Какие 2–4 функции вошли в итоговую спецификацию?</p>
+<p><a id="page-13--github-repository"></a></p>
+<h2 id="page-13--репозиторий-github">Репозиторий GitHub</h2>
+<p>Создайте пустой репозиторий GitHub и клонируйте его локально.
+Создайте в нём два файла:</p>
+<ul>
+<li><code>.gitignore</code></li>
+<li><code>README.md</code></li>
+<li><code>_docs/plan.md</code> с планом</li>
+</ul>
+<p><em>Примечание переводчика: в оригинале сказано «два файла», но в
+списке приведены три.</em></p>
+<p>Создайте коммит и отправьте его в удалённый репозиторий.</p>
+<p><a id="page-13--question-3-django-project"></a></p>
+<h2 id="page-13--вопрос-3-проект-django">Вопрос 3: Проект Django</h2>
+<p>Для этого задания мы будем использовать Django.</p>
+<p>Попросите агента установить Django, создать проект и приложение для
+него. На определённом этапе вам понадобится включить созданное
+приложение в проект.</p>
+<p>Какой файл нужно для этого отредактировать?</p>
+<ul>
+<li><code>settings.py</code></li>
+<li><code>manage.py</code></li>
+<li><code>urls.py</code></li>
+<li><code>wsgi.py</code></li>
+</ul>
+<p>В этом и следующих вопросах можно попросить ассистента для
+программирования выбрать правильный вариант.</p>
+<p><a id="page-13--question-4-backlog"></a></p>
+<h2 id="page-13--вопрос-4-бэклог">Вопрос 4: Бэклог</h2>
+<p>Затем передайте агенту <code>plan.md</code> и попросите предложить
+небольшой бэклог задач для реализации приложения на Django. Сохраните
+результат в <code>backlog.md</code>.</p>
+<p>Какую задачу агент поставил первой в бэклоге?</p>
+<p><a id="page-13--question-5-first-version"></a></p>
+<h2 id="page-13--вопрос-5-первая-версия">Вопрос 5: Первая версия</h2>
+<p>Реализуйте первые несколько задач. Просто откройте агента и
+напишите:</p>
+<pre><code>Implement task #1 from backlog.md</code></pre>
+<p>Перевод примера:</p>
+<blockquote>
+<p>Реализуй задачу № 1 из <code>backlog.md</code>.</p>
+</blockquote>
+<p>Запустите сервер. Какую команду вы используете для запуска сервера
+разработки Django?</p>
+<ul>
+<li><code>uv run python manage.py runserver</code></li>
+<li><code>uv run django-admin startserver</code></li>
+<li><code>python manage.py start</code></li>
+<li><code>uv run python app.py runserver</code></li>
+</ul>
+<p><a id="page-13--question-6-tests"></a></p>
+<h2 id="page-13--вопрос-6-тесты">Вопрос 6: Тесты</h2>
+<p>После реализации нескольких задач из бэклога убедимся, что код покрыт
+тестами.</p>
+<ul>
+<li>Скажите агенту, что мы хотим покрыть код тестами</li>
+<li>Спросите, какие сценарии стоит проверить</li>
+<li>Убедитесь, что предложенные сценарии имеют смысл</li>
+<li>Поручите агенту реализовать и запустить тесты</li>
+</ul>
+<p>Какую команду вы используете для запуска тестов в терминале?</p>
+<ul>
+<li><code>pytest</code></li>
+<li><code>uv run python manage.py test</code></li>
+<li><code>python -m django run_tests</code></li>
+<li><code>django-admin test</code></li>
+</ul>
+<p><a id="page-13--submission"></a></p>
+<h2 id="page-13--сдача-задания">Сдача задания</h2>
+<p>Отправьте домашнее задание здесь: <a href="https://courses.datatalks.club/ai-dev-tools-2026/homework/hw1" class="uri">https://courses.datatalks.club/ai-dev-tools-2026/homework/hw1</a></p>
+<p>В форме сдачи задания укажите ссылку на созданный вами
+репозиторий.</p>
+<p><a id="page-13--learning-in-public"></a></p>
+<h2 id="page-13--учимся-публично">Учимся публично</h2>
+<p>Мы призываем всех делиться тем, чему они научились. Это называется
+«обучение на публике» (learning in public). Подробнее о том, почему это
+важно: <a href="https://datatalks.club/blog/benefits-of-learning-in-public.html" class="uri">https://datatalks.club/blog/benefits-of-learning-in-public.html</a></p>
+<p>Обучение на публике — один из самых эффективных способов ускорить
+свой рост. Вот почему:</p>
+<ol type="1">
+<li>Ответственность: рассказывая о своём прогрессе, вы укрепляете
+намерение продолжать и поддерживаете мотивацию</li>
+<li>Обратная связь: сообщество может дать ценные советы и указать на
+ошибки</li>
+<li>Знакомства: вы находите единомышленников и потенциальных партнёров
+для совместной работы</li>
+<li>Документирование: ваши публикации становятся учебным дневником, к
+которому можно вернуться</li>
+<li>Возможности: работодатели и клиенты нередко находят талантливых
+специалистов благодаря их публичному обучению</li>
+</ol>
+<p>Не стремитесь к совершенству. Все с чего-то начинают, а людям
+нравится следить за настоящим процессом обучения!</p>
+<p><a id="page-13--example-post-for-linkedin"></a></p>
+<h3 id="page-13--пример-публикации-для-linkedin">Пример публикации для
+LinkedIn:</h3>
+<pre><code>🚀 Week 1 of AI Dev Tools Zoomcamp by @DataTalksClub complete!
+
+Turned a vague one-line idea into a spec, broke it into a backlog, and let an AI coding agent build a Django app for managing shared household chores!
+
+Today I learned how to:
+
+✅ Turn a vague idea into a written spec
+✅ Break a spec into a backlog of tasks
+✅ Set up a Django project and app with AI
+✅ Implement backlog tasks one at a time with a coding agent
+✅ Cover the app with tests
+
+Here's my repo: &lt;LINK&gt;
+
+Following along with this amazing course - who else is exploring AI development tools?
+
+You can sign up here: https://github.com/DataTalksClub/ai-dev-tools-zoomcamp/</code></pre>
+<p>Перевод примера:</p>
+<blockquote>
+<p>🚀 Первая неделя AI Dev Tools Zoomcamp от <span class="citation" data-cites="DataTalksClub">@DataTalksClub</span> завершена!</p>
+<p>Превратил расплывчатую идею из одной строки в спецификацию, разбил её
+на бэклог задач и поручил ИИ-агенту для программирования создать на
+Django приложение для распределения совместных домашних
+обязанностей!</p>
+<p>Сегодня я научился:</p>
+<p>✅ Превращать расплывчатую идею в письменную спецификацию ✅
+Разбивать спецификацию на бэклог задач ✅ Создавать проект и приложение
+Django с помощью ИИ ✅ Последовательно реализовывать задачи из бэклога с
+агентом для программирования ✅ Покрывать приложение тестами</p>
+<p>Мой репозиторий: <code>&lt;LINK&gt;</code></p>
+<p>Прохожу этот замечательный курс. Кто ещё изучает ИИ-инструменты для
+разработки?</p>
+<p>Присоединиться можно здесь: <a href="https://github.com/DataTalksClub/ai-dev-tools-zoomcamp/" class="uri">https://github.com/DataTalksClub/ai-dev-tools-zoomcamp/</a></p>
+</blockquote>
+<p><a id="page-13--example-post-for-twitterx"></a></p>
+<h3 id="page-13--пример-публикации-для-twitterx">Пример публикации для
+Twitter/X:</h3>
+<pre><code>🤖 Built a Django app with AI in @Al_Grigor's AI Dev Tools Zoomcamp!
+
+📝 Spec first, code second
+🗂️ Backlog-driven implementation
+✨ Household chores app from scratch
+✅ Tests
+
+My repo: &lt;LINK&gt;
+
+Zero Django knowledge → working app in one session!
+
+Join me: https://github.com/DataTalksClub/ai-dev-tools-zoomcamp/</code></pre>
+<p>Перевод примера:</p>
+<blockquote>
+<p>🤖 Создал приложение Django с помощью ИИ на AI Dev Tools Zoomcamp от
+<span class="citation" data-cites="Al_Grigor">@Al_Grigor</span>!</p>
+<p>📝 Сначала спецификация, потом код 🗂️ Реализация по задачам из
+бэклога ✨ Приложение для домашних обязанностей с нуля ✅ Тесты</p>
+<p>Мой репозиторий: <code>&lt;LINK&gt;</code></p>
+<p>Нулевые знания Django → работающее приложение за одну сессию!</p>
+<p>Присоединяйтесь: <a href="https://github.com/DataTalksClub/ai-dev-tools-zoomcamp/" class="uri">https://github.com/DataTalksClub/ai-dev-tools-zoomcamp/</a></p>
+</blockquote>
+<a class="back" href="#top">↑ В начало и к оглавлению</a></section><section id="page-14" class="chapter"><div class="chapter-label">СТРАНИЦА 14 / 18 · <a href="cohorts/2026/homework/02-development/homework.md">Markdown</a></div><p><a id="page-14--homework-2-build-and-ship-an-ai-assisted-full-stack-app"></a></p>
+<h1 id="page-14--домашнее-задание-2-создайте-и-выпустите-full-stack-приложение-с-помощью-ии">Домашнее
+задание 2: Создайте и выпустите full-stack-приложение с помощью ИИ</h1>
+<p><a href="https://github.com/Gordondalos/ai-dev-tools-zoomcamp/blob/b47dff65161c878d095e288e9f9e5b907f5aa3c6/cohorts/2026/homework/02-development/homework.md">Оригинал</a></p>
+<p>В этом домашнем задании мы создадим с помощью ИИ полноценное
+приложение: фронтенд, бэкенд и базу данных.</p>
+<p>Для бэкенда понадобятся Python и <code>uv</code>, а для фронтенда —
+Node.js. Знать эти технологии для выполнения задания не обязательно.</p>
+<p>Если какие-то вопросы непонятны или вы не уверены, какой ответ
+выбрать, попросите помощи у своего ИИ-ассистента.</p>
+<p><a id="page-14--question-1-pick-your-project"></a></p>
+<h2 id="page-14--вопрос-1-выберите-проект">Вопрос 1: Выберите проект</h2>
+<p>Можно выбрать одну из четырёх идей проекта:</p>
+<ul>
+<li>Приложение для разделения общих расходов</li>
+<li>Менеджер списка ожидания в ресторане</li>
+<li>Небольшая канбан-доска</li>
+<li>Табло результатов спортивной лиги</li>
+</ul>
+<p>Выберите то, что вам больше нравится. Рабочий процесс одинаков для
+всех вариантов.</p>
+<p>Какой проект вы выбрали для этого домашнего задания?</p>
+<p><a id="page-14--question-2-spec-first"></a></p>
+<h2 id="page-14--вопрос-2-сначала-спецификация">Вопрос 2: Сначала
+спецификация</h2>
+<p>Как и в первом домашнем задании, начнём со спецификации.</p>
+<p>Откройте чат с ассистентом и попросите помочь составить
+спецификацию.</p>
+<p>Ответьте на его вопросы, а затем попросите сохранить всё в файл
+Markdown.</p>
+<p>Также попросите помочь придумать название приложения. Какое название
+вы выбрали?</p>
+<p><a id="page-14--question-3-github-repository"></a></p>
+<h2 id="page-14--вопрос-3-репозиторий-github">Вопрос 3: Репозиторий GitHub</h2>
+<p>Создайте новый репозиторий GitHub (или папку в репозитории из
+домашнего задания 1) и клонируйте его локально. Добавьте туда
+спецификацию:</p>
+<ul>
+<li><code>_docs/specs.md</code> со спецификацией</li>
+<li><code>.gitignore</code></li>
+<li><code>README.md</code></li>
+<li><code>AGENTS.md</code></li>
+</ul>
+<p>Создайте коммит и отправьте его в удалённый репозиторий. Каков хеш
+SHA-1 этого коммита?</p>
+<p><a id="page-14--question-4-frontend-prototype"></a></p>
+<h2 id="page-14--вопрос-4-прототип-фронтенда">Вопрос 4: Прототип фронтенда</h2>
+<p>Создайте прототип фронтенда с имитацией бэкенда. Для простоты
+используйте своего агента для программирования напрямую, а не Lovable
+(хотя с ним тоже можно поэкспериментировать).</p>
+<pre class="text"><code>Implement the frontend for the app described in _docs/specs.md. Put it in frontent/.
+
+Don't implement the backend yet. Centralize all the backend calls
+in one place and mock them for now.
+
+Make the UI interactive so I can use the main features from the spec.</code></pre>
+<p>Перевод примера:</p>
+<blockquote>
+<p>Реализуй фронтенд приложения, описанного в
+<code>_docs/specs.md</code>. Помести его в <code>frontent/</code>.</p>
+<p>Пока не реализуй бэкенд. Собери все обращения к бэкенду в одном месте
+и пока замени их имитациями.</p>
+<p>Сделай интерфейс интерактивным, чтобы я мог пользоваться основными
+функциями из спецификации.</p>
+</blockquote>
+<p><em>Примечание к переводу: написание каталога <code>frontent/</code>
+сохранено из примера в оригинале; вероятно, это опечатка в слове
+<code>frontend/</code>. Выберите единое имя каталога для своего
+проекта.</em></p>
+<p>Дорабатывайте решение, пока результат вас не устроит.</p>
+<p>Какую команду вы используете для запуска фронтенда?</p>
+<p><a id="page-14--question-5-backend"></a></p>
+<h2 id="page-14--вопрос-5-бэкенд">Вопрос 5: Бэкенд</h2>
+<p>Теперь создадим бэкенд. Можно сначала попросить ассистента для
+программирования проанализировать код фронтенда и составить
+спецификации, а затем на их основе создать бэкенд. Или можно сразу
+перейти к его созданию.</p>
+<p>Как и на занятиях, сначала создадим бэкенд с имитацией базы данных,
+убедимся, что он хорошо взаимодействует с фронтендом, а затем заменим
+имитацию настоящей базой данных.</p>
+<p>Запрос может выглядеть так:</p>
+<pre class="text"><code>Based on openapi.yaml, create a FastAPI backend. Use uv for package management.
+Use a mock database, we will replace it with a real one later.
+Write tests for the endpoints first, then implement them.</code></pre>
+<p>Перевод примера:</p>
+<blockquote>
+<p>На основе <code>openapi.yaml</code> создай бэкенд на FastAPI.
+Используй <code>uv</code> для управления пакетами. Используй имитацию
+базы данных: позже мы заменим её настоящей. Сначала напиши тесты для
+эндпоинтов, затем реализуй их.</p>
+</blockquote>
+<p>Какую команду вы используете для запуска бэкенда?</p>
+<p><a id="page-14--question-6-connect-frontend-and-backend"></a></p>
+<h2 id="page-14--вопрос-6-соедините-фронтенд-и-бэкенд">Вопрос 6: Соедините
+фронтенд и бэкенд</h2>
+<p>Теперь бэкенд, предположительно, работает, так что подключим к нему
+фронтенд. Попросите ассистента для программирования сделать это.</p>
+<p>Можно проверить соединение вручную, а можно попросить агента
+проверить его через браузер.</p>
+<p>Какой URL использует фронтенд для обращения к бэкенду?</p>
+<p><a id="page-14--question-7-database"></a></p>
+<h2 id="page-14--вопрос-7-база-данных">Вопрос 7: База данных</h2>
+<p>Теперь, когда бэкенд и фронтенд работают правильно, можно заменить
+имитацию хранилища настоящей базой данных.</p>
+<p>Сохраните независимость приложения от конкретной базы данных,
+используя SQLAlchemy.</p>
+<p>Убедитесь, что тесты по-прежнему проходят, и при необходимости
+добавьте новые. Попросите агента дать рекомендации.</p>
+<p>Какую команду вы используете для запуска тестов?</p>
+<p><a id="page-14--submission"></a></p>
+<h2 id="page-14--сдача-задания">Сдача задания</h2>
+<p>Отправьте домашнее задание здесь: <a href="https://courses.datatalks.club/ai-dev-tools-2026/homework/hw2" class="uri">https://courses.datatalks.club/ai-dev-tools-2026/homework/hw2</a></p>
+<p><a id="page-14--learning-in-public"></a></p>
+<h2 id="page-14--учимся-публично">Учимся публично</h2>
+<p>Мы призываем всех делиться тем, чему они научились. Это называется
+«обучение на публике» (learning in public). Подробнее о том, почему это
+важно, читайте <a href="https://datatalks.club/blog/benefits-of-learning-in-public.html">здесь</a>.</p>
+<p>Не стремитесь к совершенству. Все с чего-то начинают, а людям
+нравится следить за настоящим процессом обучения!</p>
+<p><a id="page-14--recording-a-demo-video"></a></p>
+<h3 id="page-14--запись-демонстрационного-видео">Запись демонстрационного
+видео</h3>
+<p>Попробуйте записать короткое видео, показывающее ваше приложение в
+работе! Это сделает публикацию гораздо интереснее и поможет другим
+увидеть, что вы создали.</p>
+<p>Можно использовать:</p>
+<ul>
+<li>Программы для записи экрана, например OBS Studio, QuickTime или
+Windows Game Bar</li>
+<li>Loom для быстрой записи, которой удобно поделиться</li>
+<li>«Ножницы» в Windows</li>
+</ul>
+<p>Сделайте видео коротким (30–90 секунд) и покажите:</p>
+<ul>
+<li>Основной пользовательский сценарий проекта, например добавление
+расхода и просмотр того, кто кому должен</li>
+<li>Одни и те же данные в двух браузерах, например как изменение в одном
+отображается в другом</li>
+<li>Сохранение данных после обновления страницы</li>
+</ul>
+<p>Загрузите видео в LinkedIn, Twitter/X или YouTube и поделитесь
+ссылкой!</p>
+<p><a id="page-14--example-post-for-linkedin"></a></p>
+<h3 id="page-14--пример-публикации-для-linkedin">Пример публикации для
+LinkedIn:</h3>
+<pre><code>🚀 Week 2 of AI Dev Tools Zoomcamp by @DataTalksClub complete!
+
+Built a full-stack app with AI — spec first, then a frontend prototype, an OpenAPI contract, and a FastAPI backend, all with an AI coding agent!
+
+Today I learned how to:
+
+✅ Turn a product spec into a working app
+✅ Use an OpenAPI contract as the source of truth between frontend and backend
+✅ Implement a backend without knowing the framework
+✅ Swap a mock database for SQLite
+✅ Cover the app with tests
+
+Here's my repo: &lt;LINK&gt;
+Demo video: &lt;VIDEO_LINK&gt;
+
+Following along with this amazing course - who else is building with AI?
+
+You can sign up here: https://github.com/DataTalksClub/ai-dev-tools-zoomcamp/</code></pre>
+<p>Перевод примера:</p>
+<blockquote>
+<p>🚀 Вторая неделя AI Dev Tools Zoomcamp от <span class="citation" data-cites="DataTalksClub">@DataTalksClub</span> завершена!</p>
+<p>Создал full-stack-приложение с помощью ИИ: сначала спецификация,
+затем прототип фронтенда, контракт OpenAPI и бэкенд на FastAPI. Всё это
+с ИИ-агентом для программирования!</p>
+<p>Сегодня я научился:</p>
+<p>✅ Превращать спецификацию продукта в работающее приложение ✅
+Использовать контракт OpenAPI как единый источник истины для фронтенда и
+бэкенда ✅ Реализовывать бэкенд без знания фреймворка ✅ Заменять
+имитацию базы данных на SQLite ✅ Покрывать приложение тестами</p>
+<p>Мой репозиторий: <code>&lt;LINK&gt;</code> Демонстрационное видео:
+<code>&lt;VIDEO_LINK&gt;</code></p>
+<p>Прохожу этот замечательный курс. Кто ещё создаёт приложения с помощью
+ИИ?</p>
+<p>Присоединиться можно здесь: <a href="https://github.com/DataTalksClub/ai-dev-tools-zoomcamp/" class="uri">https://github.com/DataTalksClub/ai-dev-tools-zoomcamp/</a></p>
+</blockquote>
+<p><a id="page-14--example-post-for-x"></a></p>
+<h3 id="page-14--пример-публикации-для-x">Пример публикации для X:</h3>
+<pre><code>🤖 Built a full-stack app with AI!
+
+📝 Spec first, code second
+🎨 Frontend prototype
+📜 FastAPI backend
+💾 SQLite
+✅ Tests
+
+My repo: &lt;LINK&gt;
+Demo: &lt;VIDEO_LINK&gt;
+
+Zero full-stack knowledge → working app in one week!
+
+Join me: https://github.com/DataTalksClub/ai-dev-tools-zoomcamp/</code></pre>
+<p>Перевод примера:</p>
+<blockquote>
+<p>🤖 Создал full-stack-приложение с помощью ИИ!</p>
+<p>📝 Сначала спецификация, потом код 🎨 Прототип фронтенда 📜 Бэкенд на
+FastAPI 💾 SQLite ✅ Тесты</p>
+<p>Мой репозиторий: <code>&lt;LINK&gt;</code> Демонстрация:
+<code>&lt;VIDEO_LINK&gt;</code></p>
+<p>Нулевые знания full-stack-разработки → работающее приложение за
+неделю!</p>
+<p>Присоединяйтесь: <a href="https://github.com/DataTalksClub/ai-dev-tools-zoomcamp/" class="uri">https://github.com/DataTalksClub/ai-dev-tools-zoomcamp/</a></p>
+</blockquote>
+<a class="back" href="#top">↑ В начало и к оглавлению</a></section><section id="page-15" class="chapter"><div class="chapter-label">СТРАНИЦА 15 / 18 · <a href="cohorts/2026/homework/03-deployment/homework.md">Markdown</a></div><p><a id="page-15--homework-3-containerize-and-deploy"></a></p>
+<h1 id="page-15--домашнее-задание-3-контейнеризация-и-развёртывание">Домашнее
+задание 3: Контейнеризация и развёртывание</h1>
+<p><a href="https://github.com/Gordondalos/ai-dev-tools-zoomcamp/blob/b47dff65161c878d095e288e9f9e5b907f5aa3c6/cohorts/2026/homework/03-deployment/homework.md">Оригинал</a></p>
+<p>В этом домашнем задании вы развернёте Agent Relay — небольшую систему
+обмена сообщениями между программными агентами.</p>
+<p>Один агент отправляет задачу другому, исполнитель забирает её в
+работу, а затем подтверждает результат. База данных хранит сообщения и
+попытки их доставки. Небольшая панель мониторинга позволяет следить за
+жизненным циклом сообщений.</p>
+<p>С помощью своего агента для программирования вы протестируете и
+контейнеризируете Agent Relay. Затем развернёте его в локальном кластере
+Kubernetes с помощью <a href="https://kind.sigs.k8s.io/">kind</a>
+(Kubernetes in Docker).</p>
+<p>В стартовом проекте уже есть API и панель мониторинга.</p>
+<p>Вам не понадобятся облачный аккаунт, ключ API LLM или внешний брокер
+сообщений. Всё работает на вашем компьютере. По мере необходимости
+просите агента устанавливать и проверять каждый инструмент.</p>
+<p><a id="page-15--question-1-understand-the-project"></a></p>
+<h2 id="page-15--вопрос-1-разберитесь-в-проекте">Вопрос 1: Разберитесь в
+проекте</h2>
+<p>Создайте форк стартового репозитория Agent Relay по <a href="https://github.com/alexeygrigorev/agent-relay">этой
+ссылке</a>.</p>
+<p>Попросите агента запустить проект. Попробуйте разобраться в нём и
+поэкспериментировать.</p>
+<p>Какое описание соответствует архитектуре проекта?</p>
+<ul>
+<li>Агенты обмениваются задачами напрямую друг с другом.</li>
+<li>Агенты забирают задачи из базы данных через HTTP API.</li>
+<li>Агенты получают задачи из брокера сообщений.</li>
+<li>Браузер хранит и выполняет задачи.</li>
+</ul>
+<p><a id="page-15--question-2-register-agents-and-test-the-task-flow"></a></p>
+<h2 id="page-15--вопрос-2-зарегистрируйте-агентов-и-проверьте-прохождение-задачи">Вопрос
+2: Зарегистрируйте агентов и проверьте прохождение задачи</h2>
+<p>Попросите своего агента для программирования прочитать
+<code>SPEC.md</code> (в корне стартового репозитория) и выполнить первый
+приёмочный сценарий на локальном Agent Relay:</p>
+<p>Зарегистрируйте двух агентов и организуйте обмен задачей и её
+результатом между ними.</p>
+<p>Проверьте результат в панели мониторинга. Затем попросите агента для
+программирования превратить этот сценарий в интеграционный тест API,
+работающий с настоящими API и базой данных. Запустите тест и убедитесь,
+что он проходит.</p>
+<p>Какой статус задачи видит отправитель после того, как получатель
+отправляет результат?</p>
+<ul>
+<li><code>queued</code></li>
+<li><code>processing</code></li>
+<li><code>completed</code></li>
+<li><code>delivered</code></li>
+</ul>
+<p><a id="page-15--question-3-containerization"></a></p>
+<h2 id="page-15--вопрос-3-контейнеризация">Вопрос 3: Контейнеризация</h2>
+<p>Попросите агента для программирования создать Dockerfile для Agent
+Relay. Соберите образ с именем <code>agent-relay:local</code> и
+запустите его, опубликовав порт API на своём компьютере.</p>
+<p>Совет: внутри контейнера запускайте uvicorn с
+<code>--host 0.0.0.0</code>, иначе может показаться, что <code>-p</code>
+не работает (по умолчанию uvicorn использует
+<code>127.0.0.1</code>).</p>
+<p>Откройте панель мониторинга и повторите сценарий из вопроса 2 с API,
+работающим в контейнере.</p>
+<p>Какой параметр Docker публикует порт контейнера на вашем
+компьютере?</p>
+<ul>
+<li><code>--expose</code></li>
+<li><code>-p</code></li>
+<li><code>-v</code></li>
+<li><code>--name</code></li>
+</ul>
+<p><a id="page-15--question-4-docker-compose-and-postgresql"></a></p>
+<h2 id="page-15--вопрос-4-docker-compose-и-postgresql">Вопрос 4: Docker Compose и
+PostgreSQL</h2>
+<p>Попросите агента для программирования заменить SQLite на PostgreSQL и
+создать <code>compose.yaml</code>, который запускает Agent Relay и
+PostgreSQL вместе. Назовите сервис базы данных
+<code>postgres</code>.</p>
+<p>Запустите стек:</p>
+<div class="sourceCode" id="page-15--cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="page-15--cb1-1"><a href="#page-15--cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> compose up <span class="at">--build</span></span></code></pre></div>
+<p>Запустите интеграционный тест из вопроса 2 для стека Compose и
+проверьте результат в панели мониторинга. Убедитесь, что приложение
+хранит данные в PostgreSQL.</p>
+<p>Какое имя хоста должно использовать API для подключения к сервису
+<code>postgres</code> в Docker Compose?</p>
+<ul>
+<li><code>localhost</code></li>
+<li><code>postgres</code></li>
+<li><code>host.docker.internal</code></li>
+<li><code>0.0.0.0</code></li>
+</ul>
+<p><a id="page-15--question-5-deploy-to-kubernetes"></a></p>
+<h2 id="page-15--вопрос-5-развёртывание-в-kubernetes">Вопрос 5: Развёртывание в
+Kubernetes</h2>
+<p>Попросите агента для программирования при необходимости установить <a href="https://kind.sigs.k8s.io/">kind</a> и kubectl, а затем создать
+локальный кластер Kubernetes.</p>
+<p>Создайте в <code>k8s/</code> манифесты для Agent Relay и PostgreSQL,
+включая ресурсы Service, постоянное хранилище базы данных и проверки
+готовности. Загрузите Docker-образ в kind и разверните приложение.</p>
+<p>Убедитесь, что поды готовы. Откройте панель мониторинга через
+перенаправление порта и проверьте сценарий из вопроса 2.</p>
+<p>Какой ресурс Kubernetes поддерживает заданное число работающих реплик
+приложения и управляет обновлениями?</p>
+<ul>
+<li>Service</li>
+<li>ConfigMap</li>
+<li>Deployment</li>
+<li>Secret</li>
+</ul>
+<p><a id="page-15--question-6-cicd"></a></p>
+<h2 id="page-15--вопрос-6-cicd">Вопрос 6: CI/CD</h2>
+<p>Попросите агента для программирования создать
+<code>.github/workflows/ci.yml</code>, который запускает тесты
+стартового проекта и ваш интеграционный тест с PostgreSQL, собирает
+новый Docker-образ и развёртывает его в кластере kind только при
+успешном прохождении тестов.</p>
+<p>Запустите рабочий процесс локально с помощью <a href="https://nektosact.com/">act</a>. Попросите агента настроить доступ
+к Docker и кластеру kind, включая загрузку нового образа в kind.
+Используйте уникальный тег образа для каждой версии и дождитесь
+завершения развёртывания.</p>
+<p>Измените заголовок панели мониторинга на <code>Agent Relay v2</code>
+и запустите рабочий процесс ещё раз. Убедитесь, что тесты проходят, а в
+развёрнутой панели появился новый заголовок.</p>
+<p>Что должно произойти, если один из тестов в этом рабочем процессе
+завершится ошибкой?</p>
+<ul>
+<li>Развернуть новую версию и сообщить об ошибке.</li>
+<li>Оставить существующую версию работающей и остановить
+развёртывание.</li>
+<li>Удалить существующее развёртывание.</li>
+<li>Развернуть предыдущий образ с новым тегом.</li>
+</ul>
+<p><a id="page-15--submission"></a></p>
+<h2 id="page-15--сдача-задания">Сдача задания</h2>
+<p>Отправьте домашнее задание на <a href="https://courses.datatalks.club/ai-dev-tools-2026/homework/hw3">платформе
+курса</a>.</p>
+<p><a id="page-15--learning-in-public"></a></p>
+<h2 id="page-15--учимся-публично">Учимся публично</h2>
+<p>Поделитесь тем, чему научились, в рамках <a href="https://datatalks.club/blog/benefits-of-learning-in-public.html">обучения
+на публике</a>.</p>
+<p>Обучение на публике помогает объяснять техническую работу, получать
+обратную связь и сохранять историю своих проектов. Делитесь только
+репозиторием и снимками экрана или логами, которые не содержат
+секретов.</p>
+<p><a id="page-15--example-post-for-linkedin"></a></p>
+<h2 id="page-15--пример-публикации-для-linkedin">Пример публикации для
+LinkedIn</h2>
+<p>Этот пример можно адаптировать для собственной публикации:</p>
+<pre class="text"><code>🚀 Week 3 of AI Dev Tools Zoomcamp by @DataTalksClub complete!
+
+Deployed the Agent Relay messaging system to Kubernetes with kind.
+
+Today I learned how to:
+
+✅ Register agents and test the task flow with an integration test
+✅ Build a Docker image and run it with a published port
+✅ Run API + PostgreSQL together with Docker Compose
+✅ Deploy to Kubernetes with kind and verify via port-forward
+✅ Run CI locally with act, deploy v2 only when tests pass
+
+Here's my repo: &lt;LINK&gt;
+
+Following along with this amazing course - who else is shipping with AI?
+
+You can sign up here: https://github.com/DataTalksClub/ai-dev-tools-zoomcamp/</code></pre>
+<p>Перевод примера:</p>
+<blockquote>
+<p>🚀 Третья неделя AI Dev Tools Zoomcamp от <span class="citation" data-cites="DataTalksClub">@DataTalksClub</span> завершена!</p>
+<p>Развернул систему обмена сообщениями Agent Relay в Kubernetes с
+помощью kind.</p>
+<p>Сегодня я научился:</p>
+<p>✅ Регистрировать агентов и проверять прохождение задачи
+интеграционным тестом ✅ Собирать Docker-образ и запускать его с
+опубликованным портом ✅ Запускать API и PostgreSQL вместе с помощью
+Docker Compose ✅ Развёртывать приложение в Kubernetes с помощью kind и
+проверять его через port-forward ✅ Запускать CI локально с act и
+развёртывать v2 только после успешного прохождения тестов</p>
+<p>Мой репозиторий: <code>&lt;LINK&gt;</code></p>
+<p>Прохожу этот замечательный курс. Кто ещё выпускает приложения с
+помощью ИИ?</p>
+<p>Присоединиться можно здесь: <a href="https://github.com/DataTalksClub/ai-dev-tools-zoomcamp/" class="uri">https://github.com/DataTalksClub/ai-dev-tools-zoomcamp/</a></p>
+</blockquote>
+<p><a id="page-15--example-post-for-twitterx"></a></p>
+<h2 id="page-15--пример-публикации-для-twitterx">Пример публикации для
+Twitter/X</h2>
+<p>Этот пример можно адаптировать для собственной публикации:</p>
+<pre class="text"><code>🚀 Deployed an agent messaging system to Kubernetes!
+
+✅ API integration test
+🐳 Docker image + published port
+🐘 Compose + PostgreSQL
+☸️ kind + kubectl deploy
+⚙️ CI with act, ship v2 on green
+
+My repo: &lt;LINK&gt;
+
+"Works on my machine" is no longer the goal.
+
+Join me: https://github.com/DataTalksClub/ai-dev-tools-zoomcamp/</code></pre>
+<p>Перевод примера:</p>
+<blockquote>
+<p>🚀 Развернул систему обмена сообщениями между агентами в
+Kubernetes!</p>
+<p>✅ Интеграционный тест API 🐳 Docker-образ и опубликованный порт 🐘
+Compose и PostgreSQL ☸️ Развёртывание с kind и kubectl ⚙️ CI с act:
+выпускаем v2 после успешных проверок</p>
+<p>Мой репозиторий: <code>&lt;LINK&gt;</code></p>
+<p>«На моём компьютере работает» — больше не конечная цель.</p>
+<p>Присоединяйтесь: <a href="https://github.com/DataTalksClub/ai-dev-tools-zoomcamp/" class="uri">https://github.com/DataTalksClub/ai-dev-tools-zoomcamp/</a></p>
+</blockquote>
+<a class="back" href="#top">↑ В начало и к оглавлению</a></section><section id="page-16" class="chapter"><div class="chapter-label">СТРАНИЦА 16 / 18 · <a href="cohorts/2026/homework/04-devops/homework.md">Markdown</a></div><p><a id="page-16--homework-4-devops-and-observability-for-ai-built-apps"></a></p>
+<h1 id="page-16--домашнее-задание-4-devops-и-наблюдаемость-приложений-созданных-с-ии">Домашнее
+задание 4: DevOps и наблюдаемость приложений, созданных с ИИ</h1>
+<p><a href="https://github.com/Gordondalos/ai-dev-tools-zoomcamp/blob/b47dff65161c878d095e288e9f9e5b907f5aa3c6/cohorts/2026/homework/04-devops/homework.md">Оригинал</a></p>
+<p>В этом домашнем задании вы исследуете сбой в <a href="https://github.com/alexeygrigorev/order-tracker">Order Tracker</a>
+— небольшом приложении для создания заказов и проверки их статуса. В
+стартовом проекте есть веб-страница, API, тесты и конфигурация Docker
+Compose.</p>
+<p>Создайте форк стартового проекта на GitHub, затем клонируйте свой
+форк. Вы добавите средства наблюдаемости и сервис реагирования на
+инциденты, который срабатывает при получении оповещения. Просите агента
+для программирования помогать с реализацией, но проверяйте каждый
+результат самостоятельно.</p>
+<p>Вам понадобятся Docker с Compose и Python с <code>uv</code> для
+тестов. Как запустить проект, объясняется в его README.</p>
+<p><a id="page-16--question-1-run-the-app"></a></p>
+<h2 id="page-16--вопрос-1-запустите-приложение">Вопрос 1: Запустите
+приложение</h2>
+<p>Запустите Order Tracker:</p>
+<div class="sourceCode" id="page-16--cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="page-16--cb1-1"><a href="#page-16--cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> compose up <span class="at">--build</span> <span class="at">-d</span> <span class="at">--wait</span></span></code></pre></div>
+<p>Теперь проверьте его:</p>
+<div class="sourceCode" id="page-16--cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="page-16--cb2-1"><a href="#page-16--cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">curl</span> http://localhost:8000/healthz</span></code></pre></div>
+<p>Что возвращает проверка работоспособности?</p>
+<ul>
+<li><code>{"status":"ok"}</code></li>
+<li><code>{"status":"error"}</code></li>
+<li><code>{"orders":3}</code></li>
+<li><code>pong</code></li>
+</ul>
+<p>В этом и следующих вопросах можно попросить ассистента для
+программирования помочь выбрать правильный вариант.</p>
+<p><a id="page-16--question-2-instrument-one-endpoint"></a></p>
+<h2 id="page-16--вопрос-2-добавьте-инструментацию-для-одного-эндпоинта">Вопрос 2:
+Добавьте инструментацию для одного эндпоинта</h2>
+<p>Представьте, что клиент говорит, что не может открыть заказ. Вы
+проверяете сайт, и всё выглядит нормально. Нужен более надёжный способ
+понять, что происходит в системе. Для этого мы используем метрики, логи
+и трассировки.</p>
+<p>Попросите агента добавить метрики, логи и трассировки OpenTelemetry
+для запросов на получение заказов. Метрика запросов должна включать
+маршрут и код состояния HTTP. Пока экспортируйте сигналы в консоль,
+чтобы их можно было просматривать с помощью
+<code>docker compose logs app</code>.</p>
+<p>После изменений, внесённых агентом, пересоберите приложение командой
+<code>docker compose up --build -d --wait</code>.</p>
+<p>Затем запросите заказ <code>standard-1001</code>:</p>
+<div class="sourceCode" id="page-16--cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="page-16--cb3-1"><a href="#page-16--cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">curl</span> <span class="at">-i</span> http://localhost:8000/api/orders/standard-1001</span></code></pre></div>
+<p>Найдите метрику запроса в логах приложения.</p>
+<p>Какой код состояния HTTP записан в метрике для этого запроса?</p>
+<ul>
+<li>200</li>
+<li>301</li>
+<li>404</li>
+<li>500</li>
+</ul>
+<p><a id="page-16--question-3-build-the-telemetry-pipeline"></a></p>
+<h2 id="page-16--вопрос-3-создайте-конвейер-телеметрии">Вопрос 3: Создайте
+конвейер телеметрии</h2>
+<p>В вопросе 2 мы просматривали телеметрию в логах. Теперь сохраним её в
+специализированном хранилище.</p>
+<p>Попросите агента добавить OpenTelemetry Collector, Prometheus, Loki,
+Tempo и Grafana в Docker Compose. Направьте метрики, логи и трассировки
+приложения через Collector и создайте панель Grafana для числа запросов
+и ошибок. Сохраните конфигурацию в репозитории.</p>
+<p>Пересоберите стек командой
+<code>docker compose up --build -d --wait</code>, затем выполните:</p>
+<div class="sourceCode" id="page-16--cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="page-16--cb4-1"><a href="#page-16--cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">curl</span> <span class="at">-i</span> http://localhost:8000/api/orders/standard-1002</span></code></pre></div>
+<p>Найдите в Grafana метрику этого запроса. Убедитесь, что его лог и
+трассировка тоже появились. Какой код состояния HTTP показывает
+метрика?</p>
+<ul>
+<li>404</li>
+<li>200</li>
+<li>301</li>
+<li>500</li>
+</ul>
+<p><a id="page-16--question-4-configure-the-alert"></a></p>
+<h2 id="page-16--вопрос-4-настройте-оповещение">Вопрос 4: Настройте
+оповещение</h2>
+<p>Панель показывает ошибки, когда вы её открываете, но сама по себе
+никого не уведомляет. Оповещение отслеживает метрику <code>5xx</code> и
+меняет состояние при возникновении серверных ошибок. Позже Grafana будет
+отправлять сервису реагирования HTTP-запрос, называемый вебхуком, чтобы
+тот автоматически начинал расследование.</p>
+<p>Попросите агента добавить в Grafana оповещение для ответов
+<code>5xx</code>. Включите в него эндпоинт, временное окно и ссылку на
+панель, а также предусмотрите периоды без ответов <code>5xx</code>. Пока
+проверьте состояние оповещения в Grafana. К сервису реагирования вы
+подключите его в вопросе 6.</p>
+<p>Повторите запрос из вопроса 3:</p>
+<div class="sourceCode" id="page-16--cb5"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="page-16--cb5-1"><a href="#page-16--cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">curl</span> <span class="at">-i</span> http://localhost:8000/api/orders/standard-1002</span></code></pre></div>
+<p>Дождитесь проверки условия оповещения. Какое состояние показывает
+Grafana?</p>
+<ul>
+<li>Normal</li>
+<li>Firing</li>
+<li>Pending</li>
+<li>No data</li>
+</ul>
+<p><a id="page-16--question-5-build-the-automatic-responder"></a></p>
+<h2 id="page-16--вопрос-5-создайте-автоматический-сервис-реагирования">Вопрос 5:
+Создайте автоматический сервис реагирования</h2>
+<p>Когда срабатывает оповещение, дежурный инженер должен разобраться в
+проблеме и решить её. Если это не удаётся, он передаёт проблему
+разработчикам.</p>
+<p>В нашем случае именно этим будет заниматься агент.</p>
+<p>Попросите ассистента для программирования создать в
+<code>incident-response/</code> сервис, принимающий оповещения от
+Grafana через <code>POST /alerts</code> на порту <code>8001</code>. При
+получении оповещения сервис должен сохранять информацию, необходимую для
+понимания проблемы, например затронутый эндпоинт, логи и
+трассировки.</p>
+<p>При получении оповещения сервис должен автоматически запускать
+ассистента для программирования в неинтерактивном режиме (headless).</p>
+<p>Когда реализация будет готова, запустите сервис реагирования.
+Проверим его: отправьте ему оповещение:</p>
+<div class="sourceCode" id="page-16--cb6"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="page-16--cb6-1"><a href="#page-16--cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">curl</span> <span class="at">-X</span> POST http://localhost:8001/alerts <span class="dt">\</span></span>
+<span id="page-16--cb6-2"><a href="#page-16--cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">-H</span> <span class="st">'Content-Type: application/json'</span> <span class="dt">\</span></span>
+<span id="page-16--cb6-3"><a href="#page-16--cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">-d</span> <span class="st">'{"alerts":[{"status":"firing","labels":{"alertname":"ResponderTest","test":"true"},"annotations":{"summary":"Test notification; no incident to fix"}}]}'</span></span></code></pre></div>
+<p>Дождитесь завершения работы агента, затем прочитайте его ответ.</p>
+<p>Что ответил агент? Приведите последнюю строку его ответа.</p>
+<p><a id="page-16--question-6-watch-the-agent-fix-the-incident"></a></p>
+<h2 id="page-16--вопрос-6-посмотрите-как-агент-исправляет-инцидент">Вопрос 6:
+Посмотрите, как агент исправляет инцидент</h2>
+<p>Теперь проверьте весь процесс с настоящим оповещением Grafana.</p>
+<p>Подключите оповещение Grafana к сервису реагирования через
+вебхук.</p>
+<p>Выполним такой запрос:</p>
+<div class="sourceCode" id="page-16--cb7"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="page-16--cb7-1"><a href="#page-16--cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">curl</span> <span class="at">-i</span> http://localhost:8000/api/orders/express-1002</span></code></pre></div>
+<p>Этот запрос вызывает проблему и должен привести к срабатыванию
+оповещения. Если этого не произошло, повторите его несколько раз. Затем
+проследите, как Grafana отправляет вебхук на <code>/alerts</code>, а
+сервис реагирования запускается автоматически.</p>
+<p>Дождитесь, пока агент исправит проблему, перезапустите приложение и
+убедитесь, что тот же запрос больше не вызывает её.</p>
+<p>В чём заключалась проблема?</p>
+<ul>
+<li>При расчёте даты экспресс-доставки использовался день, которого нет
+в соответствующем месяце.</li>
+<li>Не удалось разобрать временную метку заказа, потому что в ней не
+было часового пояса.</li>
+<li>Приложение отклонило статус заказа <code>preparing</code>.</li>
+<li>При поиске экспресс-заказов использовался неверный столбец базы
+данных.</li>
+</ul>
+<p><a id="page-16--submission"></a></p>
+<h2 id="page-16--сдача-задания">Сдача задания</h2>
+<p>Отправьте домашнее задание на <a href="https://courses.datatalks.club/ai-dev-tools-2026/homework/hw4">платформе
+курса</a>. Укажите ссылку на свой репозиторий. Создайте коммит с
+конфигурацией телеметрии и оповещений, сервисом реагирования, данными об
+инциденте и исправлением агента и отправьте его в удалённый
+репозиторий.</p>
+<p><a id="page-16--learning-in-public"></a></p>
+<h2 id="page-16--учимся-публично">Учимся публично</h2>
+<p>Мы призываем всех делиться тем, чему они научились. Это называется
+«обучение на публике» (learning in public). Подробнее о том, почему это
+важно: <a href="https://datatalks.club/blog/benefits-of-learning-in-public.html" class="uri">https://datatalks.club/blog/benefits-of-learning-in-public.html</a></p>
+<p>Не стремитесь к совершенству. Все с чего-то начинают, а людям
+нравится следить за настоящим процессом обучения!</p>
+<p><a id="page-16--example-post-for-linkedin"></a></p>
+<h3 id="page-16--пример-публикации-для-linkedin">Пример публикации для
+LinkedIn:</h3>
+<pre><code>🚀 Week 4 of AI Dev Tools Zoomcamp by @DataTalksClub complete!
+
+I investigated a failed Order Tracker release and recovered the app.
+
+Today I learned how to:
+
+✅ Instrument an app with OpenTelemetry: metrics, logs, traces
+✅ View the signals together in Grafana
+✅ Alert on real user impact, not CPU graphs
+✅ Trigger a headless coding agent from an alert
+✅ Deploy a checked fix or escalate automatically
+
+Here's my repo: &lt;LINK&gt;
+
+Following along with this amazing course - who else is automating ops with AI?
+
+You can sign up here: https://github.com/DataTalksClub/ai-dev-tools-zoomcamp/</code></pre>
+<p>Перевод примера:</p>
+<blockquote>
+<p>🚀 Четвёртая неделя AI Dev Tools Zoomcamp от <span class="citation" data-cites="DataTalksClub">@DataTalksClub</span> завершена!</p>
+<p>Я исследовал неудачный релиз Order Tracker и восстановил работу
+приложения.</p>
+<p>Сегодня я научился:</p>
+<p>✅ Добавлять инструментацию OpenTelemetry в приложение: метрики, логи
+и трассировки ✅ Просматривать эти сигналы вместе в Grafana ✅
+Настраивать оповещения о реальном влиянии на пользователей, а не о
+графиках CPU ✅ Запускать агента для программирования в неинтерактивном
+режиме по оповещению ✅ Развёртывать проверенное исправление или
+автоматически передавать проблему дальше</p>
+<p>Мой репозиторий: <code>&lt;LINK&gt;</code></p>
+<p>Прохожу этот замечательный курс. Кто ещё автоматизирует эксплуатацию
+с помощью ИИ?</p>
+<p>Присоединиться можно здесь: <a href="https://github.com/DataTalksClub/ai-dev-tools-zoomcamp/" class="uri">https://github.com/DataTalksClub/ai-dev-tools-zoomcamp/</a></p>
+</blockquote>
+<p><a id="page-16--example-post-for-twitterx"></a></p>
+<h3 id="page-16--пример-публикации-для-twitterx">Пример публикации для
+Twitter/X:</h3>
+<pre><code>🤖 Made Order Tracker observable and tested an incident response loop!
+
+📈 Metrics, logs, traces
+🔔 Alerts on real user impact
+🕵️ Agent investigates, policy authorizes
+✅ Fix and verify, or escalate
+
+My repo: &lt;LINK&gt;
+
+The model may reason. The system must observe, authorize, verify, and remember.
+
+Join me: https://github.com/DataTalksClub/ai-dev-tools-zoomcamp/</code></pre>
+<p>Перевод примера:</p>
+<blockquote>
+<p>🤖 Сделал Order Tracker наблюдаемым и проверил цикл реагирования на
+инциденты!</p>
+<p>📈 Метрики, логи, трассировки 🔔 Оповещения о реальном влиянии на
+пользователей 🕵️ Агент расследует, правила определяют допустимые
+действия ✅ Исправить и проверить или передать проблему дальше</p>
+<p>Мой репозиторий: <code>&lt;LINK&gt;</code></p>
+<p>Модель может рассуждать. Система должна наблюдать, разрешать
+действия, проверять и помнить.</p>
+<p>Присоединяйтесь: <a href="https://github.com/DataTalksClub/ai-dev-tools-zoomcamp/" class="uri">https://github.com/DataTalksClub/ai-dev-tools-zoomcamp/</a></p>
+</blockquote>
+<a class="back" href="#top">↑ В начало и к оглавлению</a></section><section id="page-17" class="chapter"><div class="chapter-label">СТРАНИЦА 17 / 18 · <a href="project/README.md">Markdown</a></div><p><a id="page-17--final-project"></a></p>
+<h1 id="page-17--итоговый-проект">Итоговый проект</h1>
+<p><a href="https://github.com/Gordondalos/ai-dev-tools-zoomcamp/blob/b47dff65161c878d095e288e9f9e5b907f5aa3c6/project/README.md">Оригинал
+этой страницы</a>.</p>
+<p>В итоговом проекте вы примените полный рабочий процесс курса к одному
+приложению на свой выбор.</p>
+<p>Вы:</p>
+<ul>
+<li>Придумаете идею проекта.</li>
+<li>Определите проблему и критерии приёмки до написания кода.</li>
+<li>Создадите фронтенд, бэкенд и базу данных.</li>
+<li>Покроете приложение модульными, фронтенд- и интеграционными
+тестами.</li>
+<li>Контейнеризируете и развернёте его, а также настроите CI/CD с
+возможностью отката.</li>
+<li>Добавите инструменты наблюдаемости и оповещения о реальных проблемах
+пользователей вместо графиков загрузки CPU.</li>
+<li>Создадите триггер оповещения.</li>
+<li>Реализуете агента реагирования.</li>
+</ul>
+<p><a id="page-17--what-you-can-submit"></a></p>
+<h2 id="page-17--что-можно-сдавать">Что можно сдавать</h2>
+<ul>
+<li>Собственную идею. Если не знаете, что создать, попросите ИИ помочь с
+выбором. Небольшой идеи достаточно.</li>
+<li>Любой язык и любой стек. В курсе используется Python, но требования
+проекта от него не зависят.</li>
+<li>Одно приложение, доведённое до конца. Проект — не четыре отдельных
+задания. Это одно приложение, для которого вы создаёте спецификацию,
+пишете код, запускаете его локально, развёртываете и готовите к
+эксплуатации.</li>
+<li><strong>Документацию на английском языке, даже если интерфейс на
+другом языке.</strong> Нельзя рассчитывать, что рецензенты смогут читать
+на языке интерфейса.</li>
+<li>Около 20 часов работы, распределённых на второй месяц.</li>
+<li>Две попытки. Если не успеете к первому сроку, во второй попытке
+сдаётся тот же проект по тем же критериям.</li>
+</ul>
+<p><a id="page-17--peer-reviewing"></a></p>
+<h2 id="page-17--взаимное-рецензирование">Взаимное рецензирование</h2>
+<blockquote>
+<p>[!IMPORTANT] Взаимное рецензирование — часть проекта, а не
+дополнительный бонус. Вам нужно оценить три проекта других участников
+курса. Сдача проекта без рецензирования чужих работ не засчитывается,
+каким бы хорошим ни был ваш проект.</p>
+</blockquote>
+<p>Рецензирование — ещё и та часть обучения, которая запоминается
+надолго. В каждом проекте вы разбираетесь, что создано, как это сделано
+и какие технологии используются, а затем оцениваете его по критериям
+ниже. Каждый проект немного отличается от остальных, и именно благодаря
+этим различиям вы узнаёте то, чего не было в курсе.</p>
+<blockquote>
+<p>[!NOTE] Точные сроки и порядок рецензирования указаны на <a href="https://courses.datatalks.club/ai-dev-tools-2026/">платформе
+курса</a>.</p>
+</blockquote>
+<p><a id="page-17--criteria"></a></p>
+<h2 id="page-17--критерии">Критерии</h2>
+<p>Всего 12 критериев на 24 балла. Для успешной сдачи нужно 10
+баллов.</p>
+<p>Набирать максимум по каждому критерию необязательно.</p>
+<p><a id="page-17--problem-description"></a></p>
+<h3 id="page-17--описание-проблемы">Описание проблемы</h3>
+<ul>
+<li>Проблема не описана. (0 баллов)</li>
+<li>Проблема описана кратко, но непонятно, что делает система или какая
+функциональность ожидается. (1 балл)</li>
+<li>README ясно описывает проблему, функциональность системы и ожидаемое
+поведение. (2 балла)</li>
+</ul>
+<p><a id="page-17--product-specification"></a></p>
+<h3 id="page-17--спецификация-продукта">Спецификация продукта</h3>
+<ul>
+<li>Письменной спецификации нет. (0 баллов)</li>
+<li>Спецификация есть, но нет общедоступного трекера задач. (1
+балл)</li>
+<li>Есть спецификация и общедоступный трекер задач. В задачах определены
+критерии приёмки, и есть подтверждения того, что агенты использовали
+трекер. (2 балла)</li>
+</ul>
+<p><a id="page-17--agent-team-specification"></a></p>
+<h3 id="page-17--описание-команды-агентов">Описание команды агентов</h3>
+<ul>
+<li>Команда агентов не описана. (0 баллов)</li>
+<li>Роли или агенты упомянуты, но обязанности неясны. (1 балл)</li>
+<li>В проекте определены команда агентов и процесс их совместной работы.
+(2 балла)</li>
+</ul>
+<p><a id="page-17--context-management"></a></p>
+<h3 id="page-17--управление-контекстом">Управление контекстом</h3>
+<ul>
+<li>Документации проекта нет. (0 баллов)</li>
+<li>Есть AGENTS.md или аналогичный файл с описанием проекта. (1
+балл)</li>
+<li>Есть AGENTS.md, который также ссылается на модульную документацию о
+процессе, командах и так далее. (2 балла)</li>
+</ul>
+<p><a id="page-17--application"></a></p>
+<h3 id="page-17--приложение">Приложение</h3>
+<ul>
+<li>Нет работающего приложения либо отсутствует фронтенд, бэкенд или
+постоянное хранилище. (0 баллов)</li>
+<li>Фронтенд, бэкенд и база данных есть, но соединены не полностью. (1
+балл)</li>
+<li>Full-stack-приложение работает целиком: фронтенд взаимодействует с
+бэкендом, данные сохраняются в базе данных. Приложение запускается
+локально одной командой. (2 балла)</li>
+</ul>
+<p><a id="page-17--testing"></a></p>
+<h3 id="page-17--тестирование">Тестирование</h3>
+<ul>
+<li>Тестов нет или они не запускаются. (0 баллов)</li>
+<li>Есть только модульные либо только интеграционные тесты. (1
+балл)</li>
+<li>Есть и модульные, и интеграционные тесты; они запускаются одной
+командой и проходят успешно. (2 балла)</li>
+</ul>
+<p><a id="page-17--containerization"></a></p>
+<h3 id="page-17--контейнеризация">Контейнеризация</h3>
+<ul>
+<li>Контейнеризации нет. (0 баллов)</li>
+<li>Dockerfile есть, но для запуска всей системы нужны ручные действия.
+(1 балл)</li>
+<li>Вся система, включая базу данных, работает через Docker или Docker
+Compose и запускается одной командой. (2 балла)</li>
+</ul>
+<p><a id="page-17--deployment"></a></p>
+<h3 id="page-17--развёртывание">Развёртывание</h3>
+<ul>
+<li>Приложение не развёрнуто. (0 баллов)</li>
+<li>Шаги развёртывания описаны, но работающее развёртывание не показано.
+(1 балл)</li>
+<li>Приложение развёрнуто и доступно по общедоступному URL либо есть
+понятная демонстрация развёрнутого приложения. (2 балла)</li>
+</ul>
+<p><a id="page-17--cicd"></a></p>
+<h3>CI/CD</h3>
+<ul>
+<li>Конвейера CI/CD нет. (0 баллов)</li>
+<li>CI автоматически запускает тесты для каждого pull request. (1
+балл)</li>
+<li>CI запускает тесты, а CD автоматически выполняет развёртывание. (2
+балла)</li>
+<li>CI запускает тесты, CD развёртывает приложение в dev, а
+развёртывание в production выполняется вручную. (3 балла)</li>
+</ul>
+<p><a id="page-17--observability"></a></p>
+<h3 id="page-17--наблюдаемость">Наблюдаемость</h3>
+<ul>
+<li>Телеметрии нет. (0 баллов)</li>
+<li>Приложение выдаёт логи, но нет метрик или трассировок либо сигналы
+нельзя связать с одним запросом. (1 балл)</li>
+<li>Ключевой пользовательский сценарий инструментирован метриками,
+трассировками и структурированными логами с общим trace ID; данные
+клиентов и учётные данные не отправляются в телеметрию; сигналы
+собираются, сохраняются и доступны для просмотра в интерфейсе. (2
+балла)</li>
+</ul>
+<p><a id="page-17--alerting-on-user-impact"></a></p>
+<h3 id="page-17--оповещения-о-влиянии-на-пользователей">Оповещения о влиянии на
+пользователей</h3>
+<ul>
+<li>Оповещений нет. (0 баллов)</li>
+<li>Есть хотя бы одно оповещение. (1 балл)</li>
+</ul>
+<p><a id="page-17--on-call-agent"></a></p>
+<h3 id="page-17--дежурный-агент">Дежурный агент</h3>
+<ul>
+<li>Дежурного агента нет. (0 баллов)</li>
+<li>Агент запускается по оповещению и исправляет проблему. (2
+балла)</li>
+</ul>
+<p><a id="page-17--previous-cohort-materials"></a></p>
+<h2 id="page-17--материалы-предыдущего-потока">Материалы предыдущего потока</h2>
+<p>Предыдущие требования к проекту находятся в архиве:</p>
+<ul>
+<li><a href="https://github.com/Gordondalos/ai-dev-tools-zoomcamp/tree/b47dff65161c878d095e288e9f9e5b907f5aa3c6/cohorts/2025/project">Архивная
+страница проекта 2025 года</a></li>
+</ul>
+<a class="back" href="#top">↑ В начало и к оглавлению</a></section><section id="page-18" class="chapter"><div class="chapter-label">СТРАНИЦА 18 / 18 · <a href="cohorts/README.md">Markdown</a></div><p><a id="page-18--cohorts"></a></p>
+<h1 id="page-18--потоки-обучения">Потоки обучения</h1>
+<p><a href="https://github.com/Gordondalos/ai-dev-tools-zoomcamp/blob/b47dff65161c878d095e288e9f9e5b907f5aa3c6/cohorts/README.md">Оригинал
+этой страницы</a>.</p>
+<p>Текущая учебная программа, то есть все модули и их уроки, находится
+<strong>в корне репозитория</strong>, а не здесь. В
+<code>cohorts/&lt;year&gt;/</code> хранится только то, что относится к
+конкретному запуску курса: даты, домашние задания и, для прошедшего
+потока, зафиксированная копия программы, по которой учили в тот год.</p>
+<p><strong>Текущий поток — 2026. Исправляйте учебную программу в корне
+репозитория, а не внутри <code>cohorts/2026/</code>.</strong> Это
+указано единожды, в машиночитаемом виде, в корне:
+<code>course.yaml:current_cohort</code> задаёт текущий поток и должен
+совпадать с единственным <code>cohorts/&lt;year&gt;/cohort.yaml</code>,
+в котором объявлено <code>curriculum: current</code>.</p>
+<p><a id="page-18--layout"></a></p>
+<h2 id="page-18--структура">Структура</h2>
+<pre><code>&lt;repo root&gt;/
+├── course.yaml                   # course identity, incl. the description
+├── 01-ai-native-workflow/        # the directory name IS the module slug
+│   ├── module.yaml                 # module identity and unit list
+│   ├── README.md                   # GitHub-facing module index, not published
+│   └── 01-ai-native-developer-workflow.md  # the module's unit — the stem IS the unit slug
+├── ...
+└── cohorts/
+    ├── README.md                  # this file
+    ├── 2026/                      # the directory name IS the cohort identifier
+    │   ├── cohort.yaml            # dates, curriculum: current, homework list
+    │   ├── README.md              # the human-readable schedule
+    │   └── homework/
+    │       ├── 01-ai-native-workflow/
+    │       │   ├── homework.md    # homework instructions, fixed name
+    │       │   └── homework.yaml  # homework identity, due date, form, questions
+    │       └── ...
+    └── 2025/                      # earlier cohort: frozen, full copy</code></pre>
+<p><em>Пояснение к схеме: <code>course.yaml</code> хранит
+идентификационные данные курса, включая описание; имя каталога модуля
+является его URL-идентификатором (slug); <code>module.yaml</code>
+содержит данные модуля и список учебных единиц; <code>README.md</code>
+служит индексом модуля для GitHub и не публикуется как урок; имя файла
+урока без расширения является slug урока. Имя каталога потока является
+идентификатором потока. <code>cohort.yaml</code> содержит даты, признак
+<code>curriculum: current</code> и список домашних заданий; README
+потока — расписание для читателя. Фиксированное имя
+<code>homework.md</code> используется для инструкций, а
+<code>homework.yaml</code> — для идентификационных данных задания, срока
+сдачи, формы и вопросов. Каталог 2025 содержит полную зафиксированную
+копию прежней программы.</em></p>
+<p>Основную роль играют два правила:</p>
+<ul>
+<li><strong>Имена определяют идентичность.</strong> Slug модуля — это
+имя его каталога. В YAML он не повторяется, а переименование каталога
+изменяет опубликованный URL.</li>
+<li><strong>Каталог модуля самодостаточен.</strong> Урок находится
+внутри него. Относительная ссылка не выходит за пределы каталога модуля,
+кроме переходов к соседнему модулю или в корень репозитория. Для всего,
+что находится дальше, используется абсолютный URL GitHub.</li>
+</ul>
+<p><a id="page-18--current-cohort-vs-frozen-cohort"></a></p>
+<h2 id="page-18--текущий-поток-и-зафиксированный-архив-потока">Текущий поток и
+зафиксированный архив потока</h2>
+<p>Тип потока указан в его <code>cohort.yaml</code>:</p>
+<ul>
+<li><strong><code>curriculum: current</code></strong> — поток использует
+ту программу, которая сейчас находится в корне репозитория. В
+<code>cohorts/&lt;year&gt;/</code> хранятся только даты и домашние
+задания (<code>cohorts/&lt;year&gt;/homework/&lt;module&gt;/</code>).
+Содержимого модулей или уроков здесь нет, поэтому оно не дублируется и
+не расходится с корнем.</li>
+<li><strong><code>curriculum: github_archive</code></strong> — программа
+потока существенно отличалась от той, которая сейчас находится в корне,
+поэтому её зафиксировали: сохранили полную самостоятельную копию всех
+модулей этого потока. Архив предназначен только для чтения на GitHub и
+никогда не импортируется повторно как текущие модули или уроки. Пока
+единственный такой архив в этом репозитории —
+<code>cohorts/2025/</code>. Минимальный <code>cohort.yaml</code>
+добавлен в него позднее. Внутреннее содержимое архива, включая каталоги
+модулей и README, осталось неизменным материалом эпохи v1 и не
+перестраивалось под нынешние соглашения.</li>
+</ul>
+<p><a id="page-18--note-on-module-5"></a></p>
+<h2 id="page-18--примечание-о-модуле-5">Примечание о модуле 5</h2>
+<p>Каталог <code>05-agent-capabilities/</code> находится в корне
+репозитория и содержит реальные материалы, но у него нет
+<code>module.yaml</code>, и он пока не включён в учебную программу
+<code>cohorts/2026/</code>. На данный момент это сделано намеренно и
+соответствует аналогичному открытому вопросу в
+<code>machine-learning-zoomcamp</code> (каталог
+<code>11-kserve/</code>): пронумерованный каталог в корне без
+<code>module.yaml</code> просто не обнаруживается как часть учебной
+программы. Подключать его к программе или выносить из пространства имён
+пронумерованных модулей — отдельное решение.</p>
+<p><a id="page-18--editing"></a></p>
+<h2 id="page-18--редактирование">Редактирование</h2>
+<ul>
+<li>Исправляйте учебные материалы, то есть уроки, <strong>в корне
+репозитория</strong>. Именно туда принимаются pull request для текущего
+потока.</li>
+<li>Исправляйте даты и домашние задания текущего потока в
+<code>cohorts/2026/</code>.</li>
+<li>Зафиксированный <code>cohorts/2025/</code> — это архив: его отличия
+отражают то, чему действительно учили. Переносите туда только
+исправления фактических ошибок или ошибок, нарушающих работу, и явно
+отмечайте это.</li>
+<li>Опубликованный slug фиксирован. Его переименование — решение на
+уровне платформы, а не pull request в репозиторий.</li>
+</ul>
+<p><a id="page-18--the-conventions-themselves"></a></p>
+<h2 id="page-18--сами-соглашения">Сами соглашения</h2>
+<p>В этом репозитории они не повторяются. Авторитетный источник —
+<code>DataTalksClub/zoomcamp-ops</code>: <code>STRUCTURE.md</code>
+описывает структуру репозитория, а
+<code>docs/shared-curriculum-v2.md</code> — используемую здесь схему с
+общей программой в корне. Расположенный рядом контракт учебной программы
+описывает схемы YAML и правила страниц учебных единиц.</p>
+<p>Окончательным источником истины служит парсер импорта сайта: при push
+он явно сообщает об ошибках.</p>
+<a class="back" href="#top">↑ В начало и к оглавлению</a></section><footer class="sources">Неофициальный русский перевод для личного использования · подготовлено 6 ноября 2026 года.</footer></main></body></html>
