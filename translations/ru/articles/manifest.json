@@ -24,8 +24,8 @@
       "source_url": "https://github.com/Gordondalos/ai-dev-tools-zoomcamp/blob/b47dff65161c878d095e288e9f9e5b907f5aa3c6/articles/01-ai-native-workflow.md",
       "source_git_blob_sha": "2398399a3a399120234f7c8b237b5daa42609776",
       "source_bytes": 23562,
-      "translation_sha256": "4388cc558e7341cdc430871a1ce4b49471513cc4f23b9a2ab313f6438eee4969",
-      "translation_bytes": 50482
+      "translation_sha256": "4858d48ec3f2c68e437ee34f56c948e21d151b89b438d6e848c281e912aa8a14",
+      "translation_bytes": 50915
     },
     {
       "path": "articles/02-end-to-end-visual-plan.md",
@@ -257,6 +257,15 @@
     {
       "path": "articles/images/06-leaderboard-2025.png",
       "git_blob_sha": "34cacbd0a8a4e75f6da3b90864f28475b54cb7d2"
+    }
+  ],
+  "link_corrections": [
+    {
+      "path": "articles/01-ai-native-workflow.md",
+      "from": "https://github.com/DataTalksClub/ai-dev-tools-zoomcamp/tree/main/cohorts/2026/01-ai-native-workflow/weekly-feedback",
+      "to": "https://github.com/DataTalksClub/ai-dev-tools-zoomcamp/tree/main/01-ai-native-workflow/weekly-feedback",
+      "date": "2026-11-06",
+      "reason": "Устаревшая ссылка исходной статьи; путь исправлен только в переводе, исходный URL сохранён в примечании."
     }
   ]
 }
